@@ -33,14 +33,13 @@ The goal is to turn raw sales and inventory data into an executive-ready Excel d
 
 | File | Description |
 |---|---|
-| `Advanced_Excel_Retail_Operations_Dashboard.xlsx` | Main Excel workbook |
+| `Excel_Retail_Operations_Dashboard.xlsx` | Main Excel workbook |
 | `data/sales_transactions_2025.csv` | Synthetic transaction-level sales data |
 | `data/product_master.csv` | Product, category, cost, price, supplier, and reorder assumptions |
 | `data/inventory_snapshot.csv` | SKU and warehouse-level inventory snapshot |
 | `screenshots/dashboard_preview.png` | Dashboard preview for GitHub |
 | `screenshots/monthly_summary_preview.png` | Monthly summary preview |
 | `methodology.md` | Explanation of the analysis logic and model design |
-| `GITHUB_UPLOAD_GUIDE.md` | Step-by-step GitHub upload instructions |
 
 ## Key Metrics Included
 
@@ -70,7 +69,7 @@ The goal is to turn raw sales and inventory data into an executive-ready Excel d
 
 ## How To Use
 
-1. Download or open `Advanced_Excel_Retail_Operations_Dashboard.xlsx`.
+1. Download or open `Excel_Retail_Operations_Dashboard.xlsx`.
 2. Start from the `Dashboard` sheet for the executive view.
 3. Review `Sales_Data` and `Inventory_Data` for the source data.
 4. Change assumptions in the `Assumptions` sheet, especially the scenario demand uplift.
