@@ -1,0 +1,49 @@
+check,passed,detail
+At least 40 SKUs in 6 categories,True,"42 SKUs, 6 categories"
+At least 5 regions and 4 channels,True,"5 regions, 4 channels"
+"About 4,000 customers, ids unique",True,4000 customers
+SKU ids unique,True,
+Order lines unique on order id and line number,True,
+No missing values in sales lines,True,
+Sales cover 2023-01-01 to 2025-12-31 with a sale on every day,True,1096 days
+"Quantity positive, price and cost positive",True,
+Discount between 0 and 40%,True,max 30%
+Unit cost below list price on every line,True,
+Net revenue equals quantity x list price x (1 - discount) to the cent,True,max difference 0.0000
+Shipping and fees are not negative,True,
+Every SKU on a sale exists in products,True,
+"Every customer on a sale exists in customers, or is GUEST",True,
+Every promotion id on a sale exists in promotions,True,
+"One date, customer, region and channel per order",True,
+Sale region equals the customer's home region (guests have none),True,
+No order before the customer signed up,True,
+Only business accounts buy wholesale,True,
+"Guest orders: all marketplace, no wholesale",True,"Marketplace 100%, Online 60%, Retail 80%, Wholesale 0%"
+Overall gross margin between 35% and 60%,True,52.1%
+Every category margin between 25% and 75%,True,35.0% to 69.8%
+Every SKU margin between 10% and 80%,True,25.4% to 72.6%
+Contribution margin after fees and refunds is positive,True,35.9% of revenue
+November and December carry more than 20% of each year's revenue,True,"2023: 21.9%, 2024: 20.9%, 2025: 20.8%"
+Office has a summer dip (July below its monthly average),True,
+Units per category-day are higher on promotion days,True,x1.53
+Promotion lines earn a lower margin than other lines,True,41.9% against 53.6%
+Every return points at a sale line,True,
+Return ids unique,True,
+Returned units do not exceed sold units,True,
+Return date is after the order date,True,
+Refund does not exceed the line revenue,True,
+Return rate by category between 1% and 25%,True,2.3% to 16.5%
+Apparel returns more than Office,True,
+No negative stock on any day,True,
+Lost units are never negative,True,
+"Units sold in inventory_daily equal units on sales lines, day by day",True,"100,850 units"
+"Stock balance: yesterday + received - sold = today, for every SKU and day",True,max gap 0 units
+Purchase orders respect the minimum order quantity,True,
+Goods are received after the order date,True,
+Supplier disruption shows up as longer delays,True,12.0 days against -0.7
+Stock-outs cost between 0.5% and 8% of demand,True,5.4%
+Some SKUs never stock out and some often do,True,
+Discontinued SKUs leave obsolete stock on the shelf,True,"SKU-2004: 57, SKU-2007: 464, SKU-2013: 169"
+Some slow-moving SKUs hold more than 150 days of stock,True,8 SKUs
+Raw rows minus test and duplicate rows equals clean rows,True,"56,545 - 296 = 56,249"
+Every cleaning rule fixed at least one row,True,

@@ -1,0 +1,29 @@
+finding,measure,value,note
+Margin story,Lowest monthly gross margin,0.6005,Nov 2025
+Margin story,Highest monthly gross margin,0.6051,Jan 2025
+Margin story,Spread in percentage points,0.46,
+Margin story,Lowest monthly average discount,0.0543,
+Margin story,Highest monthly average discount,0.0577,
+Margin story,"Electronics share of revenue, January",0.2148,
+Margin story,"Electronics share of revenue, December",0.2864,
+Margin story,Electronics gross margin,0.5686,
+Margin story,Beauty gross margin,0.7152,
+ABC order,SKUs in the workbook table,18,
+ABC order,Is the table sorted by revenue,False,
+ABC order,Class A in the workbook,13,
+ABC order,Class A when sorted by revenue,11,
+ABC order,Class B in the workbook,3,
+ABC order,Class B when sorted by revenue,4,
+ABC order,Class C in the workbook,2,
+ABC order,Class C when sorted by revenue,3,
+ABC order,SKUs in the wrong class,4,
+Dates,Rows whose date is in another month than the Month label,98,of 2592
+Dates,Earliest order date,2024-12-31,
+Dates,"Workbook date minus CSV date, most common difference in days",1,100% of rows
+Reorder rule,Warehouse rows with a reorder point below demand over the lead time plus safety stock,54,of 54
+Reorder rule,Average shortfall of the reorder point in units,50.7,
+Reorder rule,Rows flagged Reorder Now,0,
+Forecast,"Three-month average, error on April to December (MAPE)",0.052,
+Forecast,"Last month as the forecast, same months (MAPE)",0.0375,
+Forecast,Average that includes the month being forecast (MAPE),0.0284,what the v1 table shows
+Forecast,Months of history,12,

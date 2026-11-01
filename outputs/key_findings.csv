@@ -1,0 +1,9 @@
+topic,finding,script
+Margin by channel,"Gross margin is 52.1% over the three years, but contribution margin is 37.3% once shipping, fees and returns come off. Marketplace earns 24.2% against 49.0% for Retail.",analysis/kpis.py
+Margin bridge 2024 to 2025,"Contribution margin moved from 314,713 to 317,479 euros (+2,766). The biggest help was price (+19,333) and the biggest drag was cost (-9,192).",analysis/kpis.py
+Stock-outs,"In 2025 stock-outs cost 2,088 units, 5.4% of demand, about 49,737 euros of revenue. On the last day 4 SKUs are at or below their reorder point, 10 more have less cover than their lead time, 10 are overstocked and 3 discontinued SKUs still hold 690 units.",analysis/abc_xyz.py
+ABC and XYZ,22 of 42 SKUs make up the first 80% of 2025 revenue (class A). 8 of them have steady demand (AX) and 3 SKUs are small and erratic (CZ).,analysis/abc_xyz.py
+Promotions,"35 of 73 promotions with a baseline added gross profit, 38 lost it, and in total they changed gross profit by -3,838 euros. The weakest campaign was Summer Clearance (-4,124) and the strongest Back to Office (+1,873). Baselines ignore seasonality.",analysis/customers.py
+Returns,"Apparel returns 12.6% of units against 2.0% for Office. Returns cost 139,089 euros, 5.8% of revenue. The worst SKU is Pilvi Denim Jeans at 21.6%.",analysis/customers.py
+Customers,"72% of the 2,217 consumers who bought ordered twice or more, and 47% of 2024 buyers ordered again in 2025. Champions are 19% of scored customers and 40% of their revenue. 76% of order lines carry no customer id (guest checkout, marketplace, retail without a card).",analysis/customers.py
+Forecast method,"On the last three months, the seasonal index with trend won 4; seasonal naive won 1; moving average won 1 of 6 categories. Best method per category was chosen on the test, not by preference.",analysis/forecast.py

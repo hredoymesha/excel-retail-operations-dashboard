@@ -1,0 +1,76 @@
+promo_id,campaign,start_date,end_date,category,discount_pct,channel_scope
+PRM-001,Winter Clearance,2023-01-05,2023-01-19,Apparel,0.3,All
+PRM-002,Winter Clearance,2023-01-05,2023-01-19,Sports & Outdoor,0.3,All
+PRM-003,Valentine Beauty,2023-02-07,2023-02-14,Beauty & Care,0.15,All
+PRM-004,Spring Home Refresh,2023-04-10,2023-04-24,Home & Kitchen,0.15,All
+PRM-005,Midsummer Sale,2023-06-15,2023-06-25,Apparel,0.25,All
+PRM-006,Midsummer Sale,2023-06-15,2023-06-25,Sports & Outdoor,0.25,All
+PRM-007,Summer Clearance,2023-07-15,2023-07-31,Apparel,0.3,All
+PRM-008,Summer Clearance,2023-07-15,2023-07-31,Home & Kitchen,0.3,All
+PRM-009,Back to Office Tech,2023-08-15,2023-08-31,Electronics,0.1,Online
+PRM-010,Back to Office,2023-08-15,2023-08-31,Office,0.12,All
+PRM-011,Singles Day,2023-11-10,2023-11-12,Electronics,0.15,Online
+PRM-012,Black Friday Week,2023-11-20,2023-11-27,Apparel,0.25,All
+PRM-013,Black Friday Week,2023-11-20,2023-11-27,Beauty & Care,0.25,All
+PRM-014,Black Friday Week,2023-11-20,2023-11-27,Electronics,0.25,All
+PRM-015,Black Friday Week,2023-11-20,2023-11-27,Home & Kitchen,0.25,All
+PRM-016,Black Friday Week,2023-11-20,2023-11-27,Office,0.25,All
+PRM-017,Black Friday Week,2023-11-20,2023-11-27,Sports & Outdoor,0.25,All
+PRM-018,Gift Season,2023-12-01,2023-12-12,Beauty & Care,0.12,All
+PRM-019,Gift Season,2023-12-01,2023-12-12,Home & Kitchen,0.12,All
+PRM-020,Boxing Day Sale,2023-12-26,2023-12-31,Apparel,0.25,All
+PRM-021,Boxing Day Sale,2023-12-26,2023-12-31,Beauty & Care,0.25,All
+PRM-022,Boxing Day Sale,2023-12-26,2023-12-31,Electronics,0.25,All
+PRM-023,Boxing Day Sale,2023-12-26,2023-12-31,Home & Kitchen,0.25,All
+PRM-024,Boxing Day Sale,2023-12-26,2023-12-31,Office,0.25,All
+PRM-025,Boxing Day Sale,2023-12-26,2023-12-31,Sports & Outdoor,0.25,All
+PRM-026,Winter Clearance,2024-01-05,2024-01-19,Apparel,0.3,All
+PRM-027,Winter Clearance,2024-01-05,2024-01-19,Sports & Outdoor,0.3,All
+PRM-028,Valentine Beauty,2024-02-07,2024-02-14,Beauty & Care,0.15,All
+PRM-029,Spring Home Refresh,2024-04-10,2024-04-24,Home & Kitchen,0.15,All
+PRM-030,Midsummer Sale,2024-06-15,2024-06-25,Apparel,0.25,All
+PRM-031,Midsummer Sale,2024-06-15,2024-06-25,Sports & Outdoor,0.25,All
+PRM-032,Summer Clearance,2024-07-15,2024-07-31,Apparel,0.3,All
+PRM-033,Summer Clearance,2024-07-15,2024-07-31,Home & Kitchen,0.3,All
+PRM-034,Back to Office Tech,2024-08-15,2024-08-31,Electronics,0.1,Online
+PRM-035,Back to Office,2024-08-15,2024-08-31,Office,0.12,All
+PRM-036,Singles Day,2024-11-10,2024-11-12,Electronics,0.15,Online
+PRM-037,Black Friday Week,2024-11-25,2024-12-02,Apparel,0.3,All
+PRM-038,Black Friday Week,2024-11-25,2024-12-02,Beauty & Care,0.3,All
+PRM-039,Black Friday Week,2024-11-25,2024-12-02,Electronics,0.3,All
+PRM-040,Black Friday Week,2024-11-25,2024-12-02,Home & Kitchen,0.3,All
+PRM-041,Black Friday Week,2024-11-25,2024-12-02,Office,0.3,All
+PRM-042,Black Friday Week,2024-11-25,2024-12-02,Sports & Outdoor,0.3,All
+PRM-043,Gift Season,2024-12-01,2024-12-12,Beauty & Care,0.12,All
+PRM-044,Gift Season,2024-12-01,2024-12-12,Home & Kitchen,0.12,All
+PRM-045,Boxing Day Sale,2024-12-26,2024-12-31,Apparel,0.25,All
+PRM-046,Boxing Day Sale,2024-12-26,2024-12-31,Beauty & Care,0.25,All
+PRM-047,Boxing Day Sale,2024-12-26,2024-12-31,Electronics,0.25,All
+PRM-048,Boxing Day Sale,2024-12-26,2024-12-31,Home & Kitchen,0.25,All
+PRM-049,Boxing Day Sale,2024-12-26,2024-12-31,Office,0.25,All
+PRM-050,Boxing Day Sale,2024-12-26,2024-12-31,Sports & Outdoor,0.25,All
+PRM-051,Winter Clearance,2025-01-05,2025-01-19,Apparel,0.3,All
+PRM-052,Winter Clearance,2025-01-05,2025-01-19,Sports & Outdoor,0.3,All
+PRM-053,Valentine Beauty,2025-02-07,2025-02-14,Beauty & Care,0.15,All
+PRM-054,Spring Home Refresh,2025-04-10,2025-04-24,Home & Kitchen,0.15,All
+PRM-055,Midsummer Sale,2025-06-15,2025-06-25,Apparel,0.25,All
+PRM-056,Midsummer Sale,2025-06-15,2025-06-25,Sports & Outdoor,0.25,All
+PRM-057,Summer Clearance,2025-07-15,2025-07-31,Apparel,0.3,All
+PRM-058,Summer Clearance,2025-07-15,2025-07-31,Home & Kitchen,0.3,All
+PRM-059,Back to Office Tech,2025-08-15,2025-08-31,Electronics,0.1,Online
+PRM-060,Back to Office,2025-08-15,2025-08-31,Office,0.12,All
+PRM-061,Singles Day,2025-11-10,2025-11-12,Electronics,0.15,Online
+PRM-062,Black Friday Week,2025-11-24,2025-12-01,Apparel,0.3,All
+PRM-063,Black Friday Week,2025-11-24,2025-12-01,Beauty & Care,0.3,All
+PRM-064,Black Friday Week,2025-11-24,2025-12-01,Electronics,0.3,All
+PRM-065,Black Friday Week,2025-11-24,2025-12-01,Home & Kitchen,0.3,All
+PRM-066,Black Friday Week,2025-11-24,2025-12-01,Office,0.3,All
+PRM-067,Black Friday Week,2025-11-24,2025-12-01,Sports & Outdoor,0.3,All
+PRM-068,Gift Season,2025-12-01,2025-12-12,Beauty & Care,0.12,All
+PRM-069,Gift Season,2025-12-01,2025-12-12,Home & Kitchen,0.12,All
+PRM-070,Boxing Day Sale,2025-12-26,2025-12-31,Apparel,0.25,All
+PRM-071,Boxing Day Sale,2025-12-26,2025-12-31,Beauty & Care,0.25,All
+PRM-072,Boxing Day Sale,2025-12-26,2025-12-31,Electronics,0.25,All
+PRM-073,Boxing Day Sale,2025-12-26,2025-12-31,Home & Kitchen,0.25,All
+PRM-074,Boxing Day Sale,2025-12-26,2025-12-31,Office,0.25,All
+PRM-075,Boxing Day Sale,2025-12-26,2025-12-31,Sports & Outdoor,0.25,All

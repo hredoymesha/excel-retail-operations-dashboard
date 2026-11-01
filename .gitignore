@@ -1,0 +1,18 @@
+# Excel lock and temporary files
+~$*
+.~lock.*
+
+# operating system
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# scratch space
+tmp/

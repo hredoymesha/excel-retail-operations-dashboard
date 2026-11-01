@@ -1,0 +1,9 @@
+supplier_id,supplier_name,country,lead_time_days_avg,lead_time_days_sd
+SUP-01,Baltic Tech Supply,Estonia,21,4
+SUP-02,Harbour Lane Imports,Netherlands,28,7
+SUP-03,Tideway Supply,United Kingdom,35,8
+SUP-04,Linden Textiles,Portugal,30,6
+SUP-05,Pohja Home Goods,Finland,18,3
+SUP-06,Selka Cosmetics,Sweden,14,2
+SUP-07,Marlow Office Wholesale,Germany,10,2
+SUP-08,Fjord Outdoor Gear,Norway,25,5
