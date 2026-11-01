@@ -1352,16 +1352,16 @@ narrow_selection,Trend revenue 2024-11,1365.18,1365.18,0.0,0.01,True
 narrow_selection,Trend revenue 2023-11,1646.22,1646.2200000000003,2.2737367544323206e-13,0.01,True
 narrow_selection,Trend revenue 2024-12,1932.22,1932.22,0.0,0.01,True
 narrow_selection,Trend revenue 2023-12,1568.22,1568.22,0.0,0.01,True
-narrow_selection,"Gross margin, category Electronics",0.0,0.0,0.0,0.0005,True
+narrow_selection,"Gross margin, category Electronics (no sales)",#N/A,#N/A,0.0,0.0,True
 narrow_selection,"Gross margin, category Apparel",0.581498390341933,0.5814983903419331,1.1102230246251565e-16,0.0005,True
-narrow_selection,"Gross margin, category Home & Kitchen",0.0,0.0,0.0,0.0005,True
-narrow_selection,"Gross margin, category Beauty & Care",0.0,0.0,0.0,0.0005,True
-narrow_selection,"Gross margin, category Office",0.0,0.0,0.0,0.0005,True
-narrow_selection,"Gross margin, category Sports & Outdoor",0.0,0.0,0.0,0.0005,True
+narrow_selection,"Gross margin, category Home & Kitchen (no sales)",#N/A,#N/A,0.0,0.0,True
+narrow_selection,"Gross margin, category Beauty & Care (no sales)",#N/A,#N/A,0.0,0.0,True
+narrow_selection,"Gross margin, category Office (no sales)",#N/A,#N/A,0.0,0.0,True
+narrow_selection,"Gross margin, category Sports & Outdoor (no sales)",#N/A,#N/A,0.0,0.0,True
 narrow_selection,"Gross margin, channel Online",0.581498390341933,0.5814983903419331,1.1102230246251565e-16,0.0005,True
-narrow_selection,"Gross margin, channel Retail",0.0,0.0,0.0,0.0005,True
-narrow_selection,"Gross margin, channel Marketplace",0.0,0.0,0.0,0.0005,True
-narrow_selection,"Gross margin, channel Wholesale",0.0,0.0,0.0,0.0005,True
+narrow_selection,"Gross margin, channel Retail (no sales)",#N/A,#N/A,0.0,0.0,True
+narrow_selection,"Gross margin, channel Marketplace (no sales)",#N/A,#N/A,0.0,0.0,True
+narrow_selection,"Gross margin, channel Wholesale (no sales)",#N/A,#N/A,0.0,0.0,True
 narrow_selection,Revenue by SKU SKU-2001,0.0,0.0,0.0,0.01,True
 narrow_selection,Revenue by SKU SKU-2002,0.0,0.0,0.0,0.01,True
 narrow_selection,Revenue by SKU SKU-2003,0.0,0.0,0.0,0.01,True

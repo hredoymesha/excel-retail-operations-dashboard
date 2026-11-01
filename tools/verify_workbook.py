@@ -86,11 +86,17 @@ def verify(label: str, selections: dict, data: dict, t: dict, monthly: pd.DataFr
     for i, c in enumerate(CATEGORIES):
         b = base[base.category == c]
         gm = 1 - b.cogs.sum() / b.net_revenue.sum() if b.net_revenue.sum() else 0
-        C.num(f"Gross margin, category {c}", V("Calc_Dashboard", ctx.cat_rows[0] + i, 3), gm, 0.0005)
+        if b.net_revenue.sum() == 0:
+            C.text(f"Gross margin, category {c} (no sales)", V("Calc_Dashboard", ctx.cat_rows[0] + i, 3), "#N/A")
+        else:
+            C.num(f"Gross margin, category {c}", V("Calc_Dashboard", ctx.cat_rows[0] + i, 3), gm, 0.0005)
     for i, c in enumerate(CHANNELS):
         b = base[base.channel == c]
         gm = 1 - b.cogs.sum() / b.net_revenue.sum() if b.net_revenue.sum() else 0
-        C.num(f"Gross margin, channel {c}", V("Calc_Dashboard", ctx.chan_rows[0] + i, 3), gm, 0.0005)
+        if b.net_revenue.sum() == 0:
+            C.text(f"Gross margin, channel {c} (no sales)", V("Calc_Dashboard", ctx.chan_rows[0] + i, 3), "#N/A")
+        else:
+            C.num(f"Gross margin, channel {c}", V("Calc_Dashboard", ctx.chan_rows[0] + i, 3), gm, 0.0005)
     sku_rev = base.groupby("sku").net_revenue.sum()
     s1, _ = ctx.sku_rows
     for i, sku in enumerate(sorted(monthly.sku.unique())):

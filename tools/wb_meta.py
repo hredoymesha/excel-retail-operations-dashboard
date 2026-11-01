@@ -72,7 +72,7 @@ def build_checks(ctx: Ctx) -> None:
         ("Refunds by category add up to total refunds", f"={r['ret_refund_total']}", "=SUM(m_refund_amount)", EUR, "eq", ""),
     ]
     for sheet, rng in last_err.items():
-        rows.append((f"No formula errors on {sheet}", f"=SUMPRODUCT(--ISERROR({sheet}!{rng}))", "=0", INT, "eq", ""))
+        rows.append((f"No formula errors on {sheet}", f"=SUMPRODUCT(--ISERR({sheet}!{rng}))", "=0", INT, "eq", ""))
     first = 6
     for i, (label, wbf, exp, num, mode, note) in enumerate(rows):
         rr = first + i
@@ -148,10 +148,10 @@ def build_start(ctx: Ctx) -> None:
     wrap = ctx.fmt(text_wrap=True, valign="top")
     lab = ctx.fmt(bold=True, font_color=PAL["navy"], valign="top")
     rows = [
-        ("Purpose", "A decision-support workbook for a fictional Finnish retailer selling through four channels. It answers where margin comes from and where it leaks, which SKUs matter, what to reorder, what next year looks like and what happens if prices, promotions, suppliers or demand change."),
-        ("How to use it", "1. Open the Dashboard and use the yellow drop-downs.   2. Follow the sheet map below for the detail.   3. Change blue input cells on Assumptions or Scenarios and watch the numbers move.   4. Look at Checks to see that everything still adds up."),
-        ("Excel versions", "Built for Excel 2010 or later. It uses no dynamic array functions, so nothing needs Microsoft 365. LibreOffice opens it too. Sorted lists use RANK and INDEX with MATCH."),
-        ("Calculation", "Every number is a live formula over the Data_ sheets. The first open can take a few seconds. If Excel is set to manual calculation, press F9."),
+        ("Purpose", "A workbook for a made-up Finnish shop that sells online, in stores, on a marketplace and wholesale. It shows where margin comes from and where it leaks, which products matter, what to reorder, what next year might look like, and what changes if prices, promotions, suppliers or demand move."),
+        ("How to use it", "Start on the Dashboard and try the yellow drop-downs. The sheet map below says what is where. Change the yellow input cells on Assumptions or Scenarios and watch the numbers move. Checks tells you whether everything still adds up."),
+        ("Excel versions", "Works in Excel 2010 or later and needs nothing from Microsoft 365. LibreOffice opens it too. It has only been tried in desktop Excel on Windows and in LibreOffice."),
+        ("Calculation", "Every number is a formula over the Data_ sheets. The first open can take a few seconds. If nothing updates, press F9, because Excel may be on manual calculation."),
         ("Version", f"2.0, built {dt.date.today():%d %B %Y}. Version 1 is kept in the folder v1."),
     ]
     r = 3
@@ -221,7 +221,7 @@ def build_notes(ctx: Ctx) -> None:
         r += 1
 
     section("Methodology")
-    item("Data", "Three years of daily sales for a fictional retailer, built by a seeded script, cleaned, then summed to month x SKU x region x channel for the workbook. Customers, promotions, stock and purchase orders come from the same run. The CSV files and scripts are in the project folder.")
+    item("Data", "Three years of daily sales for an invented retailer, made by a seeded script, cleaned, then added up to month x SKU x region x channel for this workbook. Customers, promotions, stock and purchase orders come from the same run. The scripts and CSV files are in the project folder.")
     item("Margin", "Gross profit is net revenue minus cost of goods sold at the unit cost on the sale date. Contribution margin takes off shipping, payment fees, marketplace fees and returns. Returns cost the refund and the return label, and give back the cost of goods that went back on the shelf. Returns sit on the month of the original order.")
     item("Margin bridge", "Between two years, each SKU's contribution per unit is split into list price, discount rate, unit cost, fees per unit and returns per unit. Volume and mix come from the change in units valued at last year's margin. The effects add up to the exact change in contribution margin. A SKU that did not sell in a year borrows the other year's unit values, so it adds mix but no price or cost effect.")
     item("ABC and XYZ", "ABC ranks SKUs by revenue in the trailing window. A SKU is A if the share of revenue before it is below the A limit, B below the B limit, else C. XYZ uses the coefficient of variation of monthly demand over the trailing window: X steady, Y moderate, Z erratic. Demand is units sold plus lost units unless the assumption is switched off.")
@@ -234,7 +234,7 @@ def build_notes(ctx: Ctx) -> None:
     section("Main assumptions")
     item("Where they live", "The Assumptions sheet holds every threshold and rate. Scenario parameters sit on the Scenarios sheet and the sensitivity steps on the grid headers. All are blue-on-yellow cells.")
     item("Stock snapshot", "Stock on hand and on order are the values on the as-of date. Reorder rules use trailing 12-month demand, which understates the need before a peak.")
-    item("Lost sales", "Lost units are known exactly in this synthetic data. In a real company they would be estimated.")
+    item("Lost sales", "In this made-up data the lost units are known exactly. A real company would have to estimate them.")
     r += 1
     section("Data dictionary (workbook tables)")
     dd = [
@@ -251,7 +251,7 @@ def build_notes(ctx: Ctx) -> None:
     item("Full dictionary", "The CSV files and every column are described in docs/data-dictionary.md in the project folder.")
     r += 1
     section("Change log")
-    item("2.0", "New data set: three years, 42 SKUs, 6 categories, 5 regions, 4 channels, 4,000 customers, with promotions, returns, stock-outs and supplier delays. New workbook with selectors, contribution margin, a margin bridge, ABC-XYZ, reorder points, a tested forecast, scenarios, RFM and cohorts, promotion lift, returns and a Checks sheet. A Python companion reproduces the headline numbers.")
-    item("Corrections to 1.0", "The ABC cumulative share in version 1 was worked out in product-code order instead of revenue order, so some SKUs were in the wrong class. Month labels in the version 1 sales file disagreed with the order dates on some rows. The dashboard text about margin pressure was typed in and not supported by the data: monthly gross margin moved less than half a point and the drift came from the product mix. The version 1 reorder rule never fired because reorder points sat below lead-time demand. The version 1 forecast included the month being forecast in its own average. Details and figures are in CHANGELOG.md.")
+    item("2.0", "New data set (three years, 42 SKUs, 6 categories, 5 regions, 4 channels, 4,000 customers) with promotions, returns, stock-outs and supplier delays. New workbook with selectors, contribution margin, a margin bridge, ABC-XYZ, reorder points, a tested forecast, scenarios, RFM and cohorts, promotion lift, returns and a Checks sheet. A Python version of the calculations backs it up. The PivotTable and Power Query sheets were added by hand afterwards.")
+    item("Corrections to 1.0", "Version 1 worked out the ABC cumulative share in product-code order instead of revenue order, so some SKUs were in the wrong class. Its month labels disagreed with the order dates on some rows. Its dashboard text about margin pressure was typed in and the data did not support it: monthly gross margin moved less than half a point, and that drift came from the product mix. Its reorder rule could never fire because the reorder points sat below demand over the lead time. Its forecast included the month being forecast in its own average. CHANGELOG.md has the figures.")
     ws.set_landscape()
     ws.fit_to_pages(1, 0)

@@ -117,7 +117,9 @@ def build_dashboard(ctx: Ctx) -> None:
 
     ch2 = chart("bar", "Gross margin by category")
     ch2.add_series({"name": "Gross margin %", "categories": f"='{cd}'!$A${c1+1}:$A${c2+1}", "values": f"='{cd}'!$D${c1+1}:$D${c2+1}",
-                    "fill": {"color": PAL["teal"]}, "data_labels": {"value": True, "num_format": "0%", "font": {"size": 9}}})
+                    "fill": {"color": PAL["teal"]},
+                    "data_labels": {"value": True, "font": {"size": 9},
+                                    "custom": [{"value": f"='{cd}'!$E${r+1}"} for r in range(c1, c2 + 1)]}})
     ch2.set_legend({"none": True})
     ch2.set_x_axis({"num_format": "0%", "min": 0, "max": 1, "major_gridlines": {"visible": True, "line": {"color": "#E3E8EE"}}})
     ch2.set_y_axis({"reverse": True})
@@ -126,7 +128,9 @@ def build_dashboard(ctx: Ctx) -> None:
 
     ch3 = chart("column", "Gross margin by channel")
     ch3.add_series({"name": "Gross margin %", "categories": f"='{cd}'!$A${h1+1}:$A${h2+1}", "values": f"='{cd}'!$D${h1+1}:$D${h2+1}",
-                    "fill": {"color": PAL["teal"]}, "data_labels": {"value": True, "num_format": "0%", "font": {"size": 9}}, "gap": 80})
+                    "fill": {"color": PAL["teal"]}, "gap": 80,
+                    "data_labels": {"value": True, "font": {"size": 9},
+                                    "custom": [{"value": f"='{cd}'!$E${r+1}"} for r in range(h1, h2 + 1)]}})
     ch3.set_legend({"none": True})
     ch3.set_y_axis({"num_format": "0%", "min": 0, "max": 1, "major_gridlines": {"visible": True, "line": {"color": "#E3E8EE"}}})
     ch3.set_size({"width": 400, "height": 300})
@@ -169,9 +173,16 @@ def build_dashboard(ctx: Ctx) -> None:
         ws.write(r, 1, j + 1, ctx.cell("0", align="center"))
         put(r, 2, 3, f"=Calc_Dashboard!$B${src}", cell)
         put(r, 5, 2, f"=Calc_Dashboard!$C${src}", ctx.cell(EUR))
-        ws.write(r, 7, j + 1, ctx.cell("0", align="center"))
-        put(r, 8, 3, f"=Calc_Dashboard!$D${src}", cell)
-        put(r, 11, 2, f"=Calc_Dashboard!$E${src}", ctx.cell(EUR))
+        many = f'COUNTIF(Calc_Dashboard!$C${ctx.sku_rows[0]+1}:$C${ctx.sku_rows[1]+1},">0")>=bottom_min'
+        ws.write_formula(r, 7, f'=IF({many},{j + 1},"")', ctx.cell("0", align="center"))
+        if j == 0:
+            note = '"Fewer than " & bottom_min & " products have sales"'
+            put(r, 8, 3, f"=IF({many},Calc_Dashboard!$D${src},{note})", cell)
+        elif j == 1:
+            put(r, 8, 3, f'=IF({many},Calc_Dashboard!$D${src},"so it would repeat the top five.")', cell)
+        else:
+            put(r, 8, 3, f'=IF({many},Calc_Dashboard!$D${src},"")', cell)
+        put(r, 11, 2, f'=IF({many},Calc_Dashboard!$E${src},"")', ctx.cell(EUR))
     A = T + 9
     block(A, 1, "Needs attention: stock (as of the last day of data)", ["#", "Product", "Status"], [1, 3, 2])
     block(A, 7, "Needs attention: biggest margin drops, reference year", ["#", "Product", "Margin change"], [1, 3, 2])

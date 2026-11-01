@@ -82,6 +82,7 @@ ASSUMPTIONS = [
     ("band_conf", "Forecast band confidence", 0.90, PCT0, "Width of the band around the forecast."),
     ("min_ret_units", "Minimum units for the problem-SKU list", 100, INT, "Avoids ranking SKUs on a handful of sales."),
     ("min_rev_attn", "Minimum yearly revenue for the margin-drop list (EUR)", 5000, EUR, "SKUs below this in either year are left out."),
+    ("bottom_min", "Products with sales needed for the bottom-five list", 10, INT, "Below this the bottom five would repeat the top five, so the dashboard shows a note instead."),
     ("rfm_bins", "RFM score bins", 5, INT, "Quintiles. Scores run from 1 to this number."),
     ("seg_hi", "RFM segments: high score at or above", 4, INT, ""),
     ("seg_mid", "RFM segments: medium score at or above", 3, INT, ""),
@@ -213,7 +214,9 @@ def build_calc_dashboard(ctx: Ctx) -> None:
         ws.write(r, 0, cat, cell)
         ws.write_formula(r, 1, "=SUMIFS(m_net_revenue," + YEARSEL + f",m_region,reg_c,m_channel,ch_c,m_category,$A{r+1},m_category,cat_c)", ctx.cell(EUR))
         ws.write_formula(r, 2, "=SUMIFS(m_cogs," + YEARSEL + f",m_region,reg_c,m_channel,ch_c,m_category,$A{r+1},m_category,cat_c)", ctx.cell(EUR))
-        ws.write_formula(r, 3, f"=IF(B{r+1}=0,0,1-C{r+1}/B{r+1})", ctx.cell(PCT))
+        ws.write_formula(r, 3, f"=IF(B{r+1}=0,NA(),1-C{r+1}/B{r+1})", ctx.cell(PCT))
+        ws.write_formula(r, 4, f'=IF(ISNA(D{r+1}),"",TEXT(D{r+1},"0%"))', cell)
+        ws.set_column(4, 4, 14)
     ctx.cat_rows = (c0 + 2, c0 + 1 + len(CATEGORIES))
     ch0 = c0 + 2 + len(CATEGORIES)
     for i, ch in enumerate(CHANNELS):
@@ -221,7 +224,9 @@ def build_calc_dashboard(ctx: Ctx) -> None:
         ws.write(r, 0, ch, cell)
         ws.write_formula(r, 1, "=SUMIFS(m_net_revenue," + YEARSEL + f",m_region,reg_c,m_channel,$A{r+1},m_channel,ch_c,m_category,cat_c)", ctx.cell(EUR))
         ws.write_formula(r, 2, "=SUMIFS(m_cogs," + YEARSEL + f",m_region,reg_c,m_channel,$A{r+1},m_channel,ch_c,m_category,cat_c)", ctx.cell(EUR))
-        ws.write_formula(r, 3, f"=IF(B{r+1}=0,0,1-C{r+1}/B{r+1})", ctx.cell(PCT))
+        ws.write_formula(r, 3, f"=IF(B{r+1}=0,NA(),1-C{r+1}/B{r+1})", ctx.cell(PCT))
+        ws.write_formula(r, 4, f'=IF(ISNA(D{r+1}),"",TEXT(D{r+1},"0%"))', cell)
+        ws.set_column(4, 4, 14)
     ctx.chan_rows = (ch0, ch0 + len(CHANNELS) - 1)
 
     # SKU block
