@@ -1,8 +1,8 @@
 # Methodology
 
-How I calculated each thing, in the order of the workbook. The same formulas are in `analysis/metrics.py`, written again in pandas, and the two are compared in `tools/verify_workbook.py`.
+How each number is worked out, in the order of the workbook. `analysis/metrics.py` repeats the same formulas in pandas, and `tools/verify_workbook.py` compares the two.
 
-All data is synthetic. Where a rule matters only because the data is synthetic, I say so.
+The data is made up. Where a rule only matters because of that, I say so.
 
 ## Data
 

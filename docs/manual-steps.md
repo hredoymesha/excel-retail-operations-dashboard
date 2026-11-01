@@ -1,64 +1,65 @@
 # Manual steps
 
-The build script cannot do everything. This page covers the steps done by hand in Excel, the screenshots, and what was and was not tested.
+Some things were done by hand in Excel, and some things were not tested. This page covers both.
 
-## What the script does not create
+## What the build script leaves out
 
-The workbook builder (XlsxWriter) writes formulas, tables, named ranges, charts, drop-downs and conditional formats. It cannot write PivotTables, slicers or Power Query connections. Those were added by hand in Excel after the build: the sheet `Pivot_Revenue` and the sheet `Power_Query`. Building the workbook again with `tools/build_workbook.py` leaves them out, so repeat the steps below, or keep the saved file. Nothing else in the workbook depends on them.
+`tools/build_workbook.py` writes the formulas, tables, named ranges, charts, drop-downs and conditional formats. It can't write a PivotTable, slicers or Power Query connections. I added those in Excel afterwards, on two sheets, `Pivot_Revenue` and `Power_Query`. If you build the workbook again with the script, they disappear, so either keep the saved file or repeat the steps below.
 
-## 1. The PivotTable with slicers
+## The PivotTable and slicers
 
-Use the table `tblMonthly` on the sheet `Data_Monthly`. It has one row per month, SKU, region and channel.
+It sits on the table `tblMonthly` (sheet `Data_Monthly`), which has one row per month, SKU, region and channel.
 
-1. Click any cell inside the table on `Data_Monthly`.
-2. On the **Insert** tab choose **PivotTable**. Pick **New Worksheet** and press **OK**.
-3. In the field list drag `category` to **Rows**, `year` to **Columns** and `net_revenue` to **Values**. Check that it says Sum of net_revenue.
-4. Right-click a number, choose **Number Format**, pick **Currency** with 0 decimals and euro sign.
-5. Click inside the PivotTable. On the **PivotTable Analyze** tab choose **Insert Slicer**. Tick `region` and `channel`, press **OK**.
-6. Click a slicer button to filter. Hold Ctrl to pick several. The button with the crossed funnel clears the filter.
-7. Optional: on the **PivotTable Analyze** tab choose **PivotChart** and pick a clustered column chart.
-8. Optional margin view: add a calculated field. On the **PivotTable Analyze** tab choose **Fields, Items & Sets** and then **Calculated Field**. Name it `gross_margin` with the formula `=(net_revenue-cogs)/net_revenue`.
+1. Click a cell inside the table on `Data_Monthly`.
+2. Insert tab, PivotTable, New Worksheet, OK.
+3. Drag `category` to Rows, `year` to Columns and `net_revenue` to Values (it must say Sum of net_revenue).
+4. Right-click a number, Number Format, and pick a euro format with no decimals.
+5. Click inside the PivotTable, then PivotTable Analyze, Insert Slicer. Tick `region` and `channel`.
+6. Click a slicer button to filter. Hold Ctrl to pick several. The funnel icon clears the filter.
+7. For the chart, PivotTable Analyze, PivotChart, clustered column.
 
-Rename the new sheet to `Pivot_Revenue` and move it after `Returns` if you want it near the analysis sheets.
+## Power Query
 
-## 2. Power Query on the CSV files
+The `Power_Query` sheet has six queries: `sales_lines`, `returns`, `products`, `customers`, `promotions` and `sales_with_products` (sales joined to products on `sku`). They only make a connection. To load one, go to Data, Queries & Connections, right-click it and choose Load To.
 
-The sheet `Power_Query` holds six queries (`sales_lines`, `returns`, `products`, `customers`, `promotions` and `sales_with_products`). They are connection only. The cell `DataFolder` on that sheet works out the data folder from where the workbook is saved, so keep the workbook in the project folder. To load one, open **Data**, **Queries & Connections**, right-click the query and choose **Load To**. To make a query like these yourself:
+The cell `DataFolder` on that sheet works out the data folder from where the workbook is saved, so the workbook has to stay in the project folder, next to `data`.
 
-1. Make sure the CSV files are in the `data` folder next to the workbook.
-2. On the **Data** tab choose **Get Data**, then **From File**, then **From Text/CSV**.
-3. Browse to `data\sales_lines.csv` and press **Import**. Excel shows a preview.
-4. Press **Transform Data**. In the Power Query window check that `order_date` is a Date and that the money columns are Decimal Number. Fix any type that Excel guessed wrong.
-5. On the **Home** tab choose **Close & Load**, then **Close & Load To...**. Pick **Only Create Connection** and tick **Add this data to the Data Model**. Press **OK**.
-6. Repeat steps 2 to 5 for `returns.csv`, `products.csv`, `customers.csv` and `promotions.csv`.
-7. To join them: **Data** tab, **Get Data**, **Combine Queries**, **Merge**. Choose `sales_lines` and `products` and click `sku` in both. Use a **Left Outer** join. Expand the `category` and `product_name` columns.
-8. To refresh after the scripts write new CSV files: **Data** tab, **Refresh All**.
+To build a query like these yourself:
 
-If Excel cannot find the file after you move the project, open **Data**, **Queries & Connections**, right-click the query, choose **Edit**, then open **Source** under Applied Steps and correct the path.
+1. Data tab, Get Data, From File, From Text/CSV, and pick `data\sales_lines.csv`.
+2. Transform Data. Check that `order_date` is a Date and the money columns are Decimal Number.
+3. Home, Close & Load, Close & Load To, then Only Create Connection.
+4. Do the same for the other CSV files.
+5. To join two, Data, Get Data, Combine Queries, Merge. Pick both queries, click `sku` in each and use a Left Outer join.
+6. After the scripts write new CSV files, Data, Refresh All.
 
-## 3. Screenshots
+If Excel can't find the files after you move the project, edit the query and fix the path in the Source step.
 
-Ten screenshots are in `screenshots/`. They were taken from desktop Excel 16 with the formula bar and headings hidden. Each is at least 1600 pixels wide, and some were scaled up by about 1.5 times from the Excel capture. The data is synthetic.
+## Screenshots
 
-| File | What it shows |
+The ten images in `screenshots/` were taken from desktop Excel 16 with the formula bar and headings hidden. A few were scaled up by about 1.5 times, so they are slightly soft.
+
+| File | Shows |
 |---|---|
 | `01_dashboard.png` | `Dashboard`, all drop-downs on All |
-| `02_dashboard_filtered.png` | `Dashboard` with Year 2024, Region Tampere, Channel Online, Category Apparel |
-| `03_margin_bridge.png` | `Profit_Margin`, the profit and loss, the bridge and their charts |
-| `04_abc_xyz.png` | `Products`, the matrix and the start of the scorecard |
-| `05_inventory.png` | `Inventory`, the summary and the reorder list |
-| `06_forecast.png` | `Forecast`, the method table, the chart and the forecast |
+| `02_dashboard_filtered.png` | `Dashboard`, 2024, Tampere, Online, Apparel |
+| `03_margin_bridge.png` | `Profit_Margin`, profit and loss and the bridge |
+| `04_abc_xyz.png` | `Products`, the matrix and the scorecard |
+| `05_inventory.png` | `Inventory`, summary and reorder list |
+| `06_forecast.png` | `Forecast`, method table, chart and forecast |
 | `07_scenarios.png` | `Scenarios`, assumptions, results and chart |
 | `08_cohorts.png` | `Customers`, the cohort heat map |
-| `09_checks.png` | `Checks`, every row PASS |
-| `10_pivot_table.png` | `Pivot_Revenue`, the PivotTable, slicers and chart |
+| `09_checks.png` | `Checks`, all PASS |
+| `10_pivot_table.png` | `Pivot_Revenue` |
 
-To retake one: open the workbook, wait for the status bar to stop saying Calculate, untick Formula Bar and Headings on the **View** tab, pick a zoom that fits the sheet, press Windows + Shift + S, drag a rectangle around the sheet only and save as PNG. Keep the title bar, taskbar, your user name and any file path out of the frame.
+To retake one: wait until the status bar stops saying Calculate, untick Formula Bar and Headings on the View tab, pick a zoom that fits, press Windows + Shift + S, drag around the sheet and save as PNG. Keep the title bar and taskbar out of the frame.
 
-## 4. Testing notes
+## What was and wasn't tested
 
-- The workbook was opened in desktop Excel 16 on Windows (recalculated, error cells counted, Checks sheet read) and in LibreOffice (recalculated and compared with pandas, see `outputs/workbook_parity.csv`). It was not tested in Mac Excel, Excel for the web or Google Sheets, and printing to paper was not tested.
-- Opening the file in Excel showed one problem LibreOffice had hidden: text built with `TEXT()` and a number format breaks under some regional settings. The workbook no longer uses it.
-- The workbook uses 39 functions: ABS, AND, AVERAGE, AVERAGEIF, AVERAGEIFS, CEILING, CHOOSE, COUNT, COUNTA, COUNTIF, COUNTIFS, DATE, EDATE, IF, IFERROR, INDEX, ISERROR, ISNUMBER, LN, MATCH, MAX, MIN, MOD, MONTH, NA, NOT, OR, RANK, SQRT, SUM, SUMIF, SUMIFS, SUMPRODUCT, TEXT, YEAR, NORM.S.DIST, NORM.S.INV, PERCENTILE.INC and STDEV.S (the last four need Excel 2010 or later). LibreOffice evaluated every one of them, and no formula returned an error. None of them needs Microsoft 365. `FORECAST.ETS` is not used, because LibreOffice does not evaluate it the same way as Excel, so the forecast uses an explicit seasonal index that you can read cell by cell. Every function was evaluated, but evaluating in LibreOffice is not the same as evaluating in Excel.
-- LibreOffice and Excel can differ in the last decimal places of `PERCENTILE.INC`, `NORM.S.INV` and `STDEV.S`. The parity tolerances are in `outputs/workbook_parity.csv`.
-- The first open in Excel recalculates the whole workbook. It took LibreOffice a few minutes. Excel was not timed.
+I opened the workbook in desktop Excel 16 on Windows, recalculated it, counted error cells and read the Checks sheet. I also recalculated it in LibreOffice and compared it with pandas (`outputs/workbook_parity.csv`). Mac Excel, Excel for the web and Google Sheets were not tried, and neither was printing on paper.
+
+Excel showed one problem LibreOffice had hidden. Text built with `TEXT()` and a number format breaks under some regional settings, so the workbook no longer uses it.
+
+The workbook uses 39 functions: ABS, AND, AVERAGE, AVERAGEIF, AVERAGEIFS, CEILING, CHOOSE, COUNT, COUNTA, COUNTIF, COUNTIFS, DATE, EDATE, IF, IFERROR, INDEX, ISERROR, ISNUMBER, LN, MATCH, MAX, MIN, MOD, MONTH, NA, NOT, OR, RANK, SQRT, SUM, SUMIF, SUMIFS, SUMPRODUCT, TEXT, YEAR, NORM.S.DIST, NORM.S.INV, PERCENTILE.INC and STDEV.S. The last four need Excel 2010. Nothing needs Microsoft 365. I left out `FORECAST.ETS` because LibreOffice doesn't evaluate it the way Excel does, so the forecast uses a seasonal index you can follow cell by cell.
+
+LibreOffice and Excel can differ in the last decimals of `PERCENTILE.INC`, `NORM.S.INV` and `STDEV.S`. The tolerances are in `outputs/workbook_parity.csv`.

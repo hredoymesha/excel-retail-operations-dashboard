@@ -1,6 +1,6 @@
 # Data dictionary
 
-All data in this project is synthetic. The company, products, suppliers and customers are made up, and no real person, e-mail address, phone number or brand appears anywhere. The retailer is a fictional multichannel shop in Finland. Any resemblance to a real business is by chance.
+All of this data is made up. The company is a fictional shop in Finland, and no real person, e-mail address, phone number or brand appears anywhere.
 
 Three scripts build the files. Run them from the project root in this order:
 
