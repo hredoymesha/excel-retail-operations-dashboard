@@ -1,5 +1,5 @@
-channel,revenue,gross_profit,gross_margin,contribution_margin,contribution_margin_pct,units,average_discount
-Marketplace,463118.49,243256.37,0.5253,112005.83,0.2419,17775.0,0.0485
-Online,787125.35,413062.25,0.5248,231997.24,0.2947,30281.0,0.0522
-Retail,702712.41,371165.46,0.5282,344472.34,0.4902,26901.0,0.0492
-Wholesale,426652.87,213315.53,0.5,199082.26,0.4666,25893.0,0.1718
+channel,revenue,gross_profit,gross_margin_pct,contribution_margin,contribution_margin_pct,units,average_discount_pct
+Marketplace,463118.49,243256.37,52.53,112005.83,24.19,17775,4.85
+Online,787125.35,413062.25,52.48,231997.24,29.47,30281,5.22
+Retail,702712.41,371165.46,52.82,344472.34,49.02,26901,4.92
+Wholesale,426652.87,213315.53,50.00,199082.26,46.66,25893,17.18

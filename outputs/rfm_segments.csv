@@ -1,7 +1,7 @@
-segment,customers,revenue,orders,days_since_last_order,share_of_customers,share_of_revenue
-Champions,428,179318.2,8.1449,72.5724,0.1931,0.4021
-At risk,403,104928.88,5.4342,644.1811,0.1818,0.2353
-Loyal,317,84195.04,5.3218,221.8612,0.143,0.1888
-Lost or hibernating,483,33235.37,1.3872,732.2153,0.2179,0.0745
-New or recent,363,27103.73,1.4545,78.6804,0.1637,0.0608
-Needs attention,223,17151.47,1.3946,290.1435,0.1006,0.0385
+segment,customers,revenue,orders,days_since_last_order,share_of_customers_pct,share_of_revenue_pct
+Champions,428,179318.20,8.14,72.57,19.31,40.21
+At risk,403,104928.88,5.43,644.18,18.18,23.53
+Loyal,317,84195.04,5.32,221.86,14.30,18.88
+Lost or hibernating,483,33235.37,1.39,732.22,21.79,7.45
+New or recent,363,27103.73,1.45,78.68,16.37,6.08
+Needs attention,223,17151.47,1.39,290.14,10.06,3.85

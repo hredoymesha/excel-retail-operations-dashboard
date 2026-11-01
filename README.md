@@ -4,6 +4,8 @@
 
 I built this to practise the kind of analysis a retail or operations analyst gets asked for. The workbook runs on three years of invented sales for a Finnish shop that sells online, in stores, on a marketplace and wholesale. A set of Python scripts works out the same numbers from the CSV files, which is how I checked the workbook.
 
+The numbers in the screenshots are formatted the way the PC they were taken on formats them: a space as the thousands separator and a comma as the decimal mark. The workbook follows the regional settings of whoever opens it. This README uses English formatting, a comma for thousands and a point for decimals.
+
 The first version covered one year and sits untouched in [`v1/`](v1/). It had some mistakes, and [`CHANGELOG.md`](CHANGELOG.md) says which.
 
 ## Screenshots
@@ -65,7 +67,7 @@ tools/       generate_data.py, clean_data.py, check_data.py, build_workbook.py, 
 analysis/    the workbook's calculations again in pandas, one script per topic
 tests/       pytest suite
 docs/        walkthrough.md, methodology.md, data-dictionary.md, manual-steps.md
-outputs/     CSV results, charts, data checks and the workbook comparison
+outputs/     CSV results (two decimals, shares as percentages in columns ending _pct), charts, data checks and the workbook comparison
 screenshots/ ten images taken from the workbook in Excel
 v1/          version 1, untouched
 ```

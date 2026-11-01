@@ -32,12 +32,12 @@ def main() -> None:
     cols = ["product", "category", "rev", "rank", "cum_before", "abc", "cv", "xyz"]
     abc = inv[cols].rename(columns={"rev": "revenue_2025", "rank": "revenue_rank", "cum_before": "share_before", "cv": "cv_monthly_demand"})
     abc["abc_xyz"] = abc.abc + abc.xyz
-    abc.sort_values("revenue_rank").round(4).to_csv(OUT / "abc_xyz.csv")
+    common.save_csv(abc.sort_values("revenue_rank"), OUT / "abc_xyz.csv", percent=["share_before"], index=True)
     rp = inv[["product", "mu", "lead_time_days_avg", "lead_time_days_sd", "ss", "rop", "eoq", "on_hand_end", "on_order_end",
               "cover", "turns", "gmroi", "overstock_units", "overstock_cost", "lost_window", "status", "qty"]].rename(
         columns={"mu": "demand_per_day", "ss": "safety_stock", "rop": "reorder_point", "eoq": "economic_order_qty",
                  "cover": "days_of_cover", "qty": "suggested_order_qty", "lost_window": "lost_units_2025"})
-    rp.round(3).to_csv(OUT / "reorder_points.csv")
+    common.save_csv(rp, OUT / "reorder_points.csv", index=True)
 
     apply_style()
     s = abc.sort_values("revenue_rank")

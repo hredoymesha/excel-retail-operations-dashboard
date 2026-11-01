@@ -31,26 +31,23 @@ def table_by(monthly: pd.DataFrame, key: str) -> pd.DataFrame:
         rows.append({key: k, "revenue": p["net_revenue"], "gross_profit": p["gross_profit"], "gross_margin": p["gm_pct"],
                      "contribution_margin": p["contribution"], "contribution_margin_pct": p["cm_pct"], "units": p["units"],
                      "average_discount": p["disc_pct"]})
-    df = pd.DataFrame(rows)
-    num = df.select_dtypes("number").columns
-    df[num] = df[num].round(4)
-    return df
+    return pd.DataFrame(rows)
 
 
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     t = common.load_tables()
     m = common.monthly_table(t)
-    table_by(m, "year").to_csv(OUT / "kpis_by_year.csv", index=False)
-    table_by(m, "category").to_csv(OUT / "kpis_by_category.csv", index=False)
-    table_by(m, "channel").to_csv(OUT / "kpis_by_channel.csv", index=False)
+    pct = ["gross_margin", "contribution_margin_pct", "average_discount"]
+    for key in ("year", "category", "channel"):
+        common.save_csv(table_by(m, key), OUT / f"kpis_by_{key}.csv", percent=pct)
     trend = table_by(m.assign(month_start=m.month), "month_start")
-    trend.to_csv(OUT / "monthly_trend.csv", index=False)
+    common.save_csv(trend, OUT / "monthly_trend.csv", percent=pct)
     br = metrics.bridge(m, 2024, 2025)
-    pd.DataFrame([{"step": k, "euro": round(float(v), 2)} for k, v in br.items()]).to_csv(OUT / "margin_bridge.csv", index=False)
-    cats = pd.DataFrame({c: metrics.bridge(m, 2024, 2025, "All", "All", c) for c in common.CATEGORIES}).T.astype(float).round(2)
+    common.save_csv(pd.DataFrame([{"step": k, "euro": float(v)} for k, v in br.items()]), OUT / "margin_bridge.csv")
+    cats = pd.DataFrame({c: metrics.bridge(m, 2024, 2025, "All", "All", c) for c in common.CATEGORIES}).T.astype(float)
     cats.index.name = "category"
-    cats.to_csv(OUT / "margin_bridge_by_category.csv")
+    common.save_csv(cats, OUT / "margin_bridge_by_category.csv", index=True)
 
     apply_style()
     fig, ax = plt.subplots(figsize=(9, 4.2))

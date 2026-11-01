@@ -42,11 +42,12 @@ def main() -> None:
         row["best_method"] = LABEL[o["best"]]
         rows.append(row)
         fut[cat] = o["forecast"]
-    pd.DataFrame(rows).round(4).to_csv(OUT / "forecast_backtest.csv", index=False)
-    f = pd.DataFrame(fut, index=months).round(1)
+    bt = pd.DataFrame(rows)
+    common.save_csv(bt, OUT / "forecast_backtest.csv", percent=[c for c in bt.columns if c.startswith(("wape_", "mape_"))])
+    f = pd.DataFrame(fut, index=months)
     f["all_categories"] = f.sum(axis=1)
     f.index.name = "month"
-    f.to_csv(OUT / "forecast_next12.csv")
+    common.save_csv(f, OUT / "forecast_next12.csv", index=True)
 
     apply_style()
     cd = metrics.category_demand(t, m)

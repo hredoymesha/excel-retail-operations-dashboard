@@ -1,43 +1,43 @@
-sku,product,category,revenue_2025,revenue_rank,share_before,abc,cv_monthly_demand,xyz,abc_xyz
-SKU-2021,Aava Air Purifier,Home & Kitchen,50759.38,1,0.0,A,0.3773,X,AX
-SKU-2036,Retki Daypack 30L,Sports & Outdoor,45558.8,2,0.0591,A,0.3601,X,AX
-SKU-2033,Paperi Copy Paper 2500,Office,45415.96,3,0.1122,A,0.2421,X,AX
-SKU-2018,Lykke Ceramic Mug Set,Home & Kitchen,42903.29,4,0.1652,A,0.525,Y,AY
-SKU-2041,Leiri Two-person Tent,Sports & Outdoor,40338.07,5,0.2152,A,0.6717,Y,AY
-SKU-2011,Vesi Rain Shell,Apparel,39746.37,6,0.2622,A,0.4263,Y,AY
-SKU-2007,Hylo Gaming Headset,Electronics,36182.83,7,0.3085,A,0.6212,Y,AY
-SKU-2012,Pilvi Denim Jeans,Apparel,33357.17,8,0.3506,A,0.3939,X,AX
-SKU-2037,Polku Trekking Poles,Sports & Outdoor,33315.28,9,0.3895,A,0.2901,X,AX
-SKU-2022,Lumo Moisturising Cream,Beauty & Care,31204.43,10,0.4283,A,0.6962,Y,AY
-SKU-2010,Selma Wool Beanie,Apparel,29569.92,11,0.4647,A,0.8615,Z,AZ
-SKU-2027,Sade Repair Shampoo,Beauty & Care,29107.29,12,0.4992,A,0.6271,Y,AY
-SKU-2009,Kaarna Insulated Jacket,Apparel,29040.87,13,0.5331,A,0.4033,Y,AY
-SKU-2039,Kuntoa Yoga Mat,Sports & Outdoor,28603.01,14,0.5669,A,0.2739,X,AX
-SKU-2008,Tuuli Merino Base Layer,Apparel,27911.82,15,0.6002,A,0.4498,Y,AY
-SKU-2015,Hearth Cast Iron Pan,Home & Kitchen,27179.68,16,0.6328,A,0.3063,X,AX
-SKU-2023,Nordlys Daily Sunscreen,Beauty & Care,25920.15,17,0.6644,A,0.6302,Y,AY
-SKU-2031,Kirja Ergonomic Mouse,Office,25856.38,18,0.6946,A,0.9817,Z,AZ
-SKU-2001,Lumra Wireless Earbuds,Electronics,22813.65,19,0.7248,A,0.3417,X,AX
-SKU-2042,Pyora Bike Light Set,Sports & Outdoor,22318.81,20,0.7514,A,0.7236,Z,AZ
-SKU-2016,Nimbo Electric Kettle,Home & Kitchen,19369.5,21,0.7774,A,0.4473,Y,AY
-SKU-2006,Sorva 4K Action Camera,Electronics,18660.63,22,0.7999,A,0.9942,Z,AZ
-SKU-2003,Norvi USB-C Hub,Electronics,17379.13,23,0.8217,B,0.4878,Y,BY
-SKU-2025,Marja Berry Lip Balm,Beauty & Care,15745.72,24,0.8419,B,0.6252,Y,BY
-SKU-2014,Kuura Thermal Socks 3-pack,Apparel,12111.47,25,0.8603,B,1.1443,Z,BZ
-SKU-2005,Kelmo Power Bank 20000,Electronics,10940.86,26,0.8744,B,0.7976,Z,BZ
-SKU-2020,Tammi Cutting Board,Home & Kitchen,10700.43,27,0.8871,B,0.4175,Y,BY
-SKU-2026,Sauna Body Scrub,Beauty & Care,10560.05,28,0.8996,B,0.3153,X,BX
-SKU-2024,Koivu Hand Cream Trio,Beauty & Care,9850.02,29,0.9119,B,0.5503,Y,BY
-SKU-2002,Veltix Smart Watch,Electronics,9289.56,30,0.9234,B,1.712,Z,BZ
-SKU-2029,Valo LED Desk Lamp,Office,9143.1,31,0.9342,B,0.3732,X,BX
-SKU-2028,Havu Pine Shower Gel,Beauty & Care,8536.25,32,0.9449,B,0.9138,Z,BZ
-SKU-2030,Linja A4 Notebook 5-pack,Office,8150.8,33,0.9548,C,0.3049,X,CX
-SKU-2013,Ruska Fleece Pullover,Apparel,7446.64,34,0.9643,C,0.9585,Z,CZ
-SKU-2040,Rinne Insulated Bottle 750,Sports & Outdoor,6169.98,35,0.973,C,0.3613,X,CX
-SKU-2034,Pinta Monitor Stand,Office,4236.41,36,0.9802,C,0.5538,Y,CY
-SKU-2035,Kyna Gel Pen 12-pack,Office,3237.21,37,0.9851,C,0.4023,Y,CY
-SKU-2017,Oravi Knife Set,Home & Kitchen,3202.55,38,0.9889,C,0.6004,Y,CY
-SKU-2019,Harmaa Linen Throw,Home & Kitchen,3027.04,39,0.9926,C,0.6513,Y,CY
-SKU-2032,Tolppa Desk Mat XL,Office,1840.61,40,0.9962,C,0.6797,Y,CY
-SKU-2038,Hiihto Ski Wax Kit,Sports & Outdoor,1453.08,41,0.9983,C,0.9108,Z,CZ
-SKU-2004,Taivo Portable Speaker,Electronics,0.0,42,1.0,C,1.25,Z,CZ
+sku,product,category,revenue_2025,revenue_rank,share_before_pct,abc,cv_monthly_demand,xyz,abc_xyz
+SKU-2021,Aava Air Purifier,Home & Kitchen,50759.38,1,0.00,A,0.38,X,AX
+SKU-2036,Retki Daypack 30L,Sports & Outdoor,45558.80,2,5.91,A,0.36,X,AX
+SKU-2033,Paperi Copy Paper 2500,Office,45415.96,3,11.22,A,0.24,X,AX
+SKU-2018,Lykke Ceramic Mug Set,Home & Kitchen,42903.29,4,16.52,A,0.52,Y,AY
+SKU-2041,Leiri Two-person Tent,Sports & Outdoor,40338.07,5,21.52,A,0.67,Y,AY
+SKU-2011,Vesi Rain Shell,Apparel,39746.37,6,26.22,A,0.43,Y,AY
+SKU-2007,Hylo Gaming Headset,Electronics,36182.83,7,30.85,A,0.62,Y,AY
+SKU-2012,Pilvi Denim Jeans,Apparel,33357.17,8,35.06,A,0.39,X,AX
+SKU-2037,Polku Trekking Poles,Sports & Outdoor,33315.28,9,38.95,A,0.29,X,AX
+SKU-2022,Lumo Moisturising Cream,Beauty & Care,31204.43,10,42.83,A,0.70,Y,AY
+SKU-2010,Selma Wool Beanie,Apparel,29569.92,11,46.47,A,0.86,Z,AZ
+SKU-2027,Sade Repair Shampoo,Beauty & Care,29107.29,12,49.92,A,0.63,Y,AY
+SKU-2009,Kaarna Insulated Jacket,Apparel,29040.87,13,53.31,A,0.40,Y,AY
+SKU-2039,Kuntoa Yoga Mat,Sports & Outdoor,28603.01,14,56.69,A,0.27,X,AX
+SKU-2008,Tuuli Merino Base Layer,Apparel,27911.82,15,60.02,A,0.45,Y,AY
+SKU-2015,Hearth Cast Iron Pan,Home & Kitchen,27179.68,16,63.28,A,0.31,X,AX
+SKU-2023,Nordlys Daily Sunscreen,Beauty & Care,25920.15,17,66.44,A,0.63,Y,AY
+SKU-2031,Kirja Ergonomic Mouse,Office,25856.38,18,69.46,A,0.98,Z,AZ
+SKU-2001,Lumra Wireless Earbuds,Electronics,22813.65,19,72.48,A,0.34,X,AX
+SKU-2042,Pyora Bike Light Set,Sports & Outdoor,22318.81,20,75.14,A,0.72,Z,AZ
+SKU-2016,Nimbo Electric Kettle,Home & Kitchen,19369.50,21,77.74,A,0.45,Y,AY
+SKU-2006,Sorva 4K Action Camera,Electronics,18660.63,22,79.99,A,0.99,Z,AZ
+SKU-2003,Norvi USB-C Hub,Electronics,17379.13,23,82.17,B,0.49,Y,BY
+SKU-2025,Marja Berry Lip Balm,Beauty & Care,15745.72,24,84.19,B,0.63,Y,BY
+SKU-2014,Kuura Thermal Socks 3-pack,Apparel,12111.47,25,86.03,B,1.14,Z,BZ
+SKU-2005,Kelmo Power Bank 20000,Electronics,10940.86,26,87.44,B,0.80,Z,BZ
+SKU-2020,Tammi Cutting Board,Home & Kitchen,10700.43,27,88.71,B,0.42,Y,BY
+SKU-2026,Sauna Body Scrub,Beauty & Care,10560.05,28,89.96,B,0.32,X,BX
+SKU-2024,Koivu Hand Cream Trio,Beauty & Care,9850.02,29,91.19,B,0.55,Y,BY
+SKU-2002,Veltix Smart Watch,Electronics,9289.56,30,92.34,B,1.71,Z,BZ
+SKU-2029,Valo LED Desk Lamp,Office,9143.10,31,93.42,B,0.37,X,BX
+SKU-2028,Havu Pine Shower Gel,Beauty & Care,8536.25,32,94.49,B,0.91,Z,BZ
+SKU-2030,Linja A4 Notebook 5-pack,Office,8150.80,33,95.48,C,0.30,X,CX
+SKU-2013,Ruska Fleece Pullover,Apparel,7446.64,34,96.43,C,0.96,Z,CZ
+SKU-2040,Rinne Insulated Bottle 750,Sports & Outdoor,6169.98,35,97.30,C,0.36,X,CX
+SKU-2034,Pinta Monitor Stand,Office,4236.41,36,98.02,C,0.55,Y,CY
+SKU-2035,Kyna Gel Pen 12-pack,Office,3237.21,37,98.51,C,0.40,Y,CY
+SKU-2017,Oravi Knife Set,Home & Kitchen,3202.55,38,98.89,C,0.60,Y,CY
+SKU-2019,Harmaa Linen Throw,Home & Kitchen,3027.04,39,99.26,C,0.65,Y,CY
+SKU-2032,Tolppa Desk Mat XL,Office,1840.61,40,99.62,C,0.68,Y,CY
+SKU-2038,Hiihto Ski Wax Kit,Sports & Outdoor,1453.08,41,99.83,C,0.91,Z,CZ
+SKU-2004,Taivo Portable Speaker,Electronics,0.00,42,100.00,C,1.25,Z,CZ

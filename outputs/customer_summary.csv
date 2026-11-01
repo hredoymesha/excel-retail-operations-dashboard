@@ -1,6 +1,6 @@
 measure,value
-consumers_who_bought,2217.0
-repeat_purchase_rate,0.7163
-average_order_value,50.2629
-orders_per_active_customer_year,2.8192
-yearly_retention,0.4659
+consumers_who_bought,2217.00
+repeat_purchase_rate_pct,71.63
+average_order_value,50.26
+orders_per_active_customer_year,2.82
+yearly_retention_pct,46.59

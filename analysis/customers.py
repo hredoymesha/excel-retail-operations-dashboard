@@ -2,7 +2,7 @@
 
     python analysis/customers.py
 
-Writes outputs/rfm_segments.csv, outputs/customer_summary.csv, outputs/cohort_retention.csv,
+Writes outputs/rfm_segments.csv, outputs/customer_summary.csv, outputs/cohort_retention_pct.csv,
 outputs/promotions.csv, outputs/returns_by_category.csv, outputs/returns_top_skus.csv and
 the chart outputs/cohort_retention.png.
 """
@@ -35,21 +35,24 @@ def main() -> None:
                                     orders=("orders", "mean"), days_since_last_order=("rec", "mean"))
     seg["share_of_customers"] = seg.customers / seg.customers.sum()
     seg["share_of_revenue"] = seg.revenue / seg.revenue.sum()
-    seg.sort_values("revenue", ascending=False).round(4).to_csv(OUT / "rfm_segments.csv")
+    common.save_csv(seg.sort_values("revenue", ascending=False), OUT / "rfm_segments.csv", percent=["share_of_customers", "share_of_revenue"], index=True)
     summary = pd.DataFrame([
         ("consumers_who_bought", rf["bought"]), ("repeat_purchase_rate", rf["repeat"]), ("average_order_value", rf["aov"]),
         ("orders_per_active_customer_year", rf["freq"]), ("yearly_retention", rf["retention"])], columns=["measure", "value"])
-    summary.round(4).to_csv(OUT / "customer_summary.csv", index=False)
+    summary.loc[summary.measure.isin(["repeat_purchase_rate", "yearly_retention"]), "value"] *= 100
+    summary["measure"] = summary.measure.replace({"repeat_purchase_rate": "repeat_purchase_rate_pct", "yearly_retention": "yearly_retention_pct"})
+    common.save_csv(summary, OUT / "customer_summary.csv")
     coh = metrics.cohort_matrix(t)
-    coh.round(4).to_csv(OUT / "cohort_retention.csv")
+    common.save_csv(coh, OUT / "cohort_retention_pct.csv", percent=list(coh.columns), index=True, rename=False)
     pm = metrics.promo_metrics(t)
-    pm[["promo_id", "campaign", "category", "start_date", "discount_pct", "units", "base_units", "lift", "gm_promo", "gm_base",
-        "m_list", "breakeven", "incr_gp", "implied_e"]].round(4).to_csv(OUT / "promotions.csv", index=False)
+    promo_out = pm[["promo_id", "campaign", "category", "start_date", "discount_pct", "units", "base_units", "lift", "gm_promo", "gm_base",
+                    "m_list", "breakeven", "incr_gp", "implied_e"]]
+    common.save_csv(promo_out, OUT / "promotions.csv", percent=["discount_pct", "lift", "gm_promo", "gm_base", "m_list", "breakeven"])
     rv = metrics.returns_view(t, m)
-    rv["cat"].round(4).to_csv(OUT / "returns_by_category.csv")
+    common.save_csv(rv["cat"], OUT / "returns_by_category.csv", percent=["rate"], index=True)
     names = t["products"].set_index("sku").product_name
-    top = rv["top"].assign(product=names).round(4)
-    top.to_csv(OUT / "returns_top_skus.csv")
+    top = rv["top"].assign(product=names)
+    common.save_csv(top, OUT / "returns_top_skus.csv", percent=["rate"], index=True)
 
     apply_style()
     show = coh.iloc[:, :13]

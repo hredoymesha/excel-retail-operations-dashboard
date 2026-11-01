@@ -184,3 +184,24 @@ def control_totals(t: dict[str, pd.DataFrame]) -> pd.DataFrame:
         ("Units lost to stock-outs in inventory_daily.csv", int(t["inventory_daily"].lost_units.sum())),
     ]
     return pd.DataFrame(rows, columns=["item", "csv_value"])
+
+
+def save_csv(df: pd.DataFrame, path: Path, percent=(), index: bool = False, rename: bool = True) -> None:
+    """Write df with every number rounded to two decimals.
+
+    Columns listed in percent hold fractions. They are multiplied by 100 and, unless rename is
+    False, get a _pct suffix, so 0.5253 is written as 52.53 in a column called ..._pct.
+    """
+    out = df.copy()
+    names = {}
+    for c in percent:
+        out[c] = out[c] * 100
+        if rename and not str(c).endswith("_pct"):
+            names[c] = f"{c}_pct"
+    out = out.rename(columns=names)
+    num = out.select_dtypes("number").columns
+    out[num] = out[num].round(2)
+    for c in num:
+        if out[c].notna().all() and (out[c] == out[c].round(0)).all():
+            out[c] = out[c].astype("int64")
+    out.to_csv(path, index=index, float_format="%.2f")

@@ -34,18 +34,18 @@ def main() -> None:
     # 1 margin over the year, by the Month label the workbook uses
     g = sales.groupby("Month", sort=False).agg(rev=("rev", "sum"), gp=("gp", "sum"), disc=("Discount %", "mean"))
     g["gm"] = g.gp / g.rev
-    add("Margin story", "Lowest monthly gross margin", round(g.gm.min(), 4), g.gm.idxmin())
-    add("Margin story", "Highest monthly gross margin", round(g.gm.max(), 4), g.gm.idxmax())
+    add("Margin story", "Lowest monthly gross margin (%)", round(g.gm.min() * 100, 2), g.gm.idxmin())
+    add("Margin story", "Highest monthly gross margin (%)", round(g.gm.max() * 100, 2), g.gm.idxmax())
     add("Margin story", "Spread in percentage points", round((g.gm.max() - g.gm.min()) * 100, 2))
-    add("Margin story", "Lowest monthly average discount", round(g.disc.min(), 4))
-    add("Margin story", "Highest monthly average discount", round(g.disc.max(), 4))
+    add("Margin story", "Lowest monthly average discount (%)", round(g.disc.min() * 100, 2))
+    add("Margin story", "Highest monthly average discount (%)", round(g.disc.max() * 100, 2))
     share = sales.assign(m=sales.Month).groupby(["m", "Category"]).rev.sum().unstack()
     share = share.div(share.sum(axis=1), axis=0)
-    add("Margin story", "Electronics share of revenue, January", round(share.loc["Jan 2025", "Electronics"], 4))
-    add("Margin story", "Electronics share of revenue, December", round(share.loc["Dec 2025", "Electronics"], 4))
+    add("Margin story", "Electronics share of revenue, January (%)", round(share.loc["Jan 2025", "Electronics"] * 100, 2))
+    add("Margin story", "Electronics share of revenue, December (%)", round(share.loc["Dec 2025", "Electronics"] * 100, 2))
     cat_gm = (sales.groupby("Category").gp.sum() / sales.groupby("Category").rev.sum())
-    add("Margin story", "Electronics gross margin", round(cat_gm["Electronics"], 4))
-    add("Margin story", "Beauty gross margin", round(cat_gm["Beauty"], 4))
+    add("Margin story", "Electronics gross margin (%)", round(cat_gm["Electronics"] * 100, 2))
+    add("Margin story", "Beauty gross margin (%)", round(cat_gm["Beauty"] * 100, 2))
 
     # 2 ABC in product order against revenue order
     wb = openpyxl.load_workbook(V1 / "Excel_Retail_Operations_Dashboard.xlsx", data_only=True, read_only=True)
@@ -75,7 +75,7 @@ def main() -> None:
     # 4 reorder rule
     ltd = inv["Avg Monthly Demand"] / 30 * inv["Lead Time Days"] + inv["Safety Stock"]
     add("Reorder rule", "Warehouse rows with a reorder point below demand over the lead time plus safety stock", int((inv["Reorder Point"] < ltd).sum()), f"of {len(inv)}")
-    add("Reorder rule", "Average shortfall of the reorder point in units", round(float((ltd - inv["Reorder Point"]).mean()), 1))
+    add("Reorder rule", "Average shortfall of the reorder point in units", round(float((ltd - inv["Reorder Point"]).mean()), 2))
     avail = inv["On Hand"] + inv["In Transit"]
     add("Reorder rule", "Rows flagged Reorder Now", int((avail < inv["Reorder Point"]).sum()))
 
@@ -84,12 +84,12 @@ def main() -> None:
     ma = np.array([act[t - 3:t].mean() for t in range(3, 12)])
     naive = act[2:11]
     mape = lambda a, f: float(np.mean(np.abs(a - f) / a))
-    add("Forecast", "Three-month average, error on April to December (MAPE)", round(mape(act[3:], ma), 4))
-    add("Forecast", "Last month as the forecast, same months (MAPE)", round(mape(act[3:], naive), 4))
+    add("Forecast", "Three-month average, error on April to December (MAPE, %)", round(mape(act[3:], ma) * 100, 2))
+    add("Forecast", "Last month as the forecast, same months (MAPE, %)", round(mape(act[3:], naive) * 100, 2))
     incl = np.array([act[t - 2:t + 1].mean() for t in range(2, 12)])
-    add("Forecast", "Average that includes the month being forecast (MAPE)", round(mape(act[2:], incl), 4), "what the v1 table shows")
+    add("Forecast", "Average that includes the month being forecast (MAPE, %)", round(mape(act[2:], incl) * 100, 2), "what the v1 table shows")
     add("Forecast", "Months of history", len(act))
-    pd.DataFrame(rows).to_csv(ROOT / "outputs" / "v1_review.csv", index=False)
+    pd.DataFrame(rows).to_csv(ROOT / "outputs" / "v1_review.csv", index=False, float_format="%.2f")
     print(pd.DataFrame(rows).to_string(index=False))
 
 
