@@ -1,0 +1,12 @@
+rule,issue,rows_affected,action,example_before,example_after
+R01,Test orders left in the export,15,Rows removed,TEST-0001,
+R02,Exact duplicate rows,281,Second copy removed,ORD-000020,
+R03,channel written with spaces or the wrong case,675,Trimmed and standardised,Marketplace ,Marketplace
+R03,sku written with spaces or the wrong case,225,Trimmed and standardised,sku-2037,SKU-2037
+R04,List price written with a decimal comma,337,Converted to a number,"7,99",7.99
+R05,Negative quantity on a sale,112,Sign removed,-2,2
+R06,Date written as dd.mm.yyyy,450,Converted to yyyy-mm-dd,01.01.2023,2023-01-01
+R07,Date outside the data period,140,Date rebuilt from order numbers,2203-01-15,2023-01-15
+R08,Region missing,281,"Taken from the same order, else the customer's home region",,Turku
+R09,Customer id missing,221,Taken from another line of the same order,,GUEST
+R10,Discount missing,225,"Rebuilt from list price, quantity and net revenue",,0.0

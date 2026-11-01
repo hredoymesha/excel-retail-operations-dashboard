@@ -1,0 +1,43 @@
+sku,product_name,category,supplier_id,unit_cost_2023,list_price_2023,lead_time_days_avg,lead_time_days_sd,min_order_qty,shelf_life_days,launch_date,discontinued_date,stocking_policy
+SKU-2001,Lumra Wireless Earbuds,Electronics,SUP-01,28.0,48.99,21,4.9,4,,2023-01-01,,lean
+SKU-2002,Veltix Smart Watch,Electronics,SUP-01,72.0,118.99,21,3.5,24,,2023-01-01,,good
+SKU-2003,Norvi USB-C Hub,Electronics,SUP-02,14.0,24.99,25,6.8,24,,2023-01-01,,lean
+SKU-2004,Taivo Portable Speaker,Electronics,SUP-01,33.0,53.99,18,3.7,12,,2023-01-01,2024-09-15,heavy
+SKU-2005,Kelmo Power Bank 20000,Electronics,SUP-02,16.0,28.99,28,7.3,24,,2023-01-01,,lean
+SKU-2006,Sorva 4K Action Camera,Electronics,SUP-01,96.0,148.99,19,4.2,12,,2024-03-01,,good
+SKU-2007,Hylo Gaming Headset,Electronics,SUP-02,38.0,61.99,27,6.7,24,,2023-01-01,2025-06-30,heavy
+SKU-2008,Tuuli Merino Base Layer,Apparel,SUP-04,18.0,43.99,31,6.8,12,,2023-01-01,,lean
+SKU-2009,Kaarna Insulated Jacket,Apparel,SUP-03,52.0,128.99,37,7.1,6,,2023-01-01,,good
+SKU-2010,Selma Wool Beanie,Apparel,SUP-04,5.5,16.99,29,7.4,48,,2023-01-01,,good
+SKU-2011,Vesi Rain Shell,Apparel,SUP-03,36.0,88.99,36,8.2,12,,2023-01-01,,good
+SKU-2012,Pilvi Denim Jeans,Apparel,SUP-04,21.0,58.99,33,5.7,12,,2023-01-01,,good
+SKU-2013,Ruska Fleece Pullover,Apparel,SUP-04,19.0,51.99,27,7.4,24,,2023-01-01,2025-03-01,heavy
+SKU-2014,Kuura Thermal Socks 3-pack,Apparel,SUP-04,4.8,14.99,33,7.2,48,,2023-01-01,,lean
+SKU-2015,Hearth Cast Iron Pan,Home & Kitchen,SUP-03,17.0,33.99,38,7.0,6,,2023-01-01,,good
+SKU-2016,Nimbo Electric Kettle,Home & Kitchen,SUP-05,14.0,28.99,15,2.9,12,,2023-01-01,,lean
+SKU-2017,Oravi Knife Set,Home & Kitchen,SUP-05,22.0,48.99,16,2.6,4,,2023-01-01,,heavy
+SKU-2018,Lykke Ceramic Mug Set,Home & Kitchen,SUP-05,8.5,18.99,16,3.8,48,,2023-01-01,,heavy
+SKU-2019,Harmaa Linen Throw,Home & Kitchen,SUP-03,15.0,35.99,36,10.3,4,,2023-01-01,,heavy
+SKU-2020,Tammi Cutting Board,Home & Kitchen,SUP-05,7.0,17.99,18,2.7,12,,2023-01-01,,good
+SKU-2021,Aava Air Purifier,Home & Kitchen,SUP-02,48.0,94.99,30,8.7,6,,2023-09-01,,good
+SKU-2022,Lumo Moisturising Cream,Beauty & Care,SUP-06,4.2,14.99,17,2.0,48,730,2023-01-01,,lean
+SKU-2023,Nordlys Daily Sunscreen,Beauty & Care,SUP-06,3.8,13.49,11,1.6,48,540,2023-01-01,,good
+SKU-2024,Koivu Hand Cream Trio,Beauty & Care,SUP-06,3.1,11.99,17,2.2,24,900,2023-01-01,,good
+SKU-2025,Marja Berry Lip Balm,Beauty & Care,SUP-06,1.3,4.99,12,2.1,48,720,2023-01-01,,heavy
+SKU-2026,Sauna Body Scrub,Beauty & Care,SUP-06,3.6,12.99,14,1.8,6,540,2023-01-01,,good
+SKU-2027,Sade Repair Shampoo,Beauty & Care,SUP-06,3.3,10.99,12,2.4,48,900,2023-01-01,,good
+SKU-2028,Havu Pine Shower Gel,Beauty & Care,SUP-06,2.2,7.99,16,2.6,48,900,2023-01-01,,good
+SKU-2029,Valo LED Desk Lamp,Office,SUP-07,12.0,25.99,9,1.8,4,,2023-01-01,,lean
+SKU-2030,Linja A4 Notebook 5-pack,Office,SUP-07,5.5,11.99,8,2.3,12,,2023-01-01,,good
+SKU-2031,Kirja Ergonomic Mouse,Office,SUP-02,9.0,19.99,26,6.3,48,,2023-01-01,,good
+SKU-2032,Tolppa Desk Mat XL,Office,SUP-07,18.0,35.99,12,1.8,4,,2023-01-01,,heavy
+SKU-2033,Paperi Copy Paper 2500,Office,SUP-07,11.0,18.99,9,2.5,6,,2023-01-01,,good
+SKU-2034,Pinta Monitor Stand,Office,SUP-07,15.0,30.99,13,1.8,4,,2023-01-01,,heavy
+SKU-2035,Kyna Gel Pen 12-pack,Office,SUP-07,2.6,6.99,13,1.7,6,,2023-01-01,,good
+SKU-2036,Retki Daypack 30L,Sports & Outdoor,SUP-08,17.0,38.99,26,4.5,12,,2023-01-01,,good
+SKU-2037,Polku Trekking Poles,Sports & Outdoor,SUP-08,14.0,31.99,23,5.7,6,,2023-01-01,,heavy
+SKU-2038,Hiihto Ski Wax Kit,Sports & Outdoor,SUP-08,9.0,20.99,27,5.1,4,,2023-01-01,,heavy
+SKU-2039,Kuntoa Yoga Mat,Sports & Outdoor,SUP-08,8.0,20.99,26,5.6,12,,2023-01-01,,good
+SKU-2040,Rinne Insulated Bottle 750,Sports & Outdoor,SUP-08,7.5,18.99,27,4.6,6,,2023-01-01,,lean
+SKU-2041,Leiri Two-person Tent,Sports & Outdoor,SUP-08,58.0,118.99,24,5.5,6,,2024-05-01,,good
+SKU-2042,Pyora Bike Light Set,Sports & Outdoor,SUP-03,6.5,16.99,32,8.7,48,,2023-01-01,,good

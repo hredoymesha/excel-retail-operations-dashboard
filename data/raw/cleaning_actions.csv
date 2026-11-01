@@ -1,0 +1,2963 @@
+rule,order_id,line_no,column,old_value,new_value,method
+R01,TEST-0001,1,order_id,TEST-0001,,
+R01,TEST-0002,1,order_id,TEST-0002,,
+R01,TEST-0003,1,order_id,TEST-0003,,
+R01,TEST-0004,1,order_id,TEST-0004,,
+R01,TEST-0005,1,order_id,TEST-0005,,
+R01,TEST-0006,1,order_id,TEST-0006,,
+R01,TEST-0007,1,order_id,TEST-0007,,
+R01,TEST-0008,1,order_id,TEST-0008,,
+R01,TEST-0009,1,order_id,TEST-0009,,
+R01,TEST-0010,1,order_id,TEST-0010,,
+R01,TEST-0011,1,order_id,TEST-0011,,
+R01,TEST-0012,1,order_id,TEST-0012,,
+R01,TEST-0013,1,order_id,TEST-0013,,
+R01,TEST-0014,1,order_id,TEST-0014,,
+R01,TEST-0015,1,order_id,TEST-0015,,
+R02,ORD-000020,1,order_id,ORD-000020,,
+R02,ORD-000135,2,order_id,ORD-000135,,
+R02,ORD-000252,1,order_id,ORD-000252,,
+R02,ORD-000253,2,order_id,ORD-000253,,
+R02,ORD-000301,5,order_id,ORD-000301,,
+R02,ORD-000604,2,order_id,ORD-000604,,
+R02,ORD-000899,1,order_id,ORD-000899,,
+R02,ORD-000984,3,order_id,ORD-000984,,
+R02,ORD-001193,1,order_id,ORD-001193,,
+R02,ORD-001327,2,order_id,ORD-001327,,
+R02,ORD-001336,1,order_id,ORD-001336,,
+R02,ORD-001474,1,order_id,ORD-001474,,
+R02,ORD-001908,1,order_id,ORD-001908,,
+R02,ORD-001910,1,order_id,ORD-001910,,
+R02,ORD-001947,1,order_id,ORD-001947,,
+R02,ORD-001995,1,order_id,ORD-001995,,
+R02,ORD-002023,1,order_id,ORD-002023,,
+R02,ORD-002038,1,order_id,ORD-002038,,
+R02,ORD-002048,1,order_id,ORD-002048,,
+R02,ORD-002082,3,order_id,ORD-002082,,
+R02,ORD-002095,3,order_id,ORD-002095,,
+R02,ORD-002516,1,order_id,ORD-002516,,
+R02,ORD-002842,1,order_id,ORD-002842,,
+R02,ORD-003212,2,order_id,ORD-003212,,
+R02,ORD-003466,2,order_id,ORD-003466,,
+R02,ORD-003495,1,order_id,ORD-003495,,
+R02,ORD-003600,1,order_id,ORD-003600,,
+R02,ORD-003796,1,order_id,ORD-003796,,
+R02,ORD-004232,1,order_id,ORD-004232,,
+R02,ORD-004234,1,order_id,ORD-004234,,
+R02,ORD-004384,1,order_id,ORD-004384,,
+R02,ORD-004414,1,order_id,ORD-004414,,
+R02,ORD-004585,1,order_id,ORD-004585,,
+R02,ORD-004662,2,order_id,ORD-004662,,
+R02,ORD-004688,1,order_id,ORD-004688,,
+R02,ORD-004906,1,order_id,ORD-004906,,
+R02,ORD-004930,2,order_id,ORD-004930,,
+R02,ORD-004945,1,order_id,ORD-004945,,
+R02,ORD-004946,1,order_id,ORD-004946,,
+R02,ORD-005025,2,order_id,ORD-005025,,
+R02,ORD-005064,1,order_id,ORD-005064,,
+R02,ORD-005152,1,order_id,ORD-005152,,
+R02,ORD-005163,1,order_id,ORD-005163,,
+R02,ORD-005227,2,order_id,ORD-005227,,
+R02,ORD-005405,2,order_id,ORD-005405,,
+R02,ORD-005485,3,order_id,ORD-005485,,
+R02,ORD-005570,1,order_id,ORD-005570,,
+R02,ORD-005671,1,order_id,ORD-005671,,
+R02,ORD-005739,1,order_id,ORD-005739,,
+R02,ORD-005774,2,order_id,ORD-005774,,
+R02,ORD-005822,1,order_id,ORD-005822,,
+R02,ORD-006527,1,order_id,ORD-006527,,
+R02,ORD-006537,1,order_id,ORD-006537,,
+R02,ORD-006890,1,order_id,ORD-006890,,
+R02,ORD-007082,2,order_id,ORD-007082,,
+R02,ORD-007182,1,order_id,ORD-007182,,
+R02,ORD-007398,2,order_id,ORD-007398,,
+R02,ORD-007508,1,order_id,ORD-007508,,
+R02,ORD-007727,1,order_id,ORD-007727,,
+R02,ORD-007750,1,order_id,ORD-007750,,
+R02,ORD-007844,2,order_id,ORD-007844,,
+R02,ORD-007943,1,order_id,ORD-007943,,
+R02,ORD-007983,1,order_id,ORD-007983,,
+R02,ORD-008036,1,order_id,ORD-008036,,
+R02,ORD-008093,1,order_id,ORD-008093,,
+R02,ORD-008441,2,order_id,ORD-008441,,
+R02,ORD-008629,1,order_id,ORD-008629,,
+R02,ORD-008642,1,order_id,ORD-008642,,
+R02,ORD-008853,1,order_id,ORD-008853,,
+R02,ORD-009070,1,order_id,ORD-009070,,
+R02,ORD-009087,1,order_id,ORD-009087,,
+R02,ORD-009645,4,order_id,ORD-009645,,
+R02,ORD-009775,1,order_id,ORD-009775,,
+R02,ORD-010084,1,order_id,ORD-010084,,
+R02,ORD-010141,2,order_id,ORD-010141,,
+R02,ORD-010241,1,order_id,ORD-010241,,
+R02,ORD-010333,1,order_id,ORD-010333,,
+R02,ORD-010334,4,order_id,ORD-010334,,
+R02,ORD-010356,2,order_id,ORD-010356,,
+R02,ORD-010434,2,order_id,ORD-010434,,
+R02,ORD-010548,1,order_id,ORD-010548,,
+R02,ORD-010725,1,order_id,ORD-010725,,
+R02,ORD-010895,5,order_id,ORD-010895,,
+R02,ORD-010983,1,order_id,ORD-010983,,
+R02,ORD-011024,1,order_id,ORD-011024,,
+R02,ORD-011036,1,order_id,ORD-011036,,
+R02,ORD-011079,3,order_id,ORD-011079,,
+R02,ORD-011147,1,order_id,ORD-011147,,
+R02,ORD-011227,2,order_id,ORD-011227,,
+R02,ORD-011346,1,order_id,ORD-011346,,
+R02,ORD-011454,1,order_id,ORD-011454,,
+R02,ORD-011596,2,order_id,ORD-011596,,
+R02,ORD-011634,1,order_id,ORD-011634,,
+R02,ORD-011661,1,order_id,ORD-011661,,
+R02,ORD-011724,1,order_id,ORD-011724,,
+R02,ORD-012421,1,order_id,ORD-012421,,
+R02,ORD-012630,1,order_id,ORD-012630,,
+R02,ORD-012819,3,order_id,ORD-012819,,
+R02,ORD-012866,1,order_id,ORD-012866,,
+R02,ORD-013114,2,order_id,ORD-013114,,
+R02,ORD-013138,1,order_id,ORD-013138,,
+R02,ORD-013152,1,order_id,ORD-013152,,
+R02,ORD-013192,2,order_id,ORD-013192,,
+R02,ORD-013270,1,order_id,ORD-013270,,
+R02,ORD-013449,1,order_id,ORD-013449,,
+R02,ORD-013462,1,order_id,ORD-013462,,
+R02,ORD-013543,1,order_id,ORD-013543,,
+R02,ORD-013692,2,order_id,ORD-013692,,
+R02,ORD-014002,1,order_id,ORD-014002,,
+R02,ORD-014027,2,order_id,ORD-014027,,
+R02,ORD-014038,1,order_id,ORD-014038,,
+R02,ORD-014165,1,order_id,ORD-014165,,
+R02,ORD-014267,2,order_id,ORD-014267,,
+R02,ORD-014574,1,order_id,ORD-014574,,
+R02,ORD-014670,1,order_id,ORD-014670,,
+R02,ORD-014869,1,order_id,ORD-014869,,
+R02,ORD-015541,2,order_id,ORD-015541,,
+R02,ORD-015609,2,order_id,ORD-015609,,
+R02,ORD-016342,1,order_id,ORD-016342,,
+R02,ORD-016488,1,order_id,ORD-016488,,
+R02,ORD-016676,1,order_id,ORD-016676,,
+R02,ORD-016888,1,order_id,ORD-016888,,
+R02,ORD-016925,1,order_id,ORD-016925,,
+R02,ORD-016956,1,order_id,ORD-016956,,
+R02,ORD-017049,1,order_id,ORD-017049,,
+R02,ORD-017544,1,order_id,ORD-017544,,
+R02,ORD-017560,1,order_id,ORD-017560,,
+R02,ORD-017647,1,order_id,ORD-017647,,
+R02,ORD-017804,3,order_id,ORD-017804,,
+R02,ORD-017883,2,order_id,ORD-017883,,
+R02,ORD-017952,1,order_id,ORD-017952,,
+R02,ORD-018043,1,order_id,ORD-018043,,
+R02,ORD-018053,1,order_id,ORD-018053,,
+R02,ORD-018090,1,order_id,ORD-018090,,
+R02,ORD-018189,1,order_id,ORD-018189,,
+R02,ORD-018266,1,order_id,ORD-018266,,
+R02,ORD-018338,1,order_id,ORD-018338,,
+R02,ORD-018340,1,order_id,ORD-018340,,
+R02,ORD-018392,1,order_id,ORD-018392,,
+R02,ORD-018656,1,order_id,ORD-018656,,
+R02,ORD-018897,1,order_id,ORD-018897,,
+R02,ORD-018916,1,order_id,ORD-018916,,
+R02,ORD-019086,1,order_id,ORD-019086,,
+R02,ORD-019165,1,order_id,ORD-019165,,
+R02,ORD-019733,1,order_id,ORD-019733,,
+R02,ORD-019792,2,order_id,ORD-019792,,
+R02,ORD-020038,1,order_id,ORD-020038,,
+R02,ORD-020077,1,order_id,ORD-020077,,
+R02,ORD-020086,3,order_id,ORD-020086,,
+R02,ORD-020323,1,order_id,ORD-020323,,
+R02,ORD-020420,1,order_id,ORD-020420,,
+R02,ORD-020442,1,order_id,ORD-020442,,
+R02,ORD-020443,1,order_id,ORD-020443,,
+R02,ORD-020489,3,order_id,ORD-020489,,
+R02,ORD-021210,1,order_id,ORD-021210,,
+R02,ORD-021420,2,order_id,ORD-021420,,
+R02,ORD-021674,1,order_id,ORD-021674,,
+R02,ORD-021828,1,order_id,ORD-021828,,
+R02,ORD-021888,1,order_id,ORD-021888,,
+R02,ORD-021929,1,order_id,ORD-021929,,
+R02,ORD-022102,1,order_id,ORD-022102,,
+R02,ORD-022147,1,order_id,ORD-022147,,
+R02,ORD-022188,1,order_id,ORD-022188,,
+R02,ORD-022394,1,order_id,ORD-022394,,
+R02,ORD-022446,1,order_id,ORD-022446,,
+R02,ORD-022720,2,order_id,ORD-022720,,
+R02,ORD-022745,1,order_id,ORD-022745,,
+R02,ORD-022914,2,order_id,ORD-022914,,
+R02,ORD-023009,1,order_id,ORD-023009,,
+R02,ORD-023024,1,order_id,ORD-023024,,
+R02,ORD-023101,1,order_id,ORD-023101,,
+R02,ORD-023533,1,order_id,ORD-023533,,
+R02,ORD-023540,1,order_id,ORD-023540,,
+R02,ORD-023908,1,order_id,ORD-023908,,
+R02,ORD-024160,1,order_id,ORD-024160,,
+R02,ORD-024206,1,order_id,ORD-024206,,
+R02,ORD-024305,2,order_id,ORD-024305,,
+R02,ORD-024572,2,order_id,ORD-024572,,
+R02,ORD-024579,1,order_id,ORD-024579,,
+R02,ORD-024688,2,order_id,ORD-024688,,
+R02,ORD-024979,2,order_id,ORD-024979,,
+R02,ORD-025176,1,order_id,ORD-025176,,
+R02,ORD-025298,1,order_id,ORD-025298,,
+R02,ORD-026098,1,order_id,ORD-026098,,
+R02,ORD-026134,1,order_id,ORD-026134,,
+R02,ORD-026148,3,order_id,ORD-026148,,
+R02,ORD-026435,1,order_id,ORD-026435,,
+R02,ORD-026475,1,order_id,ORD-026475,,
+R02,ORD-026589,1,order_id,ORD-026589,,
+R02,ORD-026741,1,order_id,ORD-026741,,
+R02,ORD-026835,2,order_id,ORD-026835,,
+R02,ORD-027029,1,order_id,ORD-027029,,
+R02,ORD-027067,1,order_id,ORD-027067,,
+R02,ORD-027204,1,order_id,ORD-027204,,
+R02,ORD-027266,1,order_id,ORD-027266,,
+R02,ORD-027612,2,order_id,ORD-027612,,
+R02,ORD-027878,2,order_id,ORD-027878,,
+R02,ORD-027895,1,order_id,ORD-027895,,
+R02,ORD-027967,2,order_id,ORD-027967,,
+R02,ORD-028166,1,order_id,ORD-028166,,
+R02,ORD-028209,1,order_id,ORD-028209,,
+R02,ORD-028481,1,order_id,ORD-028481,,
+R02,ORD-028515,2,order_id,ORD-028515,,
+R02,ORD-028550,2,order_id,ORD-028550,,
+R02,ORD-028671,2,order_id,ORD-028671,,
+R02,ORD-028691,2,order_id,ORD-028691,,
+R02,ORD-028909,1,order_id,ORD-028909,,
+R02,ORD-029083,1,order_id,ORD-029083,,
+R02,ORD-029801,3,order_id,ORD-029801,,
+R02,ORD-029823,1,order_id,ORD-029823,,
+R02,ORD-029951,1,order_id,ORD-029951,,
+R02,ORD-030186,1,order_id,ORD-030186,,
+R02,ORD-030190,1,order_id,ORD-030190,,
+R02,ORD-030232,1,order_id,ORD-030232,,
+R02,ORD-030752,1,order_id,ORD-030752,,
+R02,ORD-030838,1,order_id,ORD-030838,,
+R02,ORD-030865,1,order_id,ORD-030865,,
+R02,ORD-030960,1,order_id,ORD-030960,,
+R02,ORD-031000,1,order_id,ORD-031000,,
+R02,ORD-031272,1,order_id,ORD-031272,,
+R02,ORD-031334,1,order_id,ORD-031334,,
+R02,ORD-031339,1,order_id,ORD-031339,,
+R02,ORD-031552,2,order_id,ORD-031552,,
+R02,ORD-031597,1,order_id,ORD-031597,,
+R02,ORD-031634,2,order_id,ORD-031634,,
+R02,ORD-031659,1,order_id,ORD-031659,,
+R02,ORD-031691,3,order_id,ORD-031691,,
+R02,ORD-031766,2,order_id,ORD-031766,,
+R02,ORD-031859,1,order_id,ORD-031859,,
+R02,ORD-031878,1,order_id,ORD-031878,,
+R02,ORD-031939,2,order_id,ORD-031939,,
+R02,ORD-031972,2,order_id,ORD-031972,,
+R02,ORD-032084,3,order_id,ORD-032084,,
+R02,ORD-032101,1,order_id,ORD-032101,,
+R02,ORD-032222,1,order_id,ORD-032222,,
+R02,ORD-032351,2,order_id,ORD-032351,,
+R02,ORD-032677,1,order_id,ORD-032677,,
+R02,ORD-032826,1,order_id,ORD-032826,,
+R02,ORD-032929,1,order_id,ORD-032929,,
+R02,ORD-032972,1,order_id,ORD-032972,,
+R02,ORD-032999,1,order_id,ORD-032999,,
+R02,ORD-033129,1,order_id,ORD-033129,,
+R02,ORD-033549,5,order_id,ORD-033549,,
+R02,ORD-033572,2,order_id,ORD-033572,,
+R02,ORD-034129,3,order_id,ORD-034129,,
+R02,ORD-034174,1,order_id,ORD-034174,,
+R02,ORD-034293,3,order_id,ORD-034293,,
+R02,ORD-034668,1,order_id,ORD-034668,,
+R02,ORD-034778,3,order_id,ORD-034778,,
+R02,ORD-034879,1,order_id,ORD-034879,,
+R02,ORD-035237,1,order_id,ORD-035237,,
+R02,ORD-035319,1,order_id,ORD-035319,,
+R02,ORD-035347,1,order_id,ORD-035347,,
+R02,ORD-035456,1,order_id,ORD-035456,,
+R02,ORD-035490,3,order_id,ORD-035490,,
+R02,ORD-035786,1,order_id,ORD-035786,,
+R02,ORD-035824,1,order_id,ORD-035824,,
+R02,ORD-035844,1,order_id,ORD-035844,,
+R02,ORD-036241,1,order_id,ORD-036241,,
+R02,ORD-036265,2,order_id,ORD-036265,,
+R02,ORD-036374,1,order_id,ORD-036374,,
+R02,ORD-036454,1,order_id,ORD-036454,,
+R02,ORD-036503,2,order_id,ORD-036503,,
+R02,ORD-037174,3,order_id,ORD-037174,,
+R02,ORD-037735,1,order_id,ORD-037735,,
+R02,ORD-037801,1,order_id,ORD-037801,,
+R02,ORD-037906,1,order_id,ORD-037906,,
+R02,ORD-037944,1,order_id,ORD-037944,,
+R02,ORD-038006,2,order_id,ORD-038006,,
+R02,ORD-038210,1,order_id,ORD-038210,,
+R02,ORD-038254,1,order_id,ORD-038254,,
+R02,ORD-038295,1,order_id,ORD-038295,,
+R02,ORD-038429,1,order_id,ORD-038429,,
+R02,ORD-038661,1,order_id,ORD-038661,,
+R02,ORD-038719,4,order_id,ORD-038719,,
+R02,ORD-038762,1,order_id,ORD-038762,,
+R02,ORD-038796,2,order_id,ORD-038796,,
+R02,ORD-038826,3,order_id,ORD-038826,,
+R02,ORD-038927,2,order_id,ORD-038927,,
+R02,ORD-039087,2,order_id,ORD-039087,,
+R02,ORD-039101,2,order_id,ORD-039101,,
+R03,ORD-000124,1,channel,Marketplace ,Marketplace,
+R03,ORD-000214,1,channel,RETAIL,Retail,
+R03,ORD-000258,1,channel,Online ,Online,
+R03,ORD-000396,1,channel,online,Online,
+R03,ORD-000420,1,channel,RETAIL,Retail,
+R03,ORD-000438,3,channel,retail,Retail,
+R03,ORD-000471,1,channel, Retail,Retail,
+R03,ORD-000663,1,channel,online,Online,
+R03,ORD-000741,2,channel,ONLINE,Online,
+R03,ORD-000807,2,channel,Marketplace ,Marketplace,
+R03,ORD-000856,1,channel,Online ,Online,
+R03,ORD-000973,2,channel,ONLINE,Online,
+R03,ORD-001077,1,channel,online,Online,
+R03,ORD-001095,1,channel, Marketplace,Marketplace,
+R03,ORD-001111,1,channel,Online ,Online,
+R03,ORD-001128,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-001203,3,channel,online,Online,
+R03,ORD-001220,1,channel, Retail,Retail,
+R03,ORD-001237,1,channel,Retail ,Retail,
+R03,ORD-001283,2,channel, Retail,Retail,
+R03,ORD-001437,2,channel, Marketplace,Marketplace,
+R03,ORD-001524,1,channel,RETAIL,Retail,
+R03,ORD-001611,1,channel,Marketplace ,Marketplace,
+R03,ORD-001646,1,channel,online,Online,
+R03,ORD-001666,1,channel,Retail ,Retail,
+R03,ORD-001675,3,channel, Retail,Retail,
+R03,ORD-001716,1,channel, Online,Online,
+R03,ORD-001750,1,channel,online,Online,
+R03,ORD-001877,1,channel, Online,Online,
+R03,ORD-001913,1,channel,marketplace,Marketplace,
+R03,ORD-001931,1,channel, Online,Online,
+R03,ORD-001961,1,channel,ONLINE,Online,
+R03,ORD-002028,1,channel,Marketplace ,Marketplace,
+R03,ORD-002034,2,channel,retail,Retail,
+R03,ORD-002062,4,channel,RETAIL,Retail,
+R03,ORD-002098,2,channel,retail,Retail,
+R03,ORD-002227,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-002241,1,channel,ONLINE,Online,
+R03,ORD-002306,1,channel,ONLINE,Online,
+R03,ORD-002314,2,channel,Retail ,Retail,
+R03,ORD-002522,1,channel, Retail,Retail,
+R03,ORD-002613,1,channel,Retail ,Retail,
+R03,ORD-002652,2,channel,Online ,Online,
+R03,ORD-002687,1,channel,Online ,Online,
+R03,ORD-002715,1,channel,Marketplace ,Marketplace,
+R03,ORD-002770,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-002802,1,channel,online,Online,
+R03,ORD-002807,2,channel,retail,Retail,
+R03,ORD-002868,1,channel, Retail,Retail,
+R03,ORD-003109,1,channel,ONLINE,Online,
+R03,ORD-003140,3,channel,retail,Retail,
+R03,ORD-003195,1,channel,RETAIL,Retail,
+R03,ORD-003209,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-003317,1,channel, Online,Online,
+R03,ORD-003353,1,channel, Online,Online,
+R03,ORD-003356,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-003361,1,channel,Retail ,Retail,
+R03,ORD-003393,1,channel,Marketplace ,Marketplace,
+R03,ORD-003589,1,channel,Online ,Online,
+R03,ORD-003637,1,channel, Marketplace,Marketplace,
+R03,ORD-003730,1,channel,retail,Retail,
+R03,ORD-003997,3,channel,Online ,Online,
+R03,ORD-004018,1,channel,RETAIL,Retail,
+R03,ORD-004102,1,channel,RETAIL,Retail,
+R03,ORD-004160,1,channel,online,Online,
+R03,ORD-004265,1,channel,Online ,Online,
+R03,ORD-004334,1,channel,Retail ,Retail,
+R03,ORD-004385,1,channel,RETAIL,Retail,
+R03,ORD-004412,1,channel,Marketplace ,Marketplace,
+R03,ORD-004465,1,channel, Marketplace,Marketplace,
+R03,ORD-004551,1,channel,Retail ,Retail,
+R03,ORD-004559,1,channel,marketplace,Marketplace,
+R03,ORD-004625,1,channel,marketplace,Marketplace,
+R03,ORD-004635,1,channel, Retail,Retail,
+R03,ORD-004702,1,channel, Marketplace,Marketplace,
+R03,ORD-004742,1,channel,ONLINE,Online,
+R03,ORD-004764,1,channel,RETAIL,Retail,
+R03,ORD-004772,1,channel, Online,Online,
+R03,ORD-004852,2,channel,Retail ,Retail,
+R03,ORD-004860,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-005037,2,channel,RETAIL,Retail,
+R03,ORD-005040,1,channel,online,Online,
+R03,ORD-005133,4,channel,Retail ,Retail,
+R03,ORD-005178,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-005408,1,channel, Marketplace,Marketplace,
+R03,ORD-005456,1,channel,Retail ,Retail,
+R03,ORD-005489,1,channel,RETAIL,Retail,
+R03,ORD-005501,1,channel,retail,Retail,
+R03,ORD-005510,1,channel,ONLINE,Online,
+R03,ORD-005517,1,channel, Retail,Retail,
+R03,ORD-005736,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-005746,1,channel,online,Online,
+R03,ORD-005772,2,channel,Marketplace ,Marketplace,
+R03,ORD-005783,1,channel,online,Online,
+R03,ORD-005859,1,channel,Retail ,Retail,
+R03,ORD-005974,2,channel,Online ,Online,
+R03,ORD-006057,1,channel,Online ,Online,
+R03,ORD-006084,1,channel,Marketplace ,Marketplace,
+R03,ORD-006098,1,channel,retail,Retail,
+R03,ORD-006376,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-006425,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-006450,2,channel,retail,Retail,
+R03,ORD-006461,1,channel,Retail ,Retail,
+R03,ORD-006481,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-006522,1,channel, Marketplace,Marketplace,
+R03,ORD-006653,1,channel, Marketplace,Marketplace,
+R03,ORD-006721,1,channel,retail,Retail,
+R03,ORD-006740,2,channel,RETAIL,Retail,
+R03,ORD-006808,1,channel,online,Online,
+R03,ORD-006839,1,channel,ONLINE,Online,
+R03,ORD-006877,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-006889,1,channel,marketplace,Marketplace,
+R03,ORD-006988,1,channel,ONLINE,Online,
+R03,ORD-007010,2,channel,Online ,Online,
+R03,ORD-007087,1,channel,RETAIL,Retail,
+R03,ORD-007125,1,channel,online,Online,
+R03,ORD-007490,2,channel, Online,Online,
+R03,ORD-007588,2,channel, Online,Online,
+R03,ORD-007591,2,channel,marketplace,Marketplace,
+R03,ORD-007617,1,channel, Online,Online,
+R03,ORD-007810,1,channel,Retail ,Retail,
+R03,ORD-007844,2,channel,ONLINE,Online,
+R03,ORD-007867,1,channel,online,Online,
+R03,ORD-007888,1,channel,online,Online,
+R03,ORD-008074,1,channel, Online,Online,
+R03,ORD-008079,3,channel,Retail ,Retail,
+R03,ORD-008082,1,channel,RETAIL,Retail,
+R03,ORD-008132,1,channel,retail,Retail,
+R03,ORD-008322,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-008502,1,channel,ONLINE,Online,
+R03,ORD-008522,2,channel,ONLINE,Online,
+R03,ORD-008600,1,channel,RETAIL,Retail,
+R03,ORD-008809,1,channel, Retail,Retail,
+R03,ORD-008844,1,channel,ONLINE,Online,
+R03,ORD-008908,1,channel,retail,Retail,
+R03,ORD-009012,1,channel,online,Online,
+R03,ORD-009035,1,channel, Marketplace,Marketplace,
+R03,ORD-009121,1,channel,Online ,Online,
+R03,ORD-009140,2,channel,ONLINE,Online,
+R03,ORD-009142,1,channel,online,Online,
+R03,ORD-009311,1,channel,online,Online,
+R03,ORD-009318,2,channel,Online ,Online,
+R03,ORD-009319,2,channel,ONLINE,Online,
+R03,ORD-009351,1,channel,online,Online,
+R03,ORD-009373,3,channel, Retail,Retail,
+R03,ORD-009487,1,channel, Marketplace,Marketplace,
+R03,ORD-009534,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-009551,1,channel,Online ,Online,
+R03,ORD-009712,1,channel,RETAIL,Retail,
+R03,ORD-009739,1,channel,online,Online,
+R03,ORD-009749,1,channel,ONLINE,Online,
+R03,ORD-009794,2,channel,Online ,Online,
+R03,ORD-009808,1,channel, Retail,Retail,
+R03,ORD-009825,2,channel, Online,Online,
+R03,ORD-009915,1,channel,Marketplace ,Marketplace,
+R03,ORD-009954,1,channel,Retail ,Retail,
+R03,ORD-009987,1,channel,retail,Retail,
+R03,ORD-009993,1,channel, Online,Online,
+R03,ORD-010009,5,channel,RETAIL,Retail,
+R03,ORD-010011,1,channel,Online ,Online,
+R03,ORD-010046,1,channel,Retail ,Retail,
+R03,ORD-010059,1,channel,RETAIL,Retail,
+R03,ORD-010108,1,channel,retail,Retail,
+R03,ORD-010149,1,channel,Marketplace ,Marketplace,
+R03,ORD-010184,1,channel, Online,Online,
+R03,ORD-010185,2,channel,retail,Retail,
+R03,ORD-010198,1,channel,RETAIL,Retail,
+R03,ORD-010246,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-010323,2,channel,RETAIL,Retail,
+R03,ORD-010334,2,channel,marketplace,Marketplace,
+R03,ORD-010467,1,channel,online,Online,
+R03,ORD-010632,1,channel,retail,Retail,
+R03,ORD-010635,1,channel,marketplace,Marketplace,
+R03,ORD-010673,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-010690,1,channel,RETAIL,Retail,
+R03,ORD-010802,1,channel, Marketplace,Marketplace,
+R03,ORD-010833,1,channel,RETAIL,Retail,
+R03,ORD-010862,1,channel,RETAIL,Retail,
+R03,ORD-010972,1,channel,online,Online,
+R03,ORD-011030,1,channel,ONLINE,Online,
+R03,ORD-011050,1,channel,Retail ,Retail,
+R03,ORD-011091,1,channel,retail,Retail,
+R03,ORD-011309,1,channel, Retail,Retail,
+R03,ORD-011324,1,channel, Marketplace,Marketplace,
+R03,ORD-011325,5,channel,Retail ,Retail,
+R03,ORD-011385,1,channel,retail,Retail,
+R03,ORD-011447,1,channel,Retail ,Retail,
+R03,ORD-011486,1,channel,online,Online,
+R03,ORD-011534,3,channel,Retail ,Retail,
+R03,ORD-011654,3,channel, Retail,Retail,
+R03,ORD-011754,1,channel,ONLINE,Online,
+R03,ORD-011819,1,channel, Marketplace,Marketplace,
+R03,ORD-011850,1,channel, Online,Online,
+R03,ORD-012182,1,channel,ONLINE,Online,
+R03,ORD-012217,1,channel,RETAIL,Retail,
+R03,ORD-012223,1,channel,RETAIL,Retail,
+R03,ORD-012271,1,channel,Online ,Online,
+R03,ORD-012341,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-012397,2,channel,ONLINE,Online,
+R03,ORD-012438,3,channel,ONLINE,Online,
+R03,ORD-012650,1,channel,Online ,Online,
+R03,ORD-012690,1,channel,ONLINE,Online,
+R03,ORD-012723,1,channel,marketplace,Marketplace,
+R03,ORD-012756,1,channel,ONLINE,Online,
+R03,ORD-012778,1,channel, Online,Online,
+R03,ORD-012793,3,channel, Online,Online,
+R03,ORD-012838,1,channel, Marketplace,Marketplace,
+R03,ORD-012978,1,channel, Online,Online,
+R03,ORD-012997,1,channel, Marketplace,Marketplace,
+R03,ORD-013130,1,channel,Online ,Online,
+R03,ORD-013134,1,channel,Marketplace ,Marketplace,
+R03,ORD-013154,4,channel, Marketplace,Marketplace,
+R03,ORD-013155,1,channel,online,Online,
+R03,ORD-013164,1,channel, Online,Online,
+R03,ORD-013177,1,channel,retail,Retail,
+R03,ORD-013219,1,channel,Online ,Online,
+R03,ORD-013221,1,channel,online,Online,
+R03,ORD-013320,1,channel, Online,Online,
+R03,ORD-013387,1,channel,online,Online,
+R03,ORD-013396,1,channel,RETAIL,Retail,
+R03,ORD-013399,1,channel, Marketplace,Marketplace,
+R03,ORD-013401,1,channel, Retail,Retail,
+R03,ORD-013437,2,channel,Retail ,Retail,
+R03,ORD-013478,1,channel, Online,Online,
+R03,ORD-013688,1,channel,ONLINE,Online,
+R03,ORD-013717,1,channel,ONLINE,Online,
+R03,ORD-013721,2,channel,online,Online,
+R03,ORD-013879,1,channel,Online ,Online,
+R03,ORD-013884,1,channel,Retail ,Retail,
+R03,ORD-013889,1,channel,ONLINE,Online,
+R03,ORD-013892,1,channel,retail,Retail,
+R03,ORD-013903,3,channel,RETAIL,Retail,
+R03,ORD-013914,1,channel,online,Online,
+R03,ORD-013983,2,channel,retail,Retail,
+R03,ORD-013989,2,channel, Retail,Retail,
+R03,ORD-014009,2,channel,retail,Retail,
+R03,ORD-014028,2,channel,retail,Retail,
+R03,ORD-014075,2,channel,ONLINE,Online,
+R03,ORD-014101,2,channel, Marketplace,Marketplace,
+R03,ORD-014140,2,channel,Online ,Online,
+R03,ORD-014181,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-014215,1,channel,RETAIL,Retail,
+R03,ORD-014223,1,channel,ONLINE,Online,
+R03,ORD-014340,2,channel,retail,Retail,
+R03,ORD-014388,1,channel,online,Online,
+R03,ORD-014450,2,channel,ONLINE,Online,
+R03,ORD-014462,1,channel,marketplace,Marketplace,
+R03,ORD-014570,1,channel, Online,Online,
+R03,ORD-014623,1,channel, Marketplace,Marketplace,
+R03,ORD-014677,3,channel,Retail ,Retail,
+R03,ORD-014710,3,channel,retail,Retail,
+R03,ORD-014740,1,channel,online,Online,
+R03,ORD-014947,1,channel,Wholesale ,Wholesale,
+R03,ORD-015003,1,channel,Retail ,Retail,
+R03,ORD-015024,2,channel,Marketplace ,Marketplace,
+R03,ORD-015033,2,channel,Online ,Online,
+R03,ORD-015104,1,channel, Retail,Retail,
+R03,ORD-015262,1,channel,Retail ,Retail,
+R03,ORD-015384,1,channel, Marketplace,Marketplace,
+R03,ORD-015397,1,channel,retail,Retail,
+R03,ORD-015428,1,channel,Online ,Online,
+R03,ORD-015530,1,channel,Online ,Online,
+R03,ORD-015611,1,channel,ONLINE,Online,
+R03,ORD-015709,1,channel,retail,Retail,
+R03,ORD-015784,1,channel,online,Online,
+R03,ORD-015852,1,channel,marketplace,Marketplace,
+R03,ORD-016040,1,channel,RETAIL,Retail,
+R03,ORD-016070,1,channel,Online ,Online,
+R03,ORD-016088,1,channel,Online ,Online,
+R03,ORD-016088,4,channel,Online ,Online,
+R03,ORD-016091,1,channel,marketplace,Marketplace,
+R03,ORD-016117,1,channel,retail,Retail,
+R03,ORD-016195,1,channel, Online,Online,
+R03,ORD-016242,1,channel,retail,Retail,
+R03,ORD-016311,1,channel,Online ,Online,
+R03,ORD-016409,3,channel,Retail ,Retail,
+R03,ORD-016429,1,channel,Online ,Online,
+R03,ORD-016433,1,channel,Retail ,Retail,
+R03,ORD-016467,2,channel,Retail ,Retail,
+R03,ORD-016787,1,channel, Online,Online,
+R03,ORD-016802,1,channel,online,Online,
+R03,ORD-016857,1,channel,retail,Retail,
+R03,ORD-016864,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-016980,1,channel,Retail ,Retail,
+R03,ORD-017056,1,channel, Retail,Retail,
+R03,ORD-017231,2,channel, Online,Online,
+R03,ORD-017280,1,channel,online,Online,
+R03,ORD-017302,1,channel,ONLINE,Online,
+R03,ORD-017410,2,channel,marketplace,Marketplace,
+R03,ORD-017450,1,channel,Marketplace ,Marketplace,
+R03,ORD-017509,1,channel,ONLINE,Online,
+R03,ORD-017525,1,channel,ONLINE,Online,
+R03,ORD-017606,1,channel,Marketplace ,Marketplace,
+R03,ORD-017636,1,channel, Online,Online,
+R03,ORD-017686,4,channel,marketplace,Marketplace,
+R03,ORD-017717,1,channel,RETAIL,Retail,
+R03,ORD-017830,1,channel,Marketplace ,Marketplace,
+R03,ORD-017834,1,channel,ONLINE,Online,
+R03,ORD-017901,1,channel, Retail,Retail,
+R03,ORD-017967,1,channel,online,Online,
+R03,ORD-018061,2,channel, Online,Online,
+R03,ORD-018071,1,channel,online,Online,
+R03,ORD-018088,1,channel,online,Online,
+R03,ORD-018254,2,channel,Online ,Online,
+R03,ORD-018339,1,channel,Online ,Online,
+R03,ORD-018368,1,channel,ONLINE,Online,
+R03,ORD-018384,2,channel,marketplace,Marketplace,
+R03,ORD-018525,1,channel,Retail ,Retail,
+R03,ORD-018598,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-018608,2,channel,ONLINE,Online,
+R03,ORD-018622,1,channel,retail,Retail,
+R03,ORD-018645,1,channel,Online ,Online,
+R03,ORD-018675,1,channel,ONLINE,Online,
+R03,ORD-018719,3,channel,Marketplace ,Marketplace,
+R03,ORD-018748,1,channel,marketplace,Marketplace,
+R03,ORD-018885,1,channel,RETAIL,Retail,
+R03,ORD-018905,1,channel, Retail,Retail,
+R03,ORD-019010,2,channel,marketplace,Marketplace,
+R03,ORD-019069,1,channel,online,Online,
+R03,ORD-019108,2,channel,Retail ,Retail,
+R03,ORD-019208,1,channel,Retail ,Retail,
+R03,ORD-019362,1,channel,marketplace,Marketplace,
+R03,ORD-019384,1,channel, Marketplace,Marketplace,
+R03,ORD-019396,1,channel, Retail,Retail,
+R03,ORD-019453,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-019454,2,channel, Online,Online,
+R03,ORD-019502,1,channel, Retail,Retail,
+R03,ORD-019712,1,channel,Marketplace ,Marketplace,
+R03,ORD-019875,3,channel, Marketplace,Marketplace,
+R03,ORD-019912,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-019961,1,channel,marketplace,Marketplace,
+R03,ORD-019997,1,channel,retail,Retail,
+R03,ORD-020061,1,channel,Retail ,Retail,
+R03,ORD-020087,1,channel, Retail,Retail,
+R03,ORD-020133,1,channel, Marketplace,Marketplace,
+R03,ORD-020148,1,channel,RETAIL,Retail,
+R03,ORD-020179,1,channel,Marketplace ,Marketplace,
+R03,ORD-020309,1,channel,RETAIL,Retail,
+R03,ORD-020311,1,channel,online,Online,
+R03,ORD-020392,1,channel,marketplace,Marketplace,
+R03,ORD-020419,3,channel, Online,Online,
+R03,ORD-020431,2,channel,Online ,Online,
+R03,ORD-020473,1,channel,RETAIL,Retail,
+R03,ORD-020804,1,channel,RETAIL,Retail,
+R03,ORD-020854,2,channel, Marketplace,Marketplace,
+R03,ORD-020898,1,channel, Online,Online,
+R03,ORD-020899,1,channel,online,Online,
+R03,ORD-020924,1,channel,RETAIL,Retail,
+R03,ORD-020944,1,channel,RETAIL,Retail,
+R03,ORD-020947,1,channel, Online,Online,
+R03,ORD-020977,1,channel,ONLINE,Online,
+R03,ORD-021035,1,channel,Online ,Online,
+R03,ORD-021044,1,channel,RETAIL,Retail,
+R03,ORD-021046,1,channel,Retail ,Retail,
+R03,ORD-021125,3,channel,Online ,Online,
+R03,ORD-021132,1,channel,ONLINE,Online,
+R03,ORD-021149,1,channel, Retail,Retail,
+R03,ORD-021181,1,channel,marketplace,Marketplace,
+R03,ORD-021240,1,channel,Marketplace ,Marketplace,
+R03,ORD-021290,1,channel, Online,Online,
+R03,ORD-021324,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-021418,2,channel,RETAIL,Retail,
+R03,ORD-021422,1,channel, Retail,Retail,
+R03,ORD-021437,1,channel,ONLINE,Online,
+R03,ORD-021465,1,channel,marketplace,Marketplace,
+R03,ORD-021480,1,channel, Online,Online,
+R03,ORD-021634,2,channel, Retail,Retail,
+R03,ORD-021682,1,channel, Retail,Retail,
+R03,ORD-021683,2,channel,retail,Retail,
+R03,ORD-021814,2,channel, Retail,Retail,
+R03,ORD-021830,2,channel,marketplace,Marketplace,
+R03,ORD-021845,1,channel, Retail,Retail,
+R03,ORD-021883,1,channel, Retail,Retail,
+R03,ORD-021930,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-022005,1,channel,Retail ,Retail,
+R03,ORD-022017,1,channel, Online,Online,
+R03,ORD-022029,1,channel,online,Online,
+R03,ORD-022077,2,channel,RETAIL,Retail,
+R03,ORD-022095,1,channel,retail,Retail,
+R03,ORD-022147,1,channel, Online,Online,
+R03,ORD-022163,1,channel, Retail,Retail,
+R03,ORD-022167,1,channel,ONLINE,Online,
+R03,ORD-022234,1,channel,Retail ,Retail,
+R03,ORD-022486,1,channel,Marketplace ,Marketplace,
+R03,ORD-022543,2,channel,marketplace,Marketplace,
+R03,ORD-022643,1,channel,Retail ,Retail,
+R03,ORD-022645,2,channel, Marketplace,Marketplace,
+R03,ORD-022723,1,channel,Retail ,Retail,
+R03,ORD-022799,2,channel,online,Online,
+R03,ORD-022815,1,channel,retail,Retail,
+R03,ORD-022877,1,channel,Marketplace ,Marketplace,
+R03,ORD-022962,1,channel, Retail,Retail,
+R03,ORD-023049,1,channel,Retail ,Retail,
+R03,ORD-023063,1,channel,ONLINE,Online,
+R03,ORD-023071,4,channel, Online,Online,
+R03,ORD-023209,1,channel,Marketplace ,Marketplace,
+R03,ORD-023210,3,channel,retail,Retail,
+R03,ORD-023281,1,channel, Retail,Retail,
+R03,ORD-023372,2,channel,online,Online,
+R03,ORD-023381,1,channel, Online,Online,
+R03,ORD-023451,1,channel,ONLINE,Online,
+R03,ORD-023453,3,channel,retail,Retail,
+R03,ORD-023518,1,channel,retail,Retail,
+R03,ORD-023534,1,channel,RETAIL,Retail,
+R03,ORD-023607,2,channel,Online ,Online,
+R03,ORD-023626,1,channel, Online,Online,
+R03,ORD-023634,1,channel,marketplace,Marketplace,
+R03,ORD-023808,1,channel, Marketplace,Marketplace,
+R03,ORD-023880,1,channel,Marketplace ,Marketplace,
+R03,ORD-023908,1,channel,marketplace,Marketplace,
+R03,ORD-024098,3,channel,Retail ,Retail,
+R03,ORD-024111,2,channel,RETAIL,Retail,
+R03,ORD-024163,2,channel,RETAIL,Retail,
+R03,ORD-024204,4,channel,online,Online,
+R03,ORD-024379,1,channel,Retail ,Retail,
+R03,ORD-024396,1,channel,retail,Retail,
+R03,ORD-024484,1,channel,Online ,Online,
+R03,ORD-024528,1,channel,ONLINE,Online,
+R03,ORD-024590,1,channel,RETAIL,Retail,
+R03,ORD-024625,1,channel,Online ,Online,
+R03,ORD-024677,2,channel,RETAIL,Retail,
+R03,ORD-024821,3,channel,ONLINE,Online,
+R03,ORD-024837,2,channel,online,Online,
+R03,ORD-024846,1,channel,online,Online,
+R03,ORD-025060,1,channel,Marketplace ,Marketplace,
+R03,ORD-025204,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-025237,1,channel,Marketplace ,Marketplace,
+R03,ORD-025275,1,channel,RETAIL,Retail,
+R03,ORD-025299,2,channel, Online,Online,
+R03,ORD-025314,3,channel,online,Online,
+R03,ORD-025323,1,channel, Retail,Retail,
+R03,ORD-025474,1,channel, Retail,Retail,
+R03,ORD-025558,3,channel,ONLINE,Online,
+R03,ORD-025572,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-025668,2,channel,marketplace,Marketplace,
+R03,ORD-025693,1,channel,retail,Retail,
+R03,ORD-025738,1,channel, Marketplace,Marketplace,
+R03,ORD-025744,1,channel, Marketplace,Marketplace,
+R03,ORD-025778,1,channel,Retail ,Retail,
+R03,ORD-025782,1,channel, Retail,Retail,
+R03,ORD-025886,3,channel,Online ,Online,
+R03,ORD-025967,1,channel,ONLINE,Online,
+R03,ORD-026050,1,channel, Retail,Retail,
+R03,ORD-026264,1,channel,Marketplace ,Marketplace,
+R03,ORD-026296,1,channel,retail,Retail,
+R03,ORD-026355,1,channel,marketplace,Marketplace,
+R03,ORD-026381,2,channel, Online,Online,
+R03,ORD-026443,1,channel, Online,Online,
+R03,ORD-026469,1,channel, Online,Online,
+R03,ORD-026492,1,channel, Retail,Retail,
+R03,ORD-026535,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-026549,1,channel,marketplace,Marketplace,
+R03,ORD-026627,2,channel, Online,Online,
+R03,ORD-026630,1,channel,Online ,Online,
+R03,ORD-026662,1,channel,ONLINE,Online,
+R03,ORD-026698,1,channel,marketplace,Marketplace,
+R03,ORD-026741,1,channel,ONLINE,Online,
+R03,ORD-026764,1,channel,Marketplace ,Marketplace,
+R03,ORD-026775,1,channel,online,Online,
+R03,ORD-026805,2,channel, Retail,Retail,
+R03,ORD-026892,1,channel,marketplace,Marketplace,
+R03,ORD-026934,1,channel,Online ,Online,
+R03,ORD-026950,3,channel,Retail ,Retail,
+R03,ORD-026960,1,channel,Retail ,Retail,
+R03,ORD-027068,1,channel,Online ,Online,
+R03,ORD-027073,1,channel,Retail ,Retail,
+R03,ORD-027076,2,channel,retail,Retail,
+R03,ORD-027113,1,channel,RETAIL,Retail,
+R03,ORD-027195,1,channel,retail,Retail,
+R03,ORD-027232,1,channel,Retail ,Retail,
+R03,ORD-027376,2,channel,online,Online,
+R03,ORD-027381,1,channel, Online,Online,
+R03,ORD-027387,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-027497,1,channel,Marketplace ,Marketplace,
+R03,ORD-027541,2,channel, Marketplace,Marketplace,
+R03,ORD-027570,1,channel, Marketplace,Marketplace,
+R03,ORD-027614,1,channel,Marketplace ,Marketplace,
+R03,ORD-027637,1,channel, Online,Online,
+R03,ORD-027644,2,channel, Online,Online,
+R03,ORD-027693,2,channel, Online,Online,
+R03,ORD-027792,1,channel,retail,Retail,
+R03,ORD-027930,2,channel, Online,Online,
+R03,ORD-027983,1,channel,Online ,Online,
+R03,ORD-028223,3,channel,Marketplace ,Marketplace,
+R03,ORD-028316,2,channel, Retail,Retail,
+R03,ORD-028496,1,channel,online,Online,
+R03,ORD-028590,1,channel, Online,Online,
+R03,ORD-028706,2,channel,RETAIL,Retail,
+R03,ORD-028825,1,channel, Online,Online,
+R03,ORD-028864,1,channel,Online ,Online,
+R03,ORD-029010,1,channel,Online ,Online,
+R03,ORD-029046,2,channel,ONLINE,Online,
+R03,ORD-029086,1,channel,RETAIL,Retail,
+R03,ORD-029166,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-029276,2,channel,Marketplace ,Marketplace,
+R03,ORD-029316,1,channel,marketplace,Marketplace,
+R03,ORD-029328,1,channel, Online,Online,
+R03,ORD-029388,1,channel,online,Online,
+R03,ORD-029398,1,channel,Retail ,Retail,
+R03,ORD-029399,2,channel, Marketplace,Marketplace,
+R03,ORD-029516,1,channel,Online ,Online,
+R03,ORD-029530,1,channel, Online,Online,
+R03,ORD-029550,1,channel, Marketplace,Marketplace,
+R03,ORD-029586,1,channel,ONLINE,Online,
+R03,ORD-029592,2,channel,RETAIL,Retail,
+R03,ORD-029603,3,channel,Online ,Online,
+R03,ORD-029677,1,channel, Online,Online,
+R03,ORD-029735,4,channel,Marketplace ,Marketplace,
+R03,ORD-029760,1,channel, Marketplace,Marketplace,
+R03,ORD-029791,1,channel,online,Online,
+R03,ORD-029841,2,channel,retail,Retail,
+R03,ORD-029889,2,channel, Online,Online,
+R03,ORD-029977,1,channel,marketplace,Marketplace,
+R03,ORD-029986,1,channel, Retail,Retail,
+R03,ORD-030008,1,channel,Marketplace ,Marketplace,
+R03,ORD-030018,1,channel,ONLINE,Online,
+R03,ORD-030064,1,channel, Retail,Retail,
+R03,ORD-030090,2,channel,ONLINE,Online,
+R03,ORD-030121,2,channel,RETAIL,Retail,
+R03,ORD-030126,2,channel,online,Online,
+R03,ORD-030274,2,channel,ONLINE,Online,
+R03,ORD-030282,1,channel, Retail,Retail,
+R03,ORD-030288,2,channel,Retail ,Retail,
+R03,ORD-030355,1,channel, Online,Online,
+R03,ORD-030372,1,channel, Online,Online,
+R03,ORD-030418,1,channel,RETAIL,Retail,
+R03,ORD-030423,2,channel,marketplace,Marketplace,
+R03,ORD-030539,2,channel,ONLINE,Online,
+R03,ORD-030545,2,channel, Online,Online,
+R03,ORD-030610,2,channel,retail,Retail,
+R03,ORD-030720,2,channel, Marketplace,Marketplace,
+R03,ORD-030849,1,channel, Online,Online,
+R03,ORD-030892,3,channel, Retail,Retail,
+R03,ORD-030907,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-030917,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-030973,1,channel, Retail,Retail,
+R03,ORD-030998,1,channel,Marketplace ,Marketplace,
+R03,ORD-031007,1,channel,Online ,Online,
+R03,ORD-031040,1,channel,retail,Retail,
+R03,ORD-031119,2,channel,Marketplace ,Marketplace,
+R03,ORD-031225,1,channel, Marketplace,Marketplace,
+R03,ORD-031249,1,channel,ONLINE,Online,
+R03,ORD-031347,1,channel, Online,Online,
+R03,ORD-031358,1,channel,Marketplace ,Marketplace,
+R03,ORD-031374,1,channel,Retail ,Retail,
+R03,ORD-031375,1,channel,retail,Retail,
+R03,ORD-031396,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-031402,1,channel,ONLINE,Online,
+R03,ORD-031474,1,channel,ONLINE,Online,
+R03,ORD-031482,2,channel,retail,Retail,
+R03,ORD-031523,1,channel,Retail ,Retail,
+R03,ORD-031552,1,channel, Online,Online,
+R03,ORD-031895,4,channel,Marketplace ,Marketplace,
+R03,ORD-031938,1,channel,Marketplace ,Marketplace,
+R03,ORD-031962,1,channel, Retail,Retail,
+R03,ORD-031983,1,channel,Online ,Online,
+R03,ORD-032014,1,channel, Online,Online,
+R03,ORD-032081,1,channel,online,Online,
+R03,ORD-032094,2,channel, Retail,Retail,
+R03,ORD-032151,1,channel, Marketplace,Marketplace,
+R03,ORD-032204,1,channel,Retail ,Retail,
+R03,ORD-032284,1,channel, Online,Online,
+R03,ORD-032428,1,channel, Online,Online,
+R03,ORD-032489,2,channel,Marketplace ,Marketplace,
+R03,ORD-032595,1,channel,Online ,Online,
+R03,ORD-032707,1,channel, Online,Online,
+R03,ORD-032756,1,channel,Retail ,Retail,
+R03,ORD-032769,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-032861,1,channel, Marketplace,Marketplace,
+R03,ORD-033076,3,channel, Online,Online,
+R03,ORD-033080,1,channel,Marketplace ,Marketplace,
+R03,ORD-033101,1,channel,marketplace,Marketplace,
+R03,ORD-033106,1,channel, Marketplace,Marketplace,
+R03,ORD-033114,1,channel,Retail ,Retail,
+R03,ORD-033126,1,channel, Online,Online,
+R03,ORD-033204,2,channel, Online,Online,
+R03,ORD-033391,2,channel,ONLINE,Online,
+R03,ORD-033450,2,channel, Online,Online,
+R03,ORD-033451,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-033482,1,channel, Retail,Retail,
+R03,ORD-033580,1,channel, Online,Online,
+R03,ORD-033606,1,channel,retail,Retail,
+R03,ORD-033637,1,channel,Retail ,Retail,
+R03,ORD-033754,1,channel,Retail ,Retail,
+R03,ORD-033807,1,channel, Retail,Retail,
+R03,ORD-033906,2,channel,MARKETPLACE,Marketplace,
+R03,ORD-033940,1,channel,online,Online,
+R03,ORD-033988,2,channel,RETAIL,Retail,
+R03,ORD-034194,1,channel,marketplace,Marketplace,
+R03,ORD-034276,2,channel,online,Online,
+R03,ORD-034297,1,channel,ONLINE,Online,
+R03,ORD-034337,1,channel,ONLINE,Online,
+R03,ORD-034405,1,channel, Marketplace,Marketplace,
+R03,ORD-034418,1,channel,ONLINE,Online,
+R03,ORD-034567,1,channel,Marketplace ,Marketplace,
+R03,ORD-034633,1,channel,ONLINE,Online,
+R03,ORD-034802,1,channel,online,Online,
+R03,ORD-034923,1,channel,RETAIL,Retail,
+R03,ORD-035025,2,channel,retail,Retail,
+R03,ORD-035138,2,channel, Marketplace,Marketplace,
+R03,ORD-035164,2,channel,Marketplace ,Marketplace,
+R03,ORD-035187,1,channel, Retail,Retail,
+R03,ORD-035277,1,channel,RETAIL,Retail,
+R03,ORD-035314,2,channel,marketplace,Marketplace,
+R03,ORD-035554,1,channel, Retail,Retail,
+R03,ORD-035618,1,channel,retail,Retail,
+R03,ORD-035625,1,channel,ONLINE,Online,
+R03,ORD-035673,1,channel, Marketplace,Marketplace,
+R03,ORD-035727,2,channel,online,Online,
+R03,ORD-035810,1,channel,ONLINE,Online,
+R03,ORD-035813,1,channel,ONLINE,Online,
+R03,ORD-035832,4,channel,Online ,Online,
+R03,ORD-035853,2,channel,retail,Retail,
+R03,ORD-035921,1,channel, Online,Online,
+R03,ORD-035940,1,channel,wholesale,Wholesale,
+R03,ORD-035959,1,channel, Retail,Retail,
+R03,ORD-035961,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-035986,2,channel,RETAIL,Retail,
+R03,ORD-036075,1,channel,online,Online,
+R03,ORD-036076,1,channel,retail,Retail,
+R03,ORD-036091,1,channel,Marketplace ,Marketplace,
+R03,ORD-036093,1,channel, Marketplace,Marketplace,
+R03,ORD-036107,3,channel, Online,Online,
+R03,ORD-036135,1,channel,retail,Retail,
+R03,ORD-036223,1,channel, Marketplace,Marketplace,
+R03,ORD-036276,1,channel,ONLINE,Online,
+R03,ORD-036293,1,channel,Marketplace ,Marketplace,
+R03,ORD-036372,1,channel,ONLINE,Online,
+R03,ORD-036377,2,channel,Online ,Online,
+R03,ORD-036519,1,channel, Marketplace,Marketplace,
+R03,ORD-036671,2,channel, Marketplace,Marketplace,
+R03,ORD-036792,1,channel,Online ,Online,
+R03,ORD-036800,2,channel,online,Online,
+R03,ORD-036852,1,channel,Retail ,Retail,
+R03,ORD-036898,1,channel,marketplace,Marketplace,
+R03,ORD-036899,2,channel,online,Online,
+R03,ORD-036925,3,channel,RETAIL,Retail,
+R03,ORD-037130,1,channel, Retail,Retail,
+R03,ORD-037136,1,channel,ONLINE,Online,
+R03,ORD-037245,1,channel,Wholesale ,Wholesale,
+R03,ORD-037268,1,channel, Marketplace,Marketplace,
+R03,ORD-037310,2,channel,retail,Retail,
+R03,ORD-037317,1,channel,ONLINE,Online,
+R03,ORD-037451,1,channel,marketplace,Marketplace,
+R03,ORD-037479,1,channel,online,Online,
+R03,ORD-037482,3,channel,online,Online,
+R03,ORD-037616,1,channel, Retail,Retail,
+R03,ORD-037716,1,channel, Retail,Retail,
+R03,ORD-037740,4,channel,Online ,Online,
+R03,ORD-037742,1,channel,Retail ,Retail,
+R03,ORD-037765,1,channel, Marketplace,Marketplace,
+R03,ORD-037818,3,channel,ONLINE,Online,
+R03,ORD-037863,1,channel,online,Online,
+R03,ORD-037893,1,channel,online,Online,
+R03,ORD-037941,5,channel,Marketplace ,Marketplace,
+R03,ORD-037971,2,channel, Retail,Retail,
+R03,ORD-038050,1,channel,retail,Retail,
+R03,ORD-038066,1,channel,marketplace,Marketplace,
+R03,ORD-038076,1,channel,marketplace,Marketplace,
+R03,ORD-038334,1,channel,MARKETPLACE,Marketplace,
+R03,ORD-038535,1,channel,ONLINE,Online,
+R03,ORD-038546,1,channel, Online,Online,
+R03,ORD-038586,1,channel,online,Online,
+R03,ORD-038586,3,channel,ONLINE,Online,
+R03,ORD-038798,1,channel,Retail ,Retail,
+R03,ORD-038843,2,channel, Marketplace,Marketplace,
+R03,ORD-038849,1,channel, Online,Online,
+R03,ORD-038900,1,channel, Retail,Retail,
+R03,ORD-038973,2,channel, Marketplace,Marketplace,
+R03,ORD-039023,1,channel,RETAIL,Retail,
+R03,ORD-039071,1,channel, Online,Online,
+R03,ORD-039080,1,channel,Retail ,Retail,
+R03,ORD-039182,1,channel,marketplace,Marketplace,
+R03,ORD-039235,4,channel,online,Online,
+R03,ORD-039285,1,channel,Marketplace ,Marketplace,
+R03,ORD-000040,2,sku,sku-2037,SKU-2037,
+R03,ORD-000217,1,sku,sku-2025,SKU-2025,
+R03,ORD-000219,2,sku,sku-2039,SKU-2039,
+R03,ORD-000411,1,sku,sku-2018,SKU-2018,
+R03,ORD-000421,1,sku,sku-2009,SKU-2009,
+R03,ORD-000875,1,sku,sku-2010,SKU-2010,
+R03,ORD-000920,3,sku,sku-2039,SKU-2039,
+R03,ORD-001178,4,sku,sku-2042,SKU-2042,
+R03,ORD-001415,2,sku,sku-2019,SKU-2019,
+R03,ORD-001659,1,sku,sku-2007,SKU-2007,
+R03,ORD-001684,4,sku,sku-2033,SKU-2033,
+R03,ORD-001825,2,sku,sku-2023,SKU-2023,
+R03,ORD-001851,1,sku,sku-2003,SKU-2003,
+R03,ORD-002084,1,sku,sku-2033,SKU-2033,
+R03,ORD-003679,2,sku,sku-2014,SKU-2014,
+R03,ORD-003733,1,sku,sku-2042,SKU-2042,
+R03,ORD-004184,2,sku,sku-2012,SKU-2012,
+R03,ORD-004323,1,sku,sku-2007,SKU-2007,
+R03,ORD-004640,2,sku,sku-2042,SKU-2042,
+R03,ORD-004752,1,sku,sku-2039,SKU-2039,
+R03,ORD-004788,1,sku,sku-2039,SKU-2039,
+R03,ORD-004998,1,sku,sku-2003,SKU-2003,
+R03,ORD-005043,1,sku,sku-2039,SKU-2039,
+R03,ORD-005086,3,sku,sku-2042,SKU-2042,
+R03,ORD-005159,1,sku,sku-2033,SKU-2033,
+R03,ORD-005505,1,sku,sku-2018,SKU-2018,
+R03,ORD-005559,2,sku,sku-2038,SKU-2038,
+R03,ORD-005704,1,sku,sku-2023,SKU-2023,
+R03,ORD-006203,1,sku,sku-2008,SKU-2008,
+R03,ORD-006470,1,sku,sku-2020,SKU-2020,
+R03,ORD-006486,1,sku,sku-2010,SKU-2010,
+R03,ORD-006636,1,sku,sku-2031,SKU-2031,
+R03,ORD-006762,2,sku,sku-2029,SKU-2029,
+R03,ORD-006784,1,sku,sku-2016,SKU-2016,
+R03,ORD-006951,1,sku,sku-2008,SKU-2008,
+R03,ORD-007221,1,sku,sku-2020,SKU-2020,
+R03,ORD-007584,3,sku,sku-2036,SKU-2036,
+R03,ORD-007675,1,sku,sku-2011,SKU-2011,
+R03,ORD-007789,1,sku,sku-2003,SKU-2003,
+R03,ORD-007860,1,sku,sku-2035,SKU-2035,
+R03,ORD-007862,1,sku,sku-2018,SKU-2018,
+R03,ORD-007947,1,sku,sku-2023,SKU-2023,
+R03,ORD-008046,1,sku,sku-2010,SKU-2010,
+R03,ORD-008198,2,sku,sku-2033,SKU-2033,
+R03,ORD-008347,2,sku,sku-2035,SKU-2035,
+R03,ORD-008604,1,sku,sku-2025,SKU-2025,
+R03,ORD-008635,1,sku,sku-2010,SKU-2010,
+R03,ORD-008957,4,sku,sku-2039,SKU-2039,
+R03,ORD-008957,5,sku,sku-2039,SKU-2039,
+R03,ORD-009223,1,sku,sku-2007,SKU-2007,
+R03,ORD-009277,1,sku,sku-2035,SKU-2035,
+R03,ORD-009519,1,sku,sku-2015,SKU-2015,
+R03,ORD-009795,2,sku,sku-2013,SKU-2013,
+R03,ORD-009825,1,sku,sku-2001,SKU-2001,
+R03,ORD-010187,1,sku,sku-2027,SKU-2027,
+R03,ORD-010224,1,sku,sku-2030,SKU-2030,
+R03,ORD-010458,1,sku,sku-2001,SKU-2001,
+R03,ORD-010509,1,sku,sku-2033,SKU-2033,
+R03,ORD-010631,2,sku,sku-2023,SKU-2023,
+R03,ORD-010657,1,sku,sku-2039,SKU-2039,
+R03,ORD-010894,3,sku,sku-2025,SKU-2025,
+R03,ORD-010905,1,sku,sku-2007,SKU-2007,
+R03,ORD-011163,1,sku,sku-2008,SKU-2008,
+R03,ORD-011186,2,sku,sku-2018,SKU-2018,
+R03,ORD-011221,1,sku,sku-2022,SKU-2022,
+R03,ORD-011498,1,sku,sku-2013,SKU-2013,
+R03,ORD-011558,2,sku,sku-2023,SKU-2023,
+R03,ORD-011626,1,sku,sku-2015,SKU-2015,
+R03,ORD-011731,3,sku,sku-2023,SKU-2023,
+R03,ORD-011931,1,sku,sku-2005,SKU-2005,
+R03,ORD-012132,1,sku,sku-2003,SKU-2003,
+R03,ORD-012336,1,sku,sku-2010,SKU-2010,
+R03,ORD-012481,2,sku,sku-2020,SKU-2020,
+R03,ORD-012630,1,sku,sku-2026,SKU-2026,
+R03,ORD-012634,2,sku,sku-2039,SKU-2039,
+R03,ORD-012805,1,sku,sku-2037,SKU-2037,
+R03,ORD-012897,1,sku,sku-2020,SKU-2020,
+R03,ORD-013112,1,sku,sku-2007,SKU-2007,
+R03,ORD-013132,1,sku,sku-2021,SKU-2021,
+R03,ORD-013420,1,sku,sku-2027,SKU-2027,
+R03,ORD-013495,1,sku,sku-2031,SKU-2031,
+R03,ORD-013560,1,sku,sku-2031,SKU-2031,
+R03,ORD-013918,1,sku,sku-2030,SKU-2030,
+R03,ORD-014020,1,sku,sku-2027,SKU-2027,
+R03,ORD-014082,1,sku,sku-2026,SKU-2026,
+R03,ORD-014158,1,sku,sku-2026,SKU-2026,
+R03,ORD-014481,1,sku,sku-2018,SKU-2018,
+R03,ORD-014764,1,sku,sku-2029,SKU-2029,
+R03,ORD-015117,1,sku,sku-2023,SKU-2023,
+R03,ORD-015310,1,sku,sku-2018,SKU-2018,
+R03,ORD-015332,1,sku,sku-2042,SKU-2042,
+R03,ORD-015395,1,sku,sku-2036,SKU-2036,
+R03,ORD-015413,2,sku,sku-2023,SKU-2023,
+R03,ORD-015856,1,sku,sku-2020,SKU-2020,
+R03,ORD-016002,1,sku,sku-2009,SKU-2009,
+R03,ORD-016095,2,sku,sku-2023,SKU-2023,
+R03,ORD-016153,1,sku,sku-2007,SKU-2007,
+R03,ORD-016239,2,sku,sku-2012,SKU-2012,
+R03,ORD-016325,2,sku,sku-2010,SKU-2010,
+R03,ORD-016511,1,sku,sku-2036,SKU-2036,
+R03,ORD-016547,2,sku,sku-2010,SKU-2010,
+R03,ORD-016636,1,sku,sku-2036,SKU-2036,
+R03,ORD-017393,1,sku,sku-2026,SKU-2026,
+R03,ORD-017408,1,sku,sku-2031,SKU-2031,
+R03,ORD-017562,1,sku,sku-2025,SKU-2025,
+R03,ORD-017568,1,sku,sku-2016,SKU-2016,
+R03,ORD-017631,1,sku,sku-2017,SKU-2017,
+R03,ORD-017891,2,sku,sku-2039,SKU-2039,
+R03,ORD-018192,1,sku,sku-2031,SKU-2031,
+R03,ORD-018283,2,sku,sku-2037,SKU-2037,
+R03,ORD-018343,1,sku,sku-2027,SKU-2027,
+R03,ORD-018368,2,sku,sku-2028,SKU-2028,
+R03,ORD-018476,1,sku,sku-2004,SKU-2004,
+R03,ORD-018711,1,sku,sku-2004,SKU-2004,
+R03,ORD-019050,1,sku,sku-2003,SKU-2003,
+R03,ORD-019110,2,sku,sku-2015,SKU-2015,
+R03,ORD-019386,3,sku,sku-2028,SKU-2028,
+R03,ORD-019404,2,sku,sku-2024,SKU-2024,
+R03,ORD-019468,1,sku,sku-2042,SKU-2042,
+R03,ORD-019584,1,sku,sku-2013,SKU-2013,
+R03,ORD-020099,2,sku,sku-2033,SKU-2033,
+R03,ORD-020162,1,sku,sku-2003,SKU-2003,
+R03,ORD-020307,1,sku,sku-2012,SKU-2012,
+R03,ORD-020414,3,sku,sku-2037,SKU-2037,
+R03,ORD-020773,1,sku,sku-2014,SKU-2014,
+R03,ORD-021444,1,sku,sku-2033,SKU-2033,
+R03,ORD-021477,1,sku,sku-2035,SKU-2035,
+R03,ORD-021716,4,sku,sku-2023,SKU-2023,
+R03,ORD-021912,1,sku,sku-2037,SKU-2037,
+R03,ORD-022115,1,sku,sku-2003,SKU-2003,
+R03,ORD-022211,1,sku,sku-2039,SKU-2039,
+R03,ORD-022257,1,sku,sku-2010,SKU-2010,
+R03,ORD-022495,1,sku,sku-2039,SKU-2039,
+R03,ORD-022676,1,sku,sku-2037,SKU-2037,
+R03,ORD-023084,1,sku,sku-2018,SKU-2018,
+R03,ORD-023552,2,sku,sku-2028,SKU-2028,
+R03,ORD-023692,4,sku,sku-2039,SKU-2039,
+R03,ORD-023702,5,sku,sku-2037,SKU-2037,
+R03,ORD-023707,3,sku,sku-2033,SKU-2033,
+R03,ORD-023712,1,sku,sku-2039,SKU-2039,
+R03,ORD-023744,1,sku,sku-2036,SKU-2036,
+R03,ORD-023848,1,sku,sku-2013,SKU-2013,
+R03,ORD-023968,1,sku,sku-2015,SKU-2015,
+R03,ORD-024127,2,sku,sku-2028,SKU-2028,
+R03,ORD-024171,1,sku,sku-2006,SKU-2006,
+R03,ORD-024217,2,sku,sku-2036,SKU-2036,
+R03,ORD-024473,1,sku,sku-2028,SKU-2028,
+R03,ORD-024480,2,sku,sku-2021,SKU-2021,
+R03,ORD-024867,1,sku,sku-2015,SKU-2015,
+R03,ORD-025136,1,sku,sku-2030,SKU-2030,
+R03,ORD-025309,2,sku,sku-2025,SKU-2025,
+R03,ORD-025327,1,sku,sku-2003,SKU-2003,
+R03,ORD-025365,1,sku,sku-2027,SKU-2027,
+R03,ORD-025522,4,sku,sku-2025,SKU-2025,
+R03,ORD-025789,1,sku,sku-2018,SKU-2018,
+R03,ORD-026079,1,sku,sku-2042,SKU-2042,
+R03,ORD-026148,4,sku,sku-2040,SKU-2040,
+R03,ORD-026932,1,sku,sku-2027,SKU-2027,
+R03,ORD-027066,2,sku,sku-2036,SKU-2036,
+R03,ORD-027241,2,sku,sku-2037,SKU-2037,
+R03,ORD-027330,1,sku,sku-2032,SKU-2032,
+R03,ORD-027484,1,sku,sku-2007,SKU-2007,
+R03,ORD-028202,2,sku,sku-2039,SKU-2039,
+R03,ORD-028206,2,sku,sku-2033,SKU-2033,
+R03,ORD-028210,2,sku,sku-2030,SKU-2030,
+R03,ORD-028502,1,sku,sku-2022,SKU-2022,
+R03,ORD-028622,1,sku,sku-2001,SKU-2001,
+R03,ORD-028650,1,sku,sku-2024,SKU-2024,
+R03,ORD-028799,2,sku,sku-2010,SKU-2010,
+R03,ORD-029105,1,sku,sku-2007,SKU-2007,
+R03,ORD-029235,1,sku,sku-2039,SKU-2039,
+R03,ORD-029260,3,sku,sku-2039,SKU-2039,
+R03,ORD-029270,2,sku,sku-2042,SKU-2042,
+R03,ORD-029442,3,sku,sku-2033,SKU-2033,
+R03,ORD-029504,2,sku,sku-2023,SKU-2023,
+R03,ORD-029645,3,sku,sku-2036,SKU-2036,
+R03,ORD-029845,1,sku,sku-2021,SKU-2021,
+R03,ORD-030345,1,sku,sku-2006,SKU-2006,
+R03,ORD-030384,1,sku,sku-2037,SKU-2037,
+R03,ORD-030546,1,sku,sku-2016,SKU-2016,
+R03,ORD-030634,1,sku,sku-2023,SKU-2023,
+R03,ORD-030710,2,sku,sku-2035,SKU-2035,
+R03,ORD-030720,3,sku,sku-2027,SKU-2027,
+R03,ORD-031016,1,sku,sku-2025,SKU-2025,
+R03,ORD-031041,1,sku,sku-2018,SKU-2018,
+R03,ORD-031107,1,sku,sku-2018,SKU-2018,
+R03,ORD-031155,1,sku,sku-2042,SKU-2042,
+R03,ORD-032075,1,sku,sku-2007,SKU-2007,
+R03,ORD-032117,1,sku,sku-2015,SKU-2015,
+R03,ORD-032618,1,sku,sku-2008,SKU-2008,
+R03,ORD-032654,2,sku,sku-2015,SKU-2015,
+R03,ORD-032909,2,sku,sku-2018,SKU-2018,
+R03,ORD-032944,1,sku,sku-2007,SKU-2007,
+R03,ORD-033059,1,sku,sku-2042,SKU-2042,
+R03,ORD-033179,1,sku,sku-2028,SKU-2028,
+R03,ORD-033736,1,sku,sku-2027,SKU-2027,
+R03,ORD-034048,1,sku,sku-2021,SKU-2021,
+R03,ORD-034156,1,sku,sku-2010,SKU-2010,
+R03,ORD-034162,1,sku,sku-2030,SKU-2030,
+R03,ORD-034166,3,sku,sku-2039,SKU-2039,
+R03,ORD-034782,1,sku,sku-2027,SKU-2027,
+R03,ORD-034985,1,sku,sku-2039,SKU-2039,
+R03,ORD-035243,1,sku,sku-2025,SKU-2025,
+R03,ORD-035765,2,sku,sku-2025,SKU-2025,
+R03,ORD-035941,1,sku,sku-2039,SKU-2039,
+R03,ORD-036128,2,sku,sku-2036,SKU-2036,
+R03,ORD-036302,1,sku,sku-2016,SKU-2016,
+R03,ORD-036304,1,sku,sku-2001,SKU-2001,
+R03,ORD-036432,1,sku,sku-2016,SKU-2016,
+R03,ORD-036607,3,sku,sku-2026,SKU-2026,
+R03,ORD-037207,1,sku,sku-2026,SKU-2026,
+R03,ORD-037436,2,sku,sku-2008,SKU-2008,
+R03,ORD-037580,1,sku,sku-2014,SKU-2014,
+R03,ORD-037641,2,sku,sku-2042,SKU-2042,
+R03,ORD-037679,1,sku,sku-2023,SKU-2023,
+R03,ORD-037702,1,sku,sku-2018,SKU-2018,
+R03,ORD-037772,1,sku,sku-2010,SKU-2010,
+R03,ORD-038097,1,sku,sku-2036,SKU-2036,
+R03,ORD-038124,4,sku,sku-2023,SKU-2023,
+R03,ORD-038222,3,sku,sku-2025,SKU-2025,
+R03,ORD-038633,2,sku,sku-2018,SKU-2018,
+R03,ORD-038735,1,sku,sku-2027,SKU-2027,
+R03,ORD-039164,1,sku,sku-2027,SKU-2027,
+R03,ORD-039231,2,sku,sku-2018,SKU-2018,
+R03,ORD-039338,2,sku,sku-2027,SKU-2027,
+R04,ORD-000020,2,list_price,"7,99",7.99,
+R04,ORD-000130,2,list_price,"43,99",43.99,
+R04,ORD-000236,1,list_price,"43,99",43.99,
+R04,ORD-000415,2,list_price,"11,99",11.99,
+R04,ORD-000508,1,list_price,"17,99",17.99,
+R04,ORD-000813,1,list_price,"18,99",18.99,
+R04,ORD-000971,1,list_price,"18,99",18.99,
+R04,ORD-001027,1,list_price,"13,49",13.49,
+R04,ORD-001114,1,list_price,"4,99",4.99,
+R04,ORD-001383,1,list_price,"14,99",14.99,
+R04,ORD-001409,1,list_price,"28,99",28.99,
+R04,ORD-001441,2,list_price,"16,99",16.99,
+R04,ORD-001522,2,list_price,"38,99",38.99,
+R04,ORD-001733,1,list_price,"31,99",31.99,
+R04,ORD-001781,2,list_price,"11,99",11.99,
+R04,ORD-001857,1,list_price,"118,99",118.99,
+R04,ORD-002081,1,list_price,"28,99",28.99,
+R04,ORD-002207,1,list_price,"16,99",16.99,
+R04,ORD-002299,1,list_price,"4,99",4.99,
+R04,ORD-002324,1,list_price,"14,99",14.99,
+R04,ORD-002373,1,list_price,"33,99",33.99,
+R04,ORD-002445,1,list_price,"35,99",35.99,
+R04,ORD-002457,1,list_price,"13,49",13.49,
+R04,ORD-002517,2,list_price,"28,99",28.99,
+R04,ORD-002569,1,list_price,"20,99",20.99,
+R04,ORD-002696,2,list_price,"18,99",18.99,
+R04,ORD-002724,1,list_price,"16,99",16.99,
+R04,ORD-002835,1,list_price,"12,99",12.99,
+R04,ORD-002841,1,list_price,"16,99",16.99,
+R04,ORD-002960,3,list_price,"6,99",6.99,
+R04,ORD-002970,1,list_price,"43,99",43.99,
+R04,ORD-003386,1,list_price,"18,99",18.99,
+R04,ORD-003724,1,list_price,"13,49",13.49,
+R04,ORD-003813,1,list_price,"28,99",28.99,
+R04,ORD-003889,1,list_price,"14,99",14.99,
+R04,ORD-003951,1,list_price,"16,99",16.99,
+R04,ORD-004066,1,list_price,"28,99",28.99,
+R04,ORD-004101,2,list_price,"20,99",20.99,
+R04,ORD-004212,1,list_price,"4,99",4.99,
+R04,ORD-004230,3,list_price,"25,99",25.99,
+R04,ORD-004259,1,list_price,"24,99",24.99,
+R04,ORD-004474,2,list_price,"31,99",31.99,
+R04,ORD-004532,2,list_price,"38,99",38.99,
+R04,ORD-004627,2,list_price,"14,99",14.99,
+R04,ORD-004686,1,list_price,"4,99",4.99,
+R04,ORD-004831,3,list_price,"12,99",12.99,
+R04,ORD-004852,1,list_price,"28,99",28.99,
+R04,ORD-004932,1,list_price,"20,99",20.99,
+R04,ORD-005044,1,list_price,"51,99",51.99,
+R04,ORD-005098,2,list_price,"20,99",20.99,
+R04,ORD-005143,2,list_price,"58,99",58.99,
+R04,ORD-005259,1,list_price,"13,49",13.49,
+R04,ORD-005404,1,list_price,"14,99",14.99,
+R04,ORD-005480,1,list_price,"4,99",4.99,
+R04,ORD-005490,1,list_price,"38,99",38.99,
+R04,ORD-005694,3,list_price,"38,99",38.99,
+R04,ORD-005860,1,list_price,"16,99",16.99,
+R04,ORD-005882,2,list_price,"20,99",20.99,
+R04,ORD-006012,2,list_price,"58,99",58.99,
+R04,ORD-006087,1,list_price,"61,99",61.99,
+R04,ORD-006134,1,list_price,"13,49",13.49,
+R04,ORD-006423,2,list_price,"11,99",11.99,
+R04,ORD-007060,2,list_price,"18,99",18.99,
+R04,ORD-007069,1,list_price,"14,99",14.99,
+R04,ORD-007080,1,list_price,"20,99",20.99,
+R04,ORD-007176,1,list_price,"28,99",28.99,
+R04,ORD-007285,1,list_price,"12,99",12.99,
+R04,ORD-007392,1,list_price,"28,99",28.99,
+R04,ORD-007454,2,list_price,"10,99",10.99,
+R04,ORD-007808,2,list_price,"11,99",11.99,
+R04,ORD-007864,1,list_price,"18,99",18.99,
+R04,ORD-007935,1,list_price,"61,99",61.99,
+R04,ORD-008220,1,list_price,"33,99",33.99,
+R04,ORD-008429,1,list_price,"10,99",10.99,
+R04,ORD-008564,1,list_price,"4,99",4.99,
+R04,ORD-008578,2,list_price,"31,99",31.99,
+R04,ORD-008583,1,list_price,"35,99",35.99,
+R04,ORD-008737,2,list_price,"14,99",14.99,
+R04,ORD-008781,1,list_price,"24,99",24.99,
+R04,ORD-008904,1,list_price,"20,99",20.99,
+R04,ORD-008930,1,list_price,"13,49",13.49,
+R04,ORD-009025,3,list_price,"14,99",14.99,
+R04,ORD-009213,1,list_price,"33,99",33.99,
+R04,ORD-009246,3,list_price,"13,49",13.49,
+R04,ORD-009539,1,list_price,"10,99",10.99,
+R04,ORD-009734,2,list_price,"14,99",14.99,
+R04,ORD-009932,1,list_price,"13,49",13.49,
+R04,ORD-010001,1,list_price,"51,99",51.99,
+R04,ORD-010016,2,list_price,"12,99",12.99,
+R04,ORD-010146,1,list_price,"7,99",7.99,
+R04,ORD-010147,1,list_price,"35,99",35.99,
+R04,ORD-010384,1,list_price,"48,99",48.99,
+R04,ORD-010451,2,list_price,"14,99",14.99,
+R04,ORD-010718,1,list_price,"20,99",20.99,
+R04,ORD-010728,2,list_price,"20,99",20.99,
+R04,ORD-010951,1,list_price,"11,99",11.99,
+R04,ORD-011057,1,list_price,"13,49",13.49,
+R04,ORD-011099,1,list_price,"13,49",13.49,
+R04,ORD-011558,1,list_price,"17,99",17.99,
+R04,ORD-011688,1,list_price,"48,99",48.99,
+R04,ORD-011837,3,list_price,"19,99",19.99,
+R04,ORD-011863,1,list_price,"16,99",16.99,
+R04,ORD-012106,1,list_price,"97,99",97.99,
+R04,ORD-012642,2,list_price,"21,99",21.99,
+R04,ORD-012801,3,list_price,"21,99",21.99,
+R04,ORD-012960,1,list_price,"32,99",32.99,
+R04,ORD-013299,1,list_price,"29,99",29.99,
+R04,ORD-013308,1,list_price,"29,99",29.99,
+R04,ORD-013308,2,list_price,"11,49",11.49,
+R04,ORD-013311,1,list_price,"17,49",17.49,
+R04,ORD-013366,1,list_price,"19,99",19.99,
+R04,ORD-013414,2,list_price,"49,99",49.99,
+R04,ORD-013488,1,list_price,"114,99",114.99,
+R04,ORD-013557,1,list_price,"4,99",4.99,
+R04,ORD-013836,1,list_price,"13,99",13.99,
+R04,ORD-014109,2,list_price,"19,49",19.49,
+R04,ORD-014559,1,list_price,"19,49",19.49,
+R04,ORD-014907,2,list_price,"21,99",21.99,
+R04,ORD-015052,4,list_price,"13,49",13.49,
+R04,ORD-015062,1,list_price,"13,49",13.49,
+R04,ORD-015113,1,list_price,"13,99",13.99,
+R04,ORD-015346,1,list_price,"13,99",13.99,
+R04,ORD-015533,2,list_price,"19,49",19.49,
+R04,ORD-015851,1,list_price,"39,99",39.99,
+R04,ORD-015882,1,list_price,"11,49",11.49,
+R04,ORD-015894,1,list_price,"13,99",13.99,
+R04,ORD-016000,1,list_price,"19,49",19.49,
+R04,ORD-016079,1,list_price,"32,99",32.99,
+R04,ORD-016084,1,list_price,"60,99",60.99,
+R04,ORD-016305,1,list_price,"39,99",39.99,
+R04,ORD-016348,2,list_price,"15,49",15.49,
+R04,ORD-016417,1,list_price,"18,49",18.49,
+R04,ORD-016440,1,list_price,"21,99",21.99,
+R04,ORD-016525,1,list_price,"59,99",59.99,
+R04,ORD-016729,1,list_price,"21,99",21.99,
+R04,ORD-016778,1,list_price,"53,99",53.99,
+R04,ORD-016817,2,list_price,"26,99",26.99,
+R04,ORD-017006,1,list_price,"15,49",15.49,
+R04,ORD-017038,1,list_price,"18,49",18.49,
+R04,ORD-017097,1,list_price,"39,99",39.99,
+R04,ORD-017162,1,list_price,"19,49",19.49,
+R04,ORD-017169,2,list_price,"11,49",11.49,
+R04,ORD-017475,1,list_price,"59,99",59.99,
+R04,ORD-017582,1,list_price,"4,99",4.99,
+R04,ORD-017651,1,list_price,"39,99",39.99,
+R04,ORD-017816,1,list_price,"21,99",21.99,
+R04,ORD-017922,1,list_price,"53,99",53.99,
+R04,ORD-018167,1,list_price,"59,99",59.99,
+R04,ORD-018202,2,list_price,"11,49",11.49,
+R04,ORD-018419,1,list_price,"4,99",4.99,
+R04,ORD-018448,2,list_price,"11,49",11.49,
+R04,ORD-018531,1,list_price,"7,99",7.99,
+R04,ORD-018782,3,list_price,"7,99",7.99,
+R04,ORD-018990,1,list_price,"53,99",53.99,
+R04,ORD-019117,1,list_price,"92,99",92.99,
+R04,ORD-019245,1,list_price,"47,99",47.99,
+R04,ORD-019386,2,list_price,"29,99",29.99,
+R04,ORD-019388,1,list_price,"144,99",144.99,
+R04,ORD-019481,1,list_price,"47,99",47.99,
+R04,ORD-019613,2,list_price,"29,99",29.99,
+R04,ORD-019673,2,list_price,"15,49",15.49,
+R04,ORD-020090,1,list_price,"26,99",26.99,
+R04,ORD-020160,1,list_price,"27,99",27.99,
+R04,ORD-020263,2,list_price,"19,49",19.49,
+R04,ORD-020451,1,list_price,"7,99",7.99,
+R04,ORD-020532,3,list_price,"19,99",19.99,
+R04,ORD-020574,1,list_price,"11,99",11.99,
+R04,ORD-020603,1,list_price,"12,49",12.49,
+R04,ORD-020691,1,list_price,"19,99",19.99,
+R04,ORD-020727,1,list_price,"34,99",34.99,
+R04,ORD-020743,1,list_price,"97,99",97.99,
+R04,ORD-020816,1,list_price,"97,99",97.99,
+R04,ORD-020864,2,list_price,"122,99",122.99,
+R04,ORD-020954,2,list_price,"19,49",19.49,
+R04,ORD-021155,1,list_price,"19,49",19.49,
+R04,ORD-021253,2,list_price,"23,99",23.99,
+R04,ORD-021502,2,list_price,"97,99",97.99,
+R04,ORD-021540,2,list_price,"39,99",39.99,
+R04,ORD-022028,2,list_price,"11,99",11.99,
+R04,ORD-022164,1,list_price,"59,99",59.99,
+R04,ORD-022288,1,list_price,"7,99",7.99,
+R04,ORD-022324,2,list_price,"60,99",60.99,
+R04,ORD-022325,1,list_price,"97,99",97.99,
+R04,ORD-022328,2,list_price,"19,49",19.49,
+R04,ORD-022358,3,list_price,"13,49",13.49,
+R04,ORD-022359,1,list_price,"13,49",13.49,
+R04,ORD-022576,1,list_price,"17,49",17.49,
+R04,ORD-022801,2,list_price,"19,49",19.49,
+R04,ORD-022908,1,list_price,"45,99",45.99,
+R04,ORD-023038,1,list_price,"13,99",13.99,
+R04,ORD-023050,1,list_price,"47,99",47.99,
+R04,ORD-023080,1,list_price,"23,99",23.99,
+R04,ORD-023252,1,list_price,"23,99",23.99,
+R04,ORD-023425,3,list_price,"13,99",13.99,
+R04,ORD-023450,2,list_price,"19,49",19.49,
+R04,ORD-023488,1,list_price,"29,99",29.99,
+R04,ORD-023495,4,list_price,"21,99",21.99,
+R04,ORD-023505,1,list_price,"23,99",23.99,
+R04,ORD-023800,1,list_price,"51,99",51.99,
+R04,ORD-023881,1,list_price,"34,99",34.99,
+R04,ORD-024015,1,list_price,"47,99",47.99,
+R04,ORD-024073,1,list_price,"19,99",19.99,
+R04,ORD-024167,3,list_price,"17,49",17.49,
+R04,ORD-024189,1,list_price,"45,99",45.99,
+R04,ORD-024236,1,list_price,"19,49",19.49,
+R04,ORD-024273,1,list_price,"12,49",12.49,
+R04,ORD-024414,1,list_price,"32,99",32.99,
+R04,ORD-024419,2,list_price,"18,49",18.49,
+R04,ORD-024541,3,list_price,"13,99",13.99,
+R04,ORD-024620,1,list_price,"4,99",4.99,
+R04,ORD-024871,1,list_price,"12,49",12.49,
+R04,ORD-025310,1,list_price,"23,99",23.99,
+R04,ORD-025367,2,list_price,"53,99",53.99,
+R04,ORD-025381,1,list_price,"4,99",4.99,
+R04,ORD-025668,1,list_price,"12,49",12.49,
+R04,ORD-025930,1,list_price,"14,49",14.49,
+R04,ORD-025954,1,list_price,"19,99",19.99,
+R04,ORD-026010,1,list_price,"18,49",18.49,
+R04,ORD-026095,1,list_price,"20,99",20.99,
+R04,ORD-026294,2,list_price,"7,49",7.49,
+R04,ORD-026310,1,list_price,"17,99",17.99,
+R04,ORD-026896,1,list_price,"11,49",11.49,
+R04,ORD-027237,1,list_price,"31,99",31.99,
+R04,ORD-027498,1,list_price,"13,99",13.99,
+R04,ORD-027839,2,list_price,"5,49",5.49,
+R04,ORD-028090,1,list_price,"35,99",35.99,
+R04,ORD-028172,1,list_price,"40,99",40.99,
+R04,ORD-028192,1,list_price,"55,99",55.99,
+R04,ORD-028386,1,list_price,"18,49",18.49,
+R04,ORD-028469,1,list_price,"19,99",19.99,
+R04,ORD-028550,2,list_price,"21,99",21.99,
+R04,ORD-028597,1,list_price,"8,49",8.49,
+R04,ORD-028620,1,list_price,"21,99",21.99,
+R04,ORD-028636,3,list_price,"17,99",17.99,
+R04,ORD-029152,3,list_price,"19,99",19.99,
+R04,ORD-029217,1,list_price,"11,49",11.49,
+R04,ORD-029432,1,list_price,"13,99",13.99,
+R04,ORD-029509,2,list_price,"21,99",21.99,
+R04,ORD-029517,1,list_price,"57,99",57.99,
+R04,ORD-029622,1,list_price,"45,99",45.99,
+R04,ORD-029732,1,list_price,"11,49",11.49,
+R04,ORD-029853,2,list_price,"14,49",14.49,
+R04,ORD-030033,1,list_price,"15,99",15.99,
+R04,ORD-030109,1,list_price,"18,49",18.49,
+R04,ORD-030254,2,list_price,"35,99",35.99,
+R04,ORD-030299,2,list_price,"21,99",21.99,
+R04,ORD-030310,4,list_price,"17,99",17.99,
+R04,ORD-030412,1,list_price,"21,99",21.99,
+R04,ORD-030435,1,list_price,"19,99",19.99,
+R04,ORD-030511,2,list_price,"17,99",17.99,
+R04,ORD-030514,1,list_price,"57,99",57.99,
+R04,ORD-030530,1,list_price,"30,99",30.99,
+R04,ORD-030545,1,list_price,"19,99",19.99,
+R04,ORD-030552,1,list_price,"20,99",20.99,
+R04,ORD-030563,1,list_price,"5,49",5.49,
+R04,ORD-030727,2,list_price,"5,49",5.49,
+R04,ORD-030905,2,list_price,"30,99",30.99,
+R04,ORD-030953,3,list_price,"11,49",11.49,
+R04,ORD-031077,2,list_price,"40,99",40.99,
+R04,ORD-031389,2,list_price,"18,49",18.49,
+R04,ORD-031552,4,list_price,"33,99",33.99,
+R04,ORD-031559,2,list_price,"33,99",33.99,
+R04,ORD-031678,1,list_price,"95,99",95.99,
+R04,ORD-031811,3,list_price,"21,99",21.99,
+R04,ORD-031832,1,list_price,"21,99",21.99,
+R04,ORD-031846,4,list_price,"19,99",19.99,
+R04,ORD-031934,1,list_price,"5,49",5.49,
+R04,ORD-032001,1,list_price,"15,99",15.99,
+R04,ORD-032107,1,list_price,"111,99",111.99,
+R04,ORD-032192,1,list_price,"19,99",19.99,
+R04,ORD-032209,1,list_price,"19,99",19.99,
+R04,ORD-032469,1,list_price,"100,99",100.99,
+R04,ORD-032638,1,list_price,"17,99",17.99,
+R04,ORD-033029,1,list_price,"33,99",33.99,
+R04,ORD-033093,2,list_price,"100,99",100.99,
+R04,ORD-033367,1,list_price,"57,99",57.99,
+R04,ORD-033368,2,list_price,"7,49",7.49,
+R04,ORD-033459,1,list_price,"35,99",35.99,
+R04,ORD-033470,2,list_price,"5,49",5.49,
+R04,ORD-033474,1,list_price,"19,99",19.99,
+R04,ORD-033783,1,list_price,"26,99",26.99,
+R04,ORD-034306,1,list_price,"35,99",35.99,
+R04,ORD-034378,1,list_price,"12,49",12.49,
+R04,ORD-034655,1,list_price,"14,49",14.49,
+R04,ORD-034715,1,list_price,"14,49",14.49,
+R04,ORD-034949,2,list_price,"139,99",139.99,
+R04,ORD-034978,1,list_price,"19,99",19.99,
+R04,ORD-034983,1,list_price,"47,99",47.99,
+R04,ORD-035171,1,list_price,"21,99",21.99,
+R04,ORD-035212,1,list_price,"45,99",45.99,
+R04,ORD-035388,1,list_price,"18,49",18.49,
+R04,ORD-035696,3,list_price,"14,49",14.49,
+R04,ORD-035797,2,list_price,"40,99",40.99,
+R04,ORD-035907,1,list_price,"19,99",19.99,
+R04,ORD-035938,2,list_price,"35,99",35.99,
+R04,ORD-035966,1,list_price,"13,99",13.99,
+R04,ORD-036188,1,list_price,"5,49",5.49,
+R04,ORD-036231,1,list_price,"11,49",11.49,
+R04,ORD-036282,1,list_price,"23,99",23.99,
+R04,ORD-036285,1,list_price,"14,49",14.49,
+R04,ORD-036417,1,list_price,"100,99",100.99,
+R04,ORD-036425,1,list_price,"95,99",95.99,
+R04,ORD-036596,2,list_price,"18,49",18.49,
+R04,ORD-036654,1,list_price,"17,99",17.99,
+R04,ORD-036790,1,list_price,"5,49",5.49,
+R04,ORD-036814,1,list_price,"18,99",18.99,
+R04,ORD-036841,1,list_price,"21,99",21.99,
+R04,ORD-037000,2,list_price,"19,99",19.99,
+R04,ORD-037024,2,list_price,"5,49",5.49,
+R04,ORD-037170,1,list_price,"45,99",45.99,
+R04,ORD-037213,2,list_price,"23,99",23.99,
+R04,ORD-037260,2,list_price,"20,99",20.99,
+R04,ORD-037354,2,list_price,"19,99",19.99,
+R04,ORD-037367,2,list_price,"40,99",40.99,
+R04,ORD-037457,1,list_price,"19,99",19.99,
+R04,ORD-037474,1,list_price,"14,49",14.49,
+R04,ORD-037567,1,list_price,"19,99",19.99,
+R04,ORD-037582,3,list_price,"33,99",33.99,
+R04,ORD-037774,1,list_price,"8,49",8.49,
+R04,ORD-037827,1,list_price,"19,99",19.99,
+R04,ORD-037950,2,list_price,"8,49",8.49,
+R04,ORD-038239,1,list_price,"17,99",17.99,
+R04,ORD-038284,1,list_price,"18,49",18.49,
+R04,ORD-038309,1,list_price,"19,99",19.99,
+R04,ORD-038375,1,list_price,"11,49",11.49,
+R04,ORD-038438,1,list_price,"18,99",18.99,
+R04,ORD-038528,1,list_price,"40,99",40.99,
+R04,ORD-038654,2,list_price,"13,99",13.99,
+R04,ORD-038705,1,list_price,"26,99",26.99,
+R04,ORD-038888,1,list_price,"15,99",15.99,
+R04,ORD-039011,1,list_price,"45,99",45.99,
+R04,ORD-039088,1,list_price,"5,49",5.49,
+R04,ORD-039113,1,list_price,"63,99",63.99,
+R04,ORD-039144,1,list_price,"45,99",45.99,
+R04,ORD-039160,1,list_price,"35,99",35.99,
+R04,ORD-039196,2,list_price,"33,99",33.99,
+R04,ORD-039288,1,list_price,"20,99",20.99,
+R05,ORD-000266,1,quantity,-2,2,
+R05,ORD-000377,1,quantity,-1,1,
+R05,ORD-001116,1,quantity,-3,3,
+R05,ORD-001148,1,quantity,-1,1,
+R05,ORD-001312,1,quantity,-3,3,
+R05,ORD-001595,1,quantity,-1,1,
+R05,ORD-002000,1,quantity,-1,1,
+R05,ORD-003164,1,quantity,-1,1,
+R05,ORD-004321,1,quantity,-2,2,
+R05,ORD-005055,1,quantity,-1,1,
+R05,ORD-005605,1,quantity,-2,2,
+R05,ORD-005628,1,quantity,-1,1,
+R05,ORD-005798,1,quantity,-1,1,
+R05,ORD-006341,1,quantity,-1,1,
+R05,ORD-006369,1,quantity,-1,1,
+R05,ORD-006770,1,quantity,-1,1,
+R05,ORD-008598,1,quantity,-1,1,
+R05,ORD-008755,1,quantity,-3,3,
+R05,ORD-009366,1,quantity,-2,2,
+R05,ORD-009552,1,quantity,-1,1,
+R05,ORD-009685,1,quantity,-1,1,
+R05,ORD-010133,1,quantity,-2,2,
+R05,ORD-010202,1,quantity,-2,2,
+R05,ORD-010503,1,quantity,-1,1,
+R05,ORD-010534,1,quantity,-1,1,
+R05,ORD-010708,1,quantity,-1,1,
+R05,ORD-011643,1,quantity,-1,1,
+R05,ORD-012064,1,quantity,-1,1,
+R05,ORD-012263,1,quantity,-1,1,
+R05,ORD-012368,1,quantity,-1,1,
+R05,ORD-012459,1,quantity,-1,1,
+R05,ORD-013077,1,quantity,-1,1,
+R05,ORD-014169,1,quantity,-1,1,
+R05,ORD-014345,1,quantity,-3,3,
+R05,ORD-014405,1,quantity,-1,1,
+R05,ORD-014579,1,quantity,-2,2,
+R05,ORD-014631,1,quantity,-1,1,
+R05,ORD-015004,1,quantity,-1,1,
+R05,ORD-015429,1,quantity,-1,1,
+R05,ORD-017172,1,quantity,-1,1,
+R05,ORD-017537,1,quantity,-1,1,
+R05,ORD-018220,1,quantity,-1,1,
+R05,ORD-019794,1,quantity,-1,1,
+R05,ORD-019797,1,quantity,-2,2,
+R05,ORD-019847,1,quantity,-1,1,
+R05,ORD-020041,1,quantity,-1,1,
+R05,ORD-020442,1,quantity,-1,1,
+R05,ORD-020566,1,quantity,-2,2,
+R05,ORD-021164,1,quantity,-1,1,
+R05,ORD-021362,1,quantity,-1,1,
+R05,ORD-021505,1,quantity,-1,1,
+R05,ORD-021650,1,quantity,-1,1,
+R05,ORD-021915,1,quantity,-1,1,
+R05,ORD-022983,1,quantity,-2,2,
+R05,ORD-023228,1,quantity,-3,3,
+R05,ORD-024277,1,quantity,-2,2,
+R05,ORD-024588,1,quantity,-2,2,
+R05,ORD-024598,1,quantity,-2,2,
+R05,ORD-025444,1,quantity,-1,1,
+R05,ORD-025510,1,quantity,-1,1,
+R05,ORD-025515,1,quantity,-1,1,
+R05,ORD-025649,1,quantity,-2,2,
+R05,ORD-025849,1,quantity,-2,2,
+R05,ORD-025960,1,quantity,-1,1,
+R05,ORD-026204,1,quantity,-1,1,
+R05,ORD-026291,1,quantity,-1,1,
+R05,ORD-026332,1,quantity,-2,2,
+R05,ORD-026354,1,quantity,-3,3,
+R05,ORD-026369,1,quantity,-1,1,
+R05,ORD-026415,1,quantity,-1,1,
+R05,ORD-026482,1,quantity,-1,1,
+R05,ORD-026829,1,quantity,-2,2,
+R05,ORD-027355,1,quantity,-1,1,
+R05,ORD-027589,1,quantity,-1,1,
+R05,ORD-027962,1,quantity,-2,2,
+R05,ORD-028074,1,quantity,-1,1,
+R05,ORD-028275,1,quantity,-1,1,
+R05,ORD-029327,1,quantity,-1,1,
+R05,ORD-029402,1,quantity,-1,1,
+R05,ORD-029492,1,quantity,-1,1,
+R05,ORD-029691,1,quantity,-3,3,
+R05,ORD-029926,1,quantity,-1,1,
+R05,ORD-030405,1,quantity,-1,1,
+R05,ORD-030786,1,quantity,-1,1,
+R05,ORD-031079,1,quantity,-3,3,
+R05,ORD-031525,1,quantity,-1,1,
+R05,ORD-032257,1,quantity,-2,2,
+R05,ORD-032499,1,quantity,-1,1,
+R05,ORD-032771,1,quantity,-1,1,
+R05,ORD-033017,1,quantity,-1,1,
+R05,ORD-033163,1,quantity,-1,1,
+R05,ORD-033594,1,quantity,-1,1,
+R05,ORD-033655,1,quantity,-1,1,
+R05,ORD-033812,1,quantity,-1,1,
+R05,ORD-033875,1,quantity,-1,1,
+R05,ORD-033883,1,quantity,-2,2,
+R05,ORD-034172,1,quantity,-1,1,
+R05,ORD-034361,1,quantity,-1,1,
+R05,ORD-034390,1,quantity,-3,3,
+R05,ORD-034395,1,quantity,-2,2,
+R05,ORD-035539,1,quantity,-3,3,
+R05,ORD-035574,1,quantity,-1,1,
+R05,ORD-035964,1,quantity,-1,1,
+R05,ORD-036598,1,quantity,-1,1,
+R05,ORD-036810,1,quantity,-2,2,
+R05,ORD-037339,1,quantity,-2,2,
+R05,ORD-037583,1,quantity,-3,3,
+R05,ORD-037884,1,quantity,-1,1,
+R05,ORD-038048,1,quantity,-2,2,
+R05,ORD-038096,1,quantity,-1,1,
+R05,ORD-038168,1,quantity,-1,1,
+R05,ORD-038848,1,quantity,-1,1,
+R06,ORD-000018,2,order_date,01.01.2023,2023-01-01,
+R06,ORD-000070,3,order_date,03.01.2023,2023-01-03,
+R06,ORD-000081,1,order_date,03.01.2023,2023-01-03,
+R06,ORD-000130,1,order_date,05.01.2023,2023-01-05,
+R06,ORD-000438,1,order_date,14.01.2023,2023-01-14,
+R06,ORD-000464,3,order_date,15.01.2023,2023-01-15,
+R06,ORD-000482,1,order_date,15.01.2023,2023-01-15,
+R06,ORD-000764,2,order_date,25.01.2023,2023-01-25,
+R06,ORD-000891,1,order_date,29.01.2023,2023-01-29,
+R06,ORD-000988,1,order_date,01.02.2023,2023-02-01,
+R06,ORD-001129,1,order_date,07.02.2023,2023-02-07,
+R06,ORD-001467,1,order_date,18.02.2023,2023-02-18,
+R06,ORD-001484,1,order_date,18.02.2023,2023-02-18,
+R06,ORD-001677,1,order_date,25.02.2023,2023-02-25,
+R06,ORD-001757,5,order_date,28.02.2023,2023-02-28,
+R06,ORD-001803,1,order_date,02.03.2023,2023-03-02,
+R06,ORD-002011,1,order_date,09.03.2023,2023-03-09,
+R06,ORD-002022,1,order_date,09.03.2023,2023-03-09,
+R06,ORD-002085,1,order_date,11.03.2023,2023-03-11,
+R06,ORD-002154,1,order_date,14.03.2023,2023-03-14,
+R06,ORD-002405,1,order_date,23.03.2023,2023-03-23,
+R06,ORD-002438,1,order_date,25.03.2023,2023-03-25,
+R06,ORD-002719,1,order_date,02.04.2023,2023-04-02,
+R06,ORD-002720,2,order_date,02.04.2023,2023-04-02,
+R06,ORD-002768,1,order_date,04.04.2023,2023-04-04,
+R06,ORD-002827,2,order_date,07.04.2023,2023-04-07,
+R06,ORD-002846,1,order_date,07.04.2023,2023-04-07,
+R06,ORD-002963,1,order_date,11.04.2023,2023-04-11,
+R06,ORD-002995,1,order_date,12.04.2023,2023-04-12,
+R06,ORD-003008,1,order_date,12.04.2023,2023-04-12,
+R06,ORD-003024,1,order_date,13.04.2023,2023-04-13,
+R06,ORD-003133,4,order_date,15.04.2023,2023-04-15,
+R06,ORD-003227,1,order_date,19.04.2023,2023-04-19,
+R06,ORD-003252,3,order_date,20.04.2023,2023-04-20,
+R06,ORD-003377,3,order_date,24.04.2023,2023-04-24,
+R06,ORD-003389,2,order_date,24.04.2023,2023-04-24,
+R06,ORD-003451,1,order_date,27.04.2023,2023-04-27,
+R06,ORD-003641,1,order_date,03.05.2023,2023-05-03,
+R06,ORD-003658,2,order_date,03.05.2023,2023-05-03,
+R06,ORD-003683,1,order_date,04.05.2023,2023-05-04,
+R06,ORD-003712,1,order_date,05.05.2023,2023-05-05,
+R06,ORD-003842,1,order_date,09.05.2023,2023-05-09,
+R06,ORD-003924,1,order_date,12.05.2023,2023-05-12,
+R06,ORD-003997,4,order_date,14.05.2023,2023-05-14,
+R06,ORD-004102,3,order_date,17.05.2023,2023-05-17,
+R06,ORD-004248,1,order_date,21.05.2023,2023-05-21,
+R06,ORD-004489,2,order_date,30.05.2023,2023-05-30,
+R06,ORD-004509,1,order_date,31.05.2023,2023-05-31,
+R06,ORD-004617,2,order_date,03.06.2023,2023-06-03,
+R06,ORD-004994,1,order_date,15.06.2023,2023-06-15,
+R06,ORD-005012,3,order_date,16.06.2023,2023-06-16,
+R06,ORD-005167,1,order_date,19.06.2023,2023-06-19,
+R06,ORD-005277,1,order_date,22.06.2023,2023-06-22,
+R06,ORD-005292,3,order_date,22.06.2023,2023-06-22,
+R06,ORD-005313,2,order_date,23.06.2023,2023-06-23,
+R06,ORD-005356,1,order_date,24.06.2023,2023-06-24,
+R06,ORD-005412,1,order_date,25.06.2023,2023-06-25,
+R06,ORD-005439,1,order_date,26.06.2023,2023-06-26,
+R06,ORD-005446,1,order_date,27.06.2023,2023-06-27,
+R06,ORD-005491,2,order_date,28.06.2023,2023-06-28,
+R06,ORD-005495,1,order_date,28.06.2023,2023-06-28,
+R06,ORD-005556,2,order_date,30.06.2023,2023-06-30,
+R06,ORD-005672,1,order_date,04.07.2023,2023-07-04,
+R06,ORD-005769,2,order_date,08.07.2023,2023-07-08,
+R06,ORD-005839,1,order_date,10.07.2023,2023-07-10,
+R06,ORD-006137,1,order_date,20.07.2023,2023-07-20,
+R06,ORD-006215,1,order_date,22.07.2023,2023-07-22,
+R06,ORD-006387,2,order_date,27.07.2023,2023-07-27,
+R06,ORD-006454,1,order_date,29.07.2023,2023-07-29,
+R06,ORD-006461,2,order_date,29.07.2023,2023-07-29,
+R06,ORD-006529,4,order_date,31.07.2023,2023-07-31,
+R06,ORD-006564,1,order_date,01.08.2023,2023-08-01,
+R06,ORD-006590,1,order_date,02.08.2023,2023-08-02,
+R06,ORD-006619,2,order_date,03.08.2023,2023-08-03,
+R06,ORD-006627,2,order_date,03.08.2023,2023-08-03,
+R06,ORD-006651,1,order_date,04.08.2023,2023-08-04,
+R06,ORD-006941,1,order_date,13.08.2023,2023-08-13,
+R06,ORD-006975,1,order_date,14.08.2023,2023-08-14,
+R06,ORD-007027,1,order_date,16.08.2023,2023-08-16,
+R06,ORD-007099,1,order_date,18.08.2023,2023-08-18,
+R06,ORD-007140,1,order_date,20.08.2023,2023-08-20,
+R06,ORD-007448,1,order_date,29.08.2023,2023-08-29,
+R06,ORD-007463,1,order_date,30.08.2023,2023-08-30,
+R06,ORD-007465,1,order_date,30.08.2023,2023-08-30,
+R06,ORD-007478,1,order_date,30.08.2023,2023-08-30,
+R06,ORD-007499,1,order_date,31.08.2023,2023-08-31,
+R06,ORD-007646,1,order_date,05.09.2023,2023-09-05,
+R06,ORD-007647,2,order_date,05.09.2023,2023-09-05,
+R06,ORD-007677,1,order_date,06.09.2023,2023-09-06,
+R06,ORD-007896,1,order_date,11.09.2023,2023-09-11,
+R06,ORD-007909,1,order_date,12.09.2023,2023-09-12,
+R06,ORD-007985,1,order_date,14.09.2023,2023-09-14,
+R06,ORD-008108,2,order_date,18.09.2023,2023-09-18,
+R06,ORD-008265,3,order_date,23.09.2023,2023-09-23,
+R06,ORD-008307,2,order_date,24.09.2023,2023-09-24,
+R06,ORD-008371,1,order_date,27.09.2023,2023-09-27,
+R06,ORD-008455,2,order_date,30.09.2023,2023-09-30,
+R06,ORD-008586,1,order_date,04.10.2023,2023-10-04,
+R06,ORD-008617,1,order_date,05.10.2023,2023-10-05,
+R06,ORD-008897,3,order_date,14.10.2023,2023-10-14,
+R06,ORD-008961,1,order_date,16.10.2023,2023-10-16,
+R06,ORD-009075,1,order_date,20.10.2023,2023-10-20,
+R06,ORD-009120,2,order_date,21.10.2023,2023-10-21,
+R06,ORD-009159,1,order_date,22.10.2023,2023-10-22,
+R06,ORD-009357,1,order_date,29.10.2023,2023-10-29,
+R06,ORD-009406,1,order_date,31.10.2023,2023-10-31,
+R06,ORD-009424,1,order_date,31.10.2023,2023-10-31,
+R06,ORD-009493,1,order_date,02.11.2023,2023-11-02,
+R06,ORD-009517,1,order_date,03.11.2023,2023-11-03,
+R06,ORD-009631,1,order_date,06.11.2023,2023-11-06,
+R06,ORD-009651,1,order_date,07.11.2023,2023-11-07,
+R06,ORD-009652,1,order_date,07.11.2023,2023-11-07,
+R06,ORD-009754,1,order_date,10.11.2023,2023-11-10,
+R06,ORD-009947,2,order_date,15.11.2023,2023-11-15,
+R06,ORD-010050,1,order_date,17.11.2023,2023-11-17,
+R06,ORD-010078,1,order_date,18.11.2023,2023-11-18,
+R06,ORD-010165,1,order_date,20.11.2023,2023-11-20,
+R06,ORD-010229,1,order_date,21.11.2023,2023-11-21,
+R06,ORD-010338,1,order_date,24.11.2023,2023-11-24,
+R06,ORD-010339,1,order_date,24.11.2023,2023-11-24,
+R06,ORD-010530,1,order_date,27.11.2023,2023-11-27,
+R06,ORD-010548,2,order_date,27.11.2023,2023-11-27,
+R06,ORD-010613,1,order_date,29.11.2023,2023-11-29,
+R06,ORD-010714,1,order_date,02.12.2023,2023-12-02,
+R06,ORD-010786,1,order_date,03.12.2023,2023-12-03,
+R06,ORD-010850,1,order_date,06.12.2023,2023-12-06,
+R06,ORD-010897,1,order_date,07.12.2023,2023-12-07,
+R06,ORD-011170,1,order_date,14.12.2023,2023-12-14,
+R06,ORD-011178,1,order_date,14.12.2023,2023-12-14,
+R06,ORD-011342,2,order_date,18.12.2023,2023-12-18,
+R06,ORD-011404,1,order_date,20.12.2023,2023-12-20,
+R06,ORD-011472,1,order_date,22.12.2023,2023-12-22,
+R06,ORD-011805,1,order_date,28.12.2023,2023-12-28,
+R06,ORD-012120,1,order_date,04.01.2024,2024-01-04,
+R06,ORD-012147,2,order_date,05.01.2024,2024-01-05,
+R06,ORD-012147,3,order_date,05.01.2024,2024-01-05,
+R06,ORD-012175,1,order_date,05.01.2024,2024-01-05,
+R06,ORD-012199,1,order_date,06.01.2024,2024-01-06,
+R06,ORD-012219,1,order_date,06.01.2024,2024-01-06,
+R06,ORD-012249,2,order_date,07.01.2024,2024-01-07,
+R06,ORD-012284,2,order_date,08.01.2024,2024-01-08,
+R06,ORD-012285,1,order_date,08.01.2024,2024-01-08,
+R06,ORD-012433,1,order_date,12.01.2024,2024-01-12,
+R06,ORD-012702,3,order_date,19.01.2024,2024-01-19,
+R06,ORD-012828,1,order_date,23.01.2024,2024-01-23,
+R06,ORD-012924,1,order_date,26.01.2024,2024-01-26,
+R06,ORD-013071,2,order_date,31.01.2024,2024-01-31,
+R06,ORD-013145,1,order_date,02.02.2024,2024-02-02,
+R06,ORD-013581,1,order_date,15.02.2024,2024-02-15,
+R06,ORD-013606,1,order_date,16.02.2024,2024-02-16,
+R06,ORD-013828,1,order_date,22.02.2024,2024-02-22,
+R06,ORD-013976,1,order_date,27.02.2024,2024-02-27,
+R06,ORD-013982,2,order_date,27.02.2024,2024-02-27,
+R06,ORD-014181,3,order_date,04.03.2024,2024-03-04,
+R06,ORD-014242,2,order_date,06.03.2024,2024-03-06,
+R06,ORD-014278,1,order_date,07.03.2024,2024-03-07,
+R06,ORD-014350,2,order_date,09.03.2024,2024-03-09,
+R06,ORD-014442,3,order_date,13.03.2024,2024-03-13,
+R06,ORD-014456,1,order_date,13.03.2024,2024-03-13,
+R06,ORD-014546,1,order_date,16.03.2024,2024-03-16,
+R06,ORD-014737,1,order_date,22.03.2024,2024-03-22,
+R06,ORD-014742,1,order_date,22.03.2024,2024-03-22,
+R06,ORD-014750,1,order_date,22.03.2024,2024-03-22,
+R06,ORD-014763,1,order_date,22.03.2024,2024-03-22,
+R06,ORD-014847,2,order_date,25.03.2024,2024-03-25,
+R06,ORD-014890,3,order_date,26.03.2024,2024-03-26,
+R06,ORD-015061,1,order_date,31.03.2024,2024-03-31,
+R06,ORD-015112,1,order_date,01.04.2024,2024-04-01,
+R06,ORD-015148,2,order_date,02.04.2024,2024-04-02,
+R06,ORD-015440,1,order_date,11.04.2024,2024-04-11,
+R06,ORD-015802,1,order_date,20.04.2024,2024-04-20,
+R06,ORD-015877,1,order_date,22.04.2024,2024-04-22,
+R06,ORD-016211,2,order_date,03.05.2024,2024-05-03,
+R06,ORD-016432,1,order_date,10.05.2024,2024-05-10,
+R06,ORD-016515,1,order_date,12.05.2024,2024-05-12,
+R06,ORD-016535,1,order_date,12.05.2024,2024-05-12,
+R06,ORD-016587,1,order_date,14.05.2024,2024-05-14,
+R06,ORD-016596,1,order_date,14.05.2024,2024-05-14,
+R06,ORD-016626,1,order_date,15.05.2024,2024-05-15,
+R06,ORD-016701,2,order_date,17.05.2024,2024-05-17,
+R06,ORD-016723,1,order_date,18.05.2024,2024-05-18,
+R06,ORD-016745,2,order_date,18.05.2024,2024-05-18,
+R06,ORD-016851,1,order_date,21.05.2024,2024-05-21,
+R06,ORD-016865,2,order_date,22.05.2024,2024-05-22,
+R06,ORD-017113,1,order_date,29.05.2024,2024-05-29,
+R06,ORD-017362,1,order_date,05.06.2024,2024-06-05,
+R06,ORD-017364,1,order_date,05.06.2024,2024-06-05,
+R06,ORD-017419,1,order_date,06.06.2024,2024-06-06,
+R06,ORD-017504,1,order_date,09.06.2024,2024-06-09,
+R06,ORD-017512,2,order_date,09.06.2024,2024-06-09,
+R06,ORD-017538,2,order_date,10.06.2024,2024-06-10,
+R06,ORD-017878,2,order_date,19.06.2024,2024-06-19,
+R06,ORD-017995,1,order_date,21.06.2024,2024-06-21,
+R06,ORD-018087,1,order_date,24.06.2024,2024-06-24,
+R06,ORD-018100,1,order_date,25.06.2024,2024-06-25,
+R06,ORD-018118,1,order_date,25.06.2024,2024-06-25,
+R06,ORD-018144,1,order_date,26.06.2024,2024-06-26,
+R06,ORD-018180,1,order_date,28.06.2024,2024-06-28,
+R06,ORD-018205,1,order_date,29.06.2024,2024-06-29,
+R06,ORD-018463,1,order_date,06.07.2024,2024-07-06,
+R06,ORD-018707,1,order_date,14.07.2024,2024-07-14,
+R06,ORD-018709,1,order_date,14.07.2024,2024-07-14,
+R06,ORD-019051,2,order_date,24.07.2024,2024-07-24,
+R06,ORD-019119,1,order_date,25.07.2024,2024-07-25,
+R06,ORD-019121,1,order_date,25.07.2024,2024-07-25,
+R06,ORD-019154,1,order_date,26.07.2024,2024-07-26,
+R06,ORD-019286,2,order_date,29.07.2024,2024-07-29,
+R06,ORD-019329,1,order_date,31.07.2024,2024-07-31,
+R06,ORD-019388,3,order_date,02.08.2024,2024-08-02,
+R06,ORD-019733,1,order_date,14.08.2024,2024-08-14,
+R06,ORD-019820,2,order_date,17.08.2024,2024-08-17,
+R06,ORD-019966,1,order_date,21.08.2024,2024-08-21,
+R06,ORD-020034,2,order_date,23.08.2024,2024-08-23,
+R06,ORD-020165,1,order_date,26.08.2024,2024-08-26,
+R06,ORD-020188,1,order_date,27.08.2024,2024-08-27,
+R06,ORD-020248,2,order_date,28.08.2024,2024-08-28,
+R06,ORD-020340,1,order_date,30.08.2024,2024-08-30,
+R06,ORD-020385,1,order_date,01.09.2024,2024-09-01,
+R06,ORD-020531,1,order_date,06.09.2024,2024-09-06,
+R06,ORD-020577,1,order_date,07.09.2024,2024-09-07,
+R06,ORD-020724,1,order_date,12.09.2024,2024-09-12,
+R06,ORD-020752,1,order_date,13.09.2024,2024-09-13,
+R06,ORD-020867,1,order_date,16.09.2024,2024-09-16,
+R06,ORD-020889,2,order_date,16.09.2024,2024-09-16,
+R06,ORD-021019,2,order_date,20.09.2024,2024-09-20,
+R06,ORD-021038,1,order_date,21.09.2024,2024-09-21,
+R06,ORD-021192,1,order_date,25.09.2024,2024-09-25,
+R06,ORD-021245,2,order_date,27.09.2024,2024-09-27,
+R06,ORD-021248,1,order_date,27.09.2024,2024-09-27,
+R06,ORD-021381,1,order_date,01.10.2024,2024-10-01,
+R06,ORD-021407,4,order_date,02.10.2024,2024-10-02,
+R06,ORD-021424,1,order_date,02.10.2024,2024-10-02,
+R06,ORD-021485,1,order_date,04.10.2024,2024-10-04,
+R06,ORD-021572,1,order_date,06.10.2024,2024-10-06,
+R06,ORD-021639,1,order_date,07.10.2024,2024-10-07,
+R06,ORD-022097,1,order_date,19.10.2024,2024-10-19,
+R06,ORD-022162,1,order_date,21.10.2024,2024-10-21,
+R06,ORD-022201,1,order_date,22.10.2024,2024-10-22,
+R06,ORD-022205,2,order_date,22.10.2024,2024-10-22,
+R06,ORD-022284,1,order_date,25.10.2024,2024-10-25,
+R06,ORD-022410,1,order_date,28.10.2024,2024-10-28,
+R06,ORD-022427,1,order_date,29.10.2024,2024-10-29,
+R06,ORD-022745,1,order_date,06.11.2024,2024-11-06,
+R06,ORD-022752,1,order_date,06.11.2024,2024-11-06,
+R06,ORD-022809,1,order_date,07.11.2024,2024-11-07,
+R06,ORD-022846,1,order_date,08.11.2024,2024-11-08,
+R06,ORD-022851,1,order_date,08.11.2024,2024-11-08,
+R06,ORD-022882,1,order_date,09.11.2024,2024-11-09,
+R06,ORD-022999,1,order_date,11.11.2024,2024-11-11,
+R06,ORD-023104,1,order_date,15.11.2024,2024-11-15,
+R06,ORD-023354,2,order_date,21.11.2024,2024-11-21,
+R06,ORD-023494,2,order_date,24.11.2024,2024-11-24,
+R06,ORD-023528,1,order_date,25.11.2024,2024-11-25,
+R06,ORD-023549,2,order_date,25.11.2024,2024-11-25,
+R06,ORD-023614,1,order_date,27.11.2024,2024-11-27,
+R06,ORD-023621,1,order_date,27.11.2024,2024-11-27,
+R06,ORD-023709,1,order_date,28.11.2024,2024-11-28,
+R06,ORD-023756,1,order_date,29.11.2024,2024-11-29,
+R06,ORD-023826,1,order_date,30.11.2024,2024-11-30,
+R06,ORD-023865,1,order_date,01.12.2024,2024-12-01,
+R06,ORD-023965,1,order_date,02.12.2024,2024-12-02,
+R06,ORD-024020,1,order_date,03.12.2024,2024-12-03,
+R06,ORD-024148,1,order_date,06.12.2024,2024-12-06,
+R06,ORD-024273,2,order_date,09.12.2024,2024-12-09,
+R06,ORD-024367,2,order_date,11.12.2024,2024-12-11,
+R06,ORD-024434,2,order_date,12.12.2024,2024-12-12,
+R06,ORD-024532,2,order_date,15.12.2024,2024-12-15,
+R06,ORD-024760,1,order_date,20.12.2024,2024-12-20,
+R06,ORD-024837,3,order_date,22.12.2024,2024-12-22,
+R06,ORD-024865,3,order_date,23.12.2024,2024-12-23,
+R06,ORD-024935,2,order_date,25.12.2024,2024-12-25,
+R06,ORD-024977,1,order_date,26.12.2024,2024-12-26,
+R06,ORD-025023,1,order_date,26.12.2024,2024-12-26,
+R06,ORD-025117,2,order_date,28.12.2024,2024-12-28,
+R06,ORD-025121,1,order_date,28.12.2024,2024-12-28,
+R06,ORD-025218,1,order_date,29.12.2024,2024-12-29,
+R06,ORD-025286,1,order_date,30.12.2024,2024-12-30,
+R06,ORD-025454,1,order_date,02.01.2025,2025-01-02,
+R06,ORD-025511,5,order_date,04.01.2025,2025-01-04,
+R06,ORD-025532,1,order_date,04.01.2025,2025-01-04,
+R06,ORD-025733,1,order_date,09.01.2025,2025-01-09,
+R06,ORD-025856,1,order_date,11.01.2025,2025-01-11,
+R06,ORD-026097,1,order_date,17.01.2025,2025-01-17,
+R06,ORD-026161,2,order_date,18.01.2025,2025-01-18,
+R06,ORD-026202,1,order_date,20.01.2025,2025-01-20,
+R06,ORD-026217,1,order_date,20.01.2025,2025-01-20,
+R06,ORD-026247,1,order_date,21.01.2025,2025-01-21,
+R06,ORD-026278,2,order_date,22.01.2025,2025-01-22,
+R06,ORD-026395,2,order_date,26.01.2025,2025-01-26,
+R06,ORD-026498,1,order_date,30.01.2025,2025-01-30,
+R06,ORD-026518,3,order_date,30.01.2025,2025-01-30,
+R06,ORD-026663,1,order_date,04.02.2025,2025-02-04,
+R06,ORD-026691,1,order_date,04.02.2025,2025-02-04,
+R06,ORD-026818,1,order_date,08.02.2025,2025-02-08,
+R06,ORD-026900,1,order_date,10.02.2025,2025-02-10,
+R06,ORD-026905,1,order_date,10.02.2025,2025-02-10,
+R06,ORD-026969,2,order_date,11.02.2025,2025-02-11,
+R06,ORD-027012,1,order_date,13.02.2025,2025-02-13,
+R06,ORD-027055,2,order_date,14.02.2025,2025-02-14,
+R06,ORD-027125,1,order_date,16.02.2025,2025-02-16,
+R06,ORD-027189,1,order_date,18.02.2025,2025-02-18,
+R06,ORD-027260,1,order_date,20.02.2025,2025-02-20,
+R06,ORD-027384,1,order_date,23.02.2025,2025-02-23,
+R06,ORD-027847,1,order_date,08.03.2025,2025-03-08,
+R06,ORD-027880,1,order_date,09.03.2025,2025-03-09,
+R06,ORD-028020,1,order_date,12.03.2025,2025-03-12,
+R06,ORD-028064,1,order_date,13.03.2025,2025-03-13,
+R06,ORD-028205,1,order_date,17.03.2025,2025-03-17,
+R06,ORD-028227,1,order_date,18.03.2025,2025-03-18,
+R06,ORD-028259,2,order_date,19.03.2025,2025-03-19,
+R06,ORD-028283,2,order_date,19.03.2025,2025-03-19,
+R06,ORD-028288,1,order_date,20.03.2025,2025-03-20,
+R06,ORD-028289,1,order_date,20.03.2025,2025-03-20,
+R06,ORD-028433,1,order_date,23.03.2025,2025-03-23,
+R06,ORD-028454,1,order_date,24.03.2025,2025-03-24,
+R06,ORD-028510,1,order_date,25.03.2025,2025-03-25,
+R06,ORD-028678,3,order_date,31.03.2025,2025-03-31,
+R06,ORD-028768,1,order_date,02.04.2025,2025-04-02,
+R06,ORD-028828,1,order_date,04.04.2025,2025-04-04,
+R06,ORD-028832,1,order_date,04.04.2025,2025-04-04,
+R06,ORD-028868,1,order_date,05.04.2025,2025-04-05,
+R06,ORD-028965,1,order_date,08.04.2025,2025-04-08,
+R06,ORD-029047,1,order_date,11.04.2025,2025-04-11,
+R06,ORD-029222,2,order_date,15.04.2025,2025-04-15,
+R06,ORD-029578,1,order_date,25.04.2025,2025-04-25,
+R06,ORD-029597,1,order_date,26.04.2025,2025-04-26,
+R06,ORD-029613,1,order_date,26.04.2025,2025-04-26,
+R06,ORD-029625,3,order_date,26.04.2025,2025-04-26,
+R06,ORD-029731,1,order_date,29.04.2025,2025-04-29,
+R06,ORD-029893,2,order_date,03.05.2025,2025-05-03,
+R06,ORD-029935,2,order_date,04.05.2025,2025-05-04,
+R06,ORD-029965,2,order_date,05.05.2025,2025-05-05,
+R06,ORD-030036,1,order_date,07.05.2025,2025-05-07,
+R06,ORD-030108,5,order_date,09.05.2025,2025-05-09,
+R06,ORD-030116,1,order_date,10.05.2025,2025-05-10,
+R06,ORD-030205,1,order_date,12.05.2025,2025-05-12,
+R06,ORD-030288,1,order_date,14.05.2025,2025-05-14,
+R06,ORD-030434,2,order_date,18.05.2025,2025-05-18,
+R06,ORD-030460,1,order_date,19.05.2025,2025-05-19,
+R06,ORD-030474,3,order_date,19.05.2025,2025-05-19,
+R06,ORD-030571,1,order_date,21.05.2025,2025-05-21,
+R06,ORD-030644,1,order_date,23.05.2025,2025-05-23,
+R06,ORD-030842,1,order_date,29.05.2025,2025-05-29,
+R06,ORD-030967,1,order_date,02.06.2025,2025-06-02,
+R06,ORD-030969,3,order_date,02.06.2025,2025-06-02,
+R06,ORD-030997,1,order_date,03.06.2025,2025-06-03,
+R06,ORD-031063,1,order_date,04.06.2025,2025-06-04,
+R06,ORD-031112,2,order_date,06.06.2025,2025-06-06,
+R06,ORD-031128,1,order_date,06.06.2025,2025-06-06,
+R06,ORD-031314,1,order_date,12.06.2025,2025-06-12,
+R06,ORD-031357,1,order_date,13.06.2025,2025-06-13,
+R06,ORD-031364,1,order_date,13.06.2025,2025-06-13,
+R06,ORD-031388,2,order_date,13.06.2025,2025-06-13,
+R06,ORD-031422,1,order_date,14.06.2025,2025-06-14,
+R06,ORD-031432,1,order_date,14.06.2025,2025-06-14,
+R06,ORD-031495,4,order_date,16.06.2025,2025-06-16,
+R06,ORD-031515,3,order_date,17.06.2025,2025-06-17,
+R06,ORD-031554,2,order_date,18.06.2025,2025-06-18,
+R06,ORD-031575,1,order_date,18.06.2025,2025-06-18,
+R06,ORD-031579,4,order_date,18.06.2025,2025-06-18,
+R06,ORD-031595,2,order_date,19.06.2025,2025-06-19,
+R06,ORD-031711,1,order_date,21.06.2025,2025-06-21,
+R06,ORD-031736,1,order_date,22.06.2025,2025-06-22,
+R06,ORD-032101,1,order_date,01.07.2025,2025-07-01,
+R06,ORD-032128,1,order_date,02.07.2025,2025-07-02,
+R06,ORD-032131,1,order_date,02.07.2025,2025-07-02,
+R06,ORD-032143,1,order_date,02.07.2025,2025-07-02,
+R06,ORD-032241,2,order_date,06.07.2025,2025-07-06,
+R06,ORD-032287,1,order_date,08.07.2025,2025-07-08,
+R06,ORD-032297,2,order_date,08.07.2025,2025-07-08,
+R06,ORD-032751,1,order_date,21.07.2025,2025-07-21,
+R06,ORD-032798,1,order_date,22.07.2025,2025-07-22,
+R06,ORD-032864,1,order_date,24.07.2025,2025-07-24,
+R06,ORD-033002,1,order_date,27.07.2025,2025-07-27,
+R06,ORD-033082,1,order_date,29.07.2025,2025-07-29,
+R06,ORD-033219,1,order_date,01.08.2025,2025-08-01,
+R06,ORD-033516,1,order_date,11.08.2025,2025-08-11,
+R06,ORD-033527,2,order_date,11.08.2025,2025-08-11,
+R06,ORD-033772,2,order_date,17.08.2025,2025-08-17,
+R06,ORD-033831,1,order_date,18.08.2025,2025-08-18,
+R06,ORD-033841,1,order_date,18.08.2025,2025-08-18,
+R06,ORD-033845,1,order_date,18.08.2025,2025-08-18,
+R06,ORD-033852,1,order_date,19.08.2025,2025-08-19,
+R06,ORD-033915,1,order_date,20.08.2025,2025-08-20,
+R06,ORD-033953,1,order_date,21.08.2025,2025-08-21,
+R06,ORD-033995,2,order_date,22.08.2025,2025-08-22,
+R06,ORD-034018,1,order_date,23.08.2025,2025-08-23,
+R06,ORD-034102,2,order_date,25.08.2025,2025-08-25,
+R06,ORD-034166,1,order_date,26.08.2025,2025-08-26,
+R06,ORD-034305,1,order_date,30.08.2025,2025-08-30,
+R06,ORD-034332,1,order_date,31.08.2025,2025-08-31,
+R06,ORD-034427,1,order_date,03.09.2025,2025-09-03,
+R06,ORD-034503,1,order_date,05.09.2025,2025-09-05,
+R06,ORD-034557,5,order_date,06.09.2025,2025-09-06,
+R06,ORD-034580,1,order_date,07.09.2025,2025-09-07,
+R06,ORD-034636,1,order_date,09.09.2025,2025-09-09,
+R06,ORD-034680,1,order_date,10.09.2025,2025-09-10,
+R06,ORD-034702,1,order_date,10.09.2025,2025-09-10,
+R06,ORD-034830,2,order_date,14.09.2025,2025-09-14,
+R06,ORD-034836,2,order_date,14.09.2025,2025-09-14,
+R06,ORD-035025,3,order_date,20.09.2025,2025-09-20,
+R06,ORD-035123,3,order_date,22.09.2025,2025-09-22,
+R06,ORD-035159,1,order_date,23.09.2025,2025-09-23,
+R06,ORD-035194,1,order_date,24.09.2025,2025-09-24,
+R06,ORD-035309,1,order_date,27.09.2025,2025-09-27,
+R06,ORD-035409,1,order_date,30.09.2025,2025-09-30,
+R06,ORD-035467,1,order_date,02.10.2025,2025-10-02,
+R06,ORD-035468,1,order_date,02.10.2025,2025-10-02,
+R06,ORD-035703,1,order_date,10.10.2025,2025-10-10,
+R06,ORD-035729,1,order_date,10.10.2025,2025-10-10,
+R06,ORD-036019,1,order_date,18.10.2025,2025-10-18,
+R06,ORD-036053,1,order_date,19.10.2025,2025-10-19,
+R06,ORD-036159,1,order_date,22.10.2025,2025-10-22,
+R06,ORD-036195,1,order_date,23.10.2025,2025-10-23,
+R06,ORD-036236,1,order_date,24.10.2025,2025-10-24,
+R06,ORD-036250,2,order_date,24.10.2025,2025-10-24,
+R06,ORD-036297,1,order_date,26.10.2025,2025-10-26,
+R06,ORD-036351,1,order_date,27.10.2025,2025-10-27,
+R06,ORD-036362,1,order_date,28.10.2025,2025-10-28,
+R06,ORD-036398,1,order_date,29.10.2025,2025-10-29,
+R06,ORD-036507,1,order_date,01.11.2025,2025-11-01,
+R06,ORD-036862,1,order_date,09.11.2025,2025-11-09,
+R06,ORD-036966,1,order_date,12.11.2025,2025-11-12,
+R06,ORD-037001,1,order_date,13.11.2025,2025-11-13,
+R06,ORD-037018,1,order_date,14.11.2025,2025-11-14,
+R06,ORD-037125,1,order_date,16.11.2025,2025-11-16,
+R06,ORD-037187,1,order_date,18.11.2025,2025-11-18,
+R06,ORD-037246,2,order_date,20.11.2025,2025-11-20,
+R06,ORD-037269,1,order_date,20.11.2025,2025-11-20,
+R06,ORD-037529,3,order_date,25.11.2025,2025-11-25,
+R06,ORD-037682,1,order_date,27.11.2025,2025-11-27,
+R06,ORD-037689,1,order_date,27.11.2025,2025-11-27,
+R06,ORD-037984,1,order_date,02.12.2025,2025-12-02,
+R06,ORD-038012,1,order_date,03.12.2025,2025-12-03,
+R06,ORD-038462,2,order_date,13.12.2025,2025-12-13,
+R06,ORD-038596,1,order_date,17.12.2025,2025-12-17,
+R06,ORD-038627,1,order_date,18.12.2025,2025-12-18,
+R06,ORD-038701,1,order_date,19.12.2025,2025-12-19,
+R06,ORD-038734,1,order_date,20.12.2025,2025-12-20,
+R06,ORD-038736,3,order_date,20.12.2025,2025-12-20,
+R06,ORD-038841,1,order_date,23.12.2025,2025-12-23,
+R06,ORD-038855,1,order_date,24.12.2025,2025-12-24,
+R06,ORD-038871,1,order_date,24.12.2025,2025-12-24,
+R06,ORD-038972,1,order_date,26.12.2025,2025-12-26,
+R06,ORD-038978,1,order_date,26.12.2025,2025-12-26,
+R06,ORD-039017,1,order_date,27.12.2025,2025-12-27,
+R06,ORD-039077,1,order_date,27.12.2025,2025-12-27,
+R06,ORD-039086,1,order_date,27.12.2025,2025-12-27,
+R06,ORD-039122,1,order_date,28.12.2025,2025-12-28,
+R06,ORD-039171,1,order_date,29.12.2025,2025-12-29,
+R07,ORD-000478,1,order_date,2203-01-15,2023-01-15,previous and next order are on the same day
+R07,ORD-000620,1,order_date,2203-01-20,2023-01-20,previous and next order are on the same day
+R07,ORD-000965,1,order_date,1923-02-01,2023-02-01,previous and next order are on the same day
+R07,ORD-001067,1,order_date,2203-02-04,2023-02-04,previous and next order are on the same day
+R07,ORD-001276,1,order_date,2203-02-11,2023-02-11,previous and next order are on the same day
+R07,ORD-001298,1,order_date,1923-02-12,2023-02-12,previous and next order are on the same day
+R07,ORD-001303,1,order_date,1923-02-12,2023-02-12,previous and next order are on the same day
+R07,ORD-001499,1,order_date,1923-02-19,2023-02-19,previous and next order are on the same day
+R07,ORD-001610,1,order_date,2203-02-23,2023-02-23,previous and next order are on the same day
+R07,ORD-001645,1,order_date,2203-02-24,2023-02-24,previous and next order are on the same day
+R07,ORD-001928,1,order_date,1923-03-06,2023-03-06,previous and next order are on the same day
+R07,ORD-001999,1,order_date,2203-03-09,2023-03-09,previous and next order are on the same day
+R07,ORD-002617,1,order_date,2203-03-30,2023-03-30,previous and next order are on the same day
+R07,ORD-003396,1,order_date,2203-04-25,2023-04-25,previous and next order are on the same day
+R07,ORD-003550,1,order_date,1923-04-30,2023-04-30,previous and next order are on the same day
+R07,ORD-003604,1,order_date,1923-05-02,2023-05-02,previous and next order are on the same day
+R07,ORD-003688,1,order_date,1923-05-04,2023-05-04,previous and next order are on the same day
+R07,ORD-003699,1,order_date,2203-05-05,2023-05-05,previous and next order are on the same day
+R07,ORD-003741,1,order_date,2203-05-06,2023-05-06,previous and next order are on the same day
+R07,ORD-004312,1,order_date,1923-05-24,2023-05-24,previous and next order are on the same day
+R07,ORD-004493,1,order_date,1923-05-30,2023-05-30,previous and next order are on the same day
+R07,ORD-004715,1,order_date,1923-06-06,2023-06-06,previous and next order are on the same day
+R07,ORD-005241,1,order_date,1923-06-21,2023-06-21,previous and next order are on the same day
+R07,ORD-005282,1,order_date,1923-06-22,2023-06-22,previous and next order are on the same day
+R07,ORD-005311,1,order_date,1923-06-23,2023-06-23,previous and next order are on the same day
+R07,ORD-005706,1,order_date,1923-07-05,2023-07-05,previous and next order are on the same day
+R07,ORD-007538,1,order_date,1923-09-01,2023-09-01,previous and next order are on the same day
+R07,ORD-007846,1,order_date,2203-09-10,2023-09-10,previous and next order are on the same day
+R07,ORD-008620,1,order_date,2203-10-05,2023-10-05,previous and next order are on the same day
+R07,ORD-008946,1,order_date,2203-10-15,2023-10-15,previous and next order are on the same day
+R07,ORD-009245,1,order_date,2203-10-25,2023-10-25,previous and next order are on the same day
+R07,ORD-009427,1,order_date,2203-10-31,2023-10-31,previous and next order are on the same day
+R07,ORD-009494,1,order_date,1923-11-02,2023-11-02,previous and next order are on the same day
+R07,ORD-009758,1,order_date,2203-11-10,2023-11-10,previous and next order are on the same day
+R07,ORD-010836,1,order_date,2203-12-05,2023-12-05,previous and next order are on the same day
+R07,ORD-011319,1,order_date,1923-12-18,2023-12-18,previous and next order are on the same day
+R07,ORD-011752,1,order_date,1923-12-27,2023-12-27,previous and next order are on the same day
+R07,ORD-012410,1,order_date,1924-01-11,2024-01-11,previous and next order are on the same day
+R07,ORD-012542,1,order_date,2204-01-15,2024-01-15,previous and next order are on the same day
+R07,ORD-013136,1,order_date,1924-02-01,2024-02-01,previous and next order are on the same day
+R07,ORD-013169,1,order_date,2204-02-02,2024-02-02,previous and next order are on the same day
+R07,ORD-013819,1,order_date,1924-02-22,2024-02-22,previous and next order are on the same day
+R07,ORD-014004,1,order_date,1924-02-28,2024-02-28,previous and next order are on the same day
+R07,ORD-014042,1,order_date,2204-02-29,2024-02-29,previous and next order are on the same day
+R07,ORD-014230,1,order_date,2204-03-06,2024-03-06,previous and next order are on the same day
+R07,ORD-014298,1,order_date,2204-03-08,2024-03-08,previous and next order are on the same day
+R07,ORD-014872,1,order_date,2204-03-26,2024-03-26,previous and next order are on the same day
+R07,ORD-014915,1,order_date,1924-03-27,2024-03-27,previous and next order are on the same day
+R07,ORD-015596,1,order_date,2204-04-15,2024-04-15,previous and next order are on the same day
+R07,ORD-015730,1,order_date,2204-04-19,2024-04-19,previous and next order are on the same day
+R07,ORD-015768,1,order_date,2204-04-20,2024-04-20,previous and next order are on the same day
+R07,ORD-015968,1,order_date,2204-04-25,2024-04-25,previous and next order are on the same day
+R07,ORD-016278,1,order_date,2204-05-05,2024-05-05,previous and next order are on the same day
+R07,ORD-016564,1,order_date,2204-05-13,2024-05-13,previous and next order are on the same day
+R07,ORD-016595,1,order_date,2204-05-14,2024-05-14,previous and next order are on the same day
+R07,ORD-016662,1,order_date,2204-05-16,2024-05-16,previous and next order are on the same day
+R07,ORD-017108,1,order_date,2204-05-29,2024-05-29,previous and next order are on the same day
+R07,ORD-017314,1,order_date,2204-06-04,2024-06-04,previous and next order are on the same day
+R07,ORD-017548,1,order_date,1924-06-10,2024-06-10,previous and next order are on the same day
+R07,ORD-017566,1,order_date,2204-06-10,2024-06-10,previous and next order are on the same day
+R07,ORD-017608,1,order_date,1924-06-12,2024-06-12,previous and next order are on the same day
+R07,ORD-018237,1,order_date,1924-06-29,2024-06-29,previous and next order are on the same day
+R07,ORD-018444,1,order_date,2204-07-06,2024-07-06,previous and next order are on the same day
+R07,ORD-018667,1,order_date,2204-07-13,2024-07-13,previous and next order are on the same day
+R07,ORD-019066,1,order_date,2204-07-24,2024-07-24,previous and next order are on the same day
+R07,ORD-019978,1,order_date,1924-08-21,2024-08-21,previous and next order are on the same day
+R07,ORD-020374,1,order_date,2204-08-31,2024-08-31,previous and next order are on the same day
+R07,ORD-020547,1,order_date,2204-09-06,2024-09-06,previous and next order are on the same day
+R07,ORD-021382,1,order_date,2204-10-01,2024-10-01,previous and next order are on the same day
+R07,ORD-021745,1,order_date,2204-10-10,2024-10-10,previous and next order are on the same day
+R07,ORD-022055,1,order_date,1924-10-18,2024-10-18,previous and next order are on the same day
+R07,ORD-022089,1,order_date,2204-10-19,2024-10-19,previous and next order are on the same day
+R07,ORD-022126,1,order_date,1924-10-20,2024-10-20,previous and next order are on the same day
+R07,ORD-022294,1,order_date,2204-10-25,2024-10-25,previous and next order are on the same day
+R07,ORD-022362,1,order_date,1924-10-27,2024-10-27,previous and next order are on the same day
+R07,ORD-022492,1,order_date,1924-10-31,2024-10-31,previous and next order are on the same day
+R07,ORD-023142,1,order_date,1924-11-16,2024-11-16,previous and next order are on the same day
+R07,ORD-023249,1,order_date,1924-11-18,2024-11-18,previous and next order are on the same day
+R07,ORD-023377,1,order_date,1924-11-22,2024-11-22,previous and next order are on the same day
+R07,ORD-023636,1,order_date,1924-11-27,2024-11-27,previous and next order are on the same day
+R07,ORD-023953,1,order_date,2204-12-02,2024-12-02,previous and next order are on the same day
+R07,ORD-024070,1,order_date,1924-12-05,2024-12-05,previous and next order are on the same day
+R07,ORD-024081,1,order_date,1924-12-05,2024-12-05,previous and next order are on the same day
+R07,ORD-024100,1,order_date,1924-12-05,2024-12-05,previous and next order are on the same day
+R07,ORD-024126,1,order_date,1924-12-06,2024-12-06,previous and next order are on the same day
+R07,ORD-024249,1,order_date,1924-12-09,2024-12-09,previous and next order are on the same day
+R07,ORD-024265,1,order_date,1924-12-09,2024-12-09,previous and next order are on the same day
+R07,ORD-024613,1,order_date,2204-12-17,2024-12-17,previous and next order are on the same day
+R07,ORD-025427,1,order_date,1925-01-01,2025-01-01,previous and next order are on the same day
+R07,ORD-025611,1,order_date,2205-01-06,2025-01-06,previous and next order are on the same day
+R07,ORD-025850,1,order_date,2205-01-11,2025-01-11,previous and next order are on the same day
+R07,ORD-025972,1,order_date,2205-01-14,2025-01-14,previous and next order are on the same day
+R07,ORD-026062,1,order_date,1925-01-16,2025-01-16,previous and next order are on the same day
+R07,ORD-026174,1,order_date,2205-01-19,2025-01-19,previous and next order are on the same day
+R07,ORD-026208,1,order_date,1925-01-20,2025-01-20,previous and next order are on the same day
+R07,ORD-026672,1,order_date,1925-02-04,2025-02-04,previous and next order are on the same day
+R07,ORD-026903,1,order_date,1925-02-10,2025-02-10,previous and next order are on the same day
+R07,ORD-027153,1,order_date,2205-02-17,2025-02-17,previous and next order are on the same day
+R07,ORD-027188,1,order_date,1925-02-18,2025-02-18,previous and next order are on the same day
+R07,ORD-027398,1,order_date,2205-02-24,2025-02-24,previous and next order are on the same day
+R07,ORD-027547,1,order_date,1925-03-01,2025-03-01,previous and next order are on the same day
+R07,ORD-027623,1,order_date,2205-03-02,2025-03-02,previous and next order are on the same day
+R07,ORD-028356,1,order_date,2205-03-21,2025-03-21,previous and next order are on the same day
+R07,ORD-028779,1,order_date,1925-04-03,2025-04-03,previous and next order are on the same day
+R07,ORD-028910,1,order_date,2205-04-06,2025-04-06,previous and next order are on the same day
+R07,ORD-029050,1,order_date,1925-04-11,2025-04-11,previous and next order are on the same day
+R07,ORD-029070,1,order_date,1925-04-11,2025-04-11,previous and next order are on the same day
+R07,ORD-029206,1,order_date,1925-04-15,2025-04-15,previous and next order are on the same day
+R07,ORD-029234,1,order_date,2205-04-16,2025-04-16,previous and next order are on the same day
+R07,ORD-029304,1,order_date,2205-04-18,2025-04-18,previous and next order are on the same day
+R07,ORD-030326,1,order_date,1925-05-15,2025-05-15,previous and next order are on the same day
+R07,ORD-030687,1,order_date,1925-05-24,2025-05-24,previous and next order are on the same day
+R07,ORD-030894,1,order_date,1925-05-31,2025-05-31,previous and next order are on the same day
+R07,ORD-031085,1,order_date,2205-06-05,2025-06-05,previous and next order are on the same day
+R07,ORD-031529,1,order_date,1925-06-17,2025-06-17,previous and next order are on the same day
+R07,ORD-031623,1,order_date,1925-06-19,2025-06-19,previous and next order are on the same day
+R07,ORD-031675,1,order_date,1925-06-20,2025-06-20,previous and next order are on the same day
+R07,ORD-032029,1,order_date,1925-06-29,2025-06-29,previous and next order are on the same day
+R07,ORD-032456,1,order_date,1925-07-12,2025-07-12,previous and next order are on the same day
+R07,ORD-032506,1,order_date,2205-07-14,2025-07-14,previous and next order are on the same day
+R07,ORD-032995,1,order_date,2205-07-27,2025-07-27,previous and next order are on the same day
+R07,ORD-033107,1,order_date,1925-07-29,2025-07-29,previous and next order are on the same day
+R07,ORD-033501,1,order_date,2205-08-10,2025-08-10,previous and next order are on the same day
+R07,ORD-033757,1,order_date,2205-08-16,2025-08-16,previous and next order are on the same day
+R07,ORD-034348,1,order_date,1925-08-31,2025-08-31,previous and next order are on the same day
+R07,ORD-034494,1,order_date,2205-09-05,2025-09-05,previous and next order are on the same day
+R07,ORD-034666,1,order_date,2205-09-09,2025-09-09,previous and next order are on the same day
+R07,ORD-035602,1,order_date,1925-10-06,2025-10-06,previous and next order are on the same day
+R07,ORD-036315,1,order_date,1925-10-26,2025-10-26,previous and next order are on the same day
+R07,ORD-036410,1,order_date,1925-10-29,2025-10-29,previous and next order are on the same day
+R07,ORD-036531,1,order_date,2205-11-02,2025-11-02,previous and next order are on the same day
+R07,ORD-036929,1,order_date,2205-11-11,2025-11-11,previous and next order are on the same day
+R07,ORD-037273,1,order_date,2205-11-20,2025-11-20,previous and next order are on the same day
+R07,ORD-038140,1,order_date,1925-12-06,2025-12-06,previous and next order are on the same day
+R07,ORD-038201,1,order_date,1925-12-07,2025-12-07,previous and next order are on the same day
+R07,ORD-038457,1,order_date,1925-12-13,2025-12-13,previous and next order are on the same day
+R07,ORD-038576,1,order_date,1925-12-16,2025-12-16,previous and next order are on the same day
+R07,ORD-038727,1,order_date,2205-12-20,2025-12-20,previous and next order are on the same day
+R07,ORD-039165,1,order_date,2205-12-29,2025-12-29,previous and next order are on the same day
+R07,ORD-039321,1,order_date,1925-12-31,2025-12-31,previous and next order are on the same day
+R08,ORD-000112,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-000227,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-000291,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-000305,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-000411,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-000447,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-001052,4,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-001734,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-001875,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-002041,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-002062,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-002110,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-002152,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-002396,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-002412,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-002600,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-003163,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-003205,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-003231,4,region,,Turku,"same order, else customers.csv"
+R08,ORD-003445,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-003494,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-003531,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-003759,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-003807,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-004120,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-004440,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-004575,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-005468,4,region,,Oulu,"same order, else customers.csv"
+R08,ORD-005549,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-005847,3,region,,Turku,"same order, else customers.csv"
+R08,ORD-005849,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-006076,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-006614,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-006776,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-006832,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-007235,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-007743,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-007921,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-008034,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-008057,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-008082,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-008087,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-008265,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-008462,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-009020,4,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-009027,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-009075,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-009471,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-009992,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-010123,5,region,,Turku,"same order, else customers.csv"
+R08,ORD-010154,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-010383,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-010653,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-010694,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-010764,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-010837,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-010988,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-010997,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011277,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011287,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011327,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011416,4,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-011576,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-011673,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-011741,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011754,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011845,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-011869,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-011900,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-011917,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-012229,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-012714,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-013056,4,region,,Oulu,"same order, else customers.csv"
+R08,ORD-013355,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-013444,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-013445,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-013517,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-013569,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-013654,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-013733,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-013891,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-014079,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-014101,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-014283,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-014305,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-014684,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-014944,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-015012,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-015074,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-015080,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-015401,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-015541,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-015543,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-015593,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-015712,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-015714,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-015798,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-015871,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-015945,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-016011,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-016514,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-016515,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-016579,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-016890,4,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017032,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017203,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017409,4,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017412,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017487,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-017490,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017588,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-017668,3,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-017669,3,region,,Oulu,"same order, else customers.csv"
+R08,ORD-017772,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-017803,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-017841,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-018166,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-018284,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-018316,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-018388,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-018863,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-018876,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-018914,3,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-019097,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-019146,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-019195,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-019710,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-019889,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-020044,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-020139,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-020153,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-020343,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-020431,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-020757,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-020980,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-021096,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-021225,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-021229,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-021274,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-021350,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-021475,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-021642,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-021652,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-021707,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-022151,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-022302,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-022303,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-022314,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-022461,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-022564,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-022566,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-022568,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-022890,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-022953,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-023025,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-023037,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-023203,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-023279,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-023366,4,region,,Turku,"same order, else customers.csv"
+R08,ORD-023482,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-023559,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-023737,4,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-023748,4,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-024021,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-024025,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-024051,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-024532,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-024542,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-024591,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-024947,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-025035,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-025114,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-025150,3,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-025211,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-025348,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-025390,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-025433,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-025488,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-025499,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-025511,4,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-025728,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-025975,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-026022,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-026150,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-026159,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-026179,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-026207,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-026212,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-026551,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-026627,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-026836,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-026877,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-027190,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-027322,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-027525,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-027567,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-027612,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-027617,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-027913,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-028049,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-028333,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-028375,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-028714,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-029110,3,region,,Turku,"same order, else customers.csv"
+R08,ORD-029139,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-029142,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-029148,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-029155,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-029400,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-029438,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-029453,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-029475,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-029563,3,region,,Oulu,"same order, else customers.csv"
+R08,ORD-030446,3,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-030654,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-030712,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-030713,4,region,,Tampere,"same order, else customers.csv"
+R08,ORD-030785,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-030794,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-030815,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-030903,3,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-031049,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-031199,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-031422,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-031506,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-031697,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-031728,5,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-031837,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-032028,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-032325,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-032497,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-032569,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-032575,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-032669,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-032791,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-033140,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-033332,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-033364,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-033620,1,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-033651,4,region,,Tampere,"same order, else customers.csv"
+R08,ORD-033686,3,region,,Tampere,"same order, else customers.csv"
+R08,ORD-033770,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-033831,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-034077,3,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-034284,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-034725,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-034914,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-035151,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-035295,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-035342,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-035416,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-035532,2,region,,Tampere,"same order, else customers.csv"
+R08,ORD-035543,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-035665,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-036111,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-036301,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-036307,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-036370,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-036482,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-036595,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-036873,2,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-037000,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-037089,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-037178,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-037364,2,region,,Oulu,"same order, else customers.csv"
+R08,ORD-037414,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-037459,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-037589,4,region,,Tampere,"same order, else customers.csv"
+R08,ORD-037612,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-037675,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-037695,1,region,,Tampere,"same order, else customers.csv"
+R08,ORD-037813,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-038060,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-038195,1,region,,Turku,"same order, else customers.csv"
+R08,ORD-038539,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-038552,2,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-038697,3,region,,Kuopio,"same order, else customers.csv"
+R08,ORD-038782,1,region,,Helsinki,"same order, else customers.csv"
+R08,ORD-039261,1,region,,Oulu,"same order, else customers.csv"
+R08,ORD-039297,2,region,,Turku,"same order, else customers.csv"
+R08,ORD-039342,1,region,,Tampere,"same order, else customers.csv"
+R09,ORD-000163,1,customer_id,,GUEST,same order
+R09,ORD-000388,4,customer_id,,GUEST,same order
+R09,ORD-000404,3,customer_id,,GUEST,same order
+R09,ORD-000509,2,customer_id,,GUEST,same order
+R09,ORD-000613,1,customer_id,,GUEST,same order
+R09,ORD-000819,2,customer_id,,GUEST,same order
+R09,ORD-000941,1,customer_id,,GUEST,same order
+R09,ORD-000948,2,customer_id,,GUEST,same order
+R09,ORD-001173,2,customer_id,,GUEST,same order
+R09,ORD-001527,1,customer_id,,GUEST,same order
+R09,ORD-002790,1,customer_id,,GUEST,same order
+R09,ORD-002844,1,customer_id,,GUEST,same order
+R09,ORD-002889,1,customer_id,,GUEST,same order
+R09,ORD-003062,2,customer_id,,GUEST,same order
+R09,ORD-003268,2,customer_id,,C00927,same order
+R09,ORD-003372,1,customer_id,,GUEST,same order
+R09,ORD-003819,1,customer_id,,GUEST,same order
+R09,ORD-003970,2,customer_id,,GUEST,same order
+R09,ORD-004193,2,customer_id,,GUEST,same order
+R09,ORD-004214,2,customer_id,,GUEST,same order
+R09,ORD-004402,2,customer_id,,GUEST,same order
+R09,ORD-004575,3,customer_id,,GUEST,same order
+R09,ORD-004600,1,customer_id,,GUEST,same order
+R09,ORD-004757,2,customer_id,,GUEST,same order
+R09,ORD-005071,1,customer_id,,C01564,same order
+R09,ORD-005270,2,customer_id,,GUEST,same order
+R09,ORD-005526,1,customer_id,,GUEST,same order
+R09,ORD-005637,2,customer_id,,GUEST,same order
+R09,ORD-005641,1,customer_id,,GUEST,same order
+R09,ORD-005842,1,customer_id,,GUEST,same order
+R09,ORD-006226,1,customer_id,,C00667,same order
+R09,ORD-006773,3,customer_id,,GUEST,same order
+R09,ORD-007512,1,customer_id,,C01623,same order
+R09,ORD-007900,2,customer_id,,C01685,same order
+R09,ORD-007940,4,customer_id,,GUEST,same order
+R09,ORD-008042,1,customer_id,,GUEST,same order
+R09,ORD-008188,2,customer_id,,GUEST,same order
+R09,ORD-008222,1,customer_id,,GUEST,same order
+R09,ORD-008308,1,customer_id,,GUEST,same order
+R09,ORD-008338,1,customer_id,,C00904,same order
+R09,ORD-008430,2,customer_id,,GUEST,same order
+R09,ORD-008642,2,customer_id,,GUEST,same order
+R09,ORD-008644,2,customer_id,,GUEST,same order
+R09,ORD-008797,2,customer_id,,GUEST,same order
+R09,ORD-008814,1,customer_id,,GUEST,same order
+R09,ORD-009020,1,customer_id,,GUEST,same order
+R09,ORD-009156,2,customer_id,,C00983,same order
+R09,ORD-009172,1,customer_id,,GUEST,same order
+R09,ORD-009600,3,customer_id,,GUEST,same order
+R09,ORD-009902,2,customer_id,,GUEST,same order
+R09,ORD-010172,2,customer_id,,GUEST,same order
+R09,ORD-010460,1,customer_id,,GUEST,same order
+R09,ORD-010598,3,customer_id,,GUEST,same order
+R09,ORD-010761,3,customer_id,,GUEST,same order
+R09,ORD-010875,2,customer_id,,GUEST,same order
+R09,ORD-010978,2,customer_id,,GUEST,same order
+R09,ORD-011534,4,customer_id,,GUEST,same order
+R09,ORD-011667,2,customer_id,,GUEST,same order
+R09,ORD-011727,1,customer_id,,GUEST,same order
+R09,ORD-012025,1,customer_id,,GUEST,same order
+R09,ORD-012264,3,customer_id,,GUEST,same order
+R09,ORD-012281,2,customer_id,,GUEST,same order
+R09,ORD-013010,1,customer_id,,GUEST,same order
+R09,ORD-013062,1,customer_id,,C01720,same order
+R09,ORD-013152,2,customer_id,,GUEST,same order
+R09,ORD-013197,1,customer_id,,GUEST,same order
+R09,ORD-013446,3,customer_id,,C01377,same order
+R09,ORD-013545,1,customer_id,,C01546,same order
+R09,ORD-013583,3,customer_id,,GUEST,same order
+R09,ORD-013588,1,customer_id,,GUEST,same order
+R09,ORD-013845,2,customer_id,,GUEST,same order
+R09,ORD-013847,2,customer_id,,GUEST,same order
+R09,ORD-013879,3,customer_id,,GUEST,same order
+R09,ORD-014096,2,customer_id,,C01383,same order
+R09,ORD-014239,2,customer_id,,C02045,same order
+R09,ORD-014981,1,customer_id,,GUEST,same order
+R09,ORD-015347,2,customer_id,,GUEST,same order
+R09,ORD-015464,3,customer_id,,C02167,same order
+R09,ORD-015641,2,customer_id,,C00285,same order
+R09,ORD-015690,3,customer_id,,GUEST,same order
+R09,ORD-015875,2,customer_id,,GUEST,same order
+R09,ORD-016051,2,customer_id,,GUEST,same order
+R09,ORD-016118,1,customer_id,,GUEST,same order
+R09,ORD-016358,3,customer_id,,C01333,same order
+R09,ORD-016366,2,customer_id,,GUEST,same order
+R09,ORD-016776,1,customer_id,,GUEST,same order
+R09,ORD-017133,2,customer_id,,GUEST,same order
+R09,ORD-017411,2,customer_id,,GUEST,same order
+R09,ORD-017540,2,customer_id,,GUEST,same order
+R09,ORD-017654,2,customer_id,,C02215,same order
+R09,ORD-017772,2,customer_id,,C02329,same order
+R09,ORD-018171,1,customer_id,,GUEST,same order
+R09,ORD-018207,1,customer_id,,GUEST,same order
+R09,ORD-018325,3,customer_id,,GUEST,same order
+R09,ORD-018491,3,customer_id,,GUEST,same order
+R09,ORD-018996,3,customer_id,,GUEST,same order
+R09,ORD-018997,2,customer_id,,GUEST,same order
+R09,ORD-019067,2,customer_id,,C01735,same order
+R09,ORD-019151,1,customer_id,,GUEST,same order
+R09,ORD-019299,2,customer_id,,GUEST,same order
+R09,ORD-019457,1,customer_id,,GUEST,same order
+R09,ORD-019522,2,customer_id,,GUEST,same order
+R09,ORD-019760,2,customer_id,,C02126,same order
+R09,ORD-019859,1,customer_id,,GUEST,same order
+R09,ORD-019989,2,customer_id,,GUEST,same order
+R09,ORD-020505,1,customer_id,,GUEST,same order
+R09,ORD-020569,2,customer_id,,GUEST,same order
+R09,ORD-021130,1,customer_id,,GUEST,same order
+R09,ORD-021267,2,customer_id,,GUEST,same order
+R09,ORD-021347,2,customer_id,,GUEST,same order
+R09,ORD-021680,4,customer_id,,GUEST,same order
+R09,ORD-021816,2,customer_id,,GUEST,same order
+R09,ORD-021817,1,customer_id,,C01707,same order
+R09,ORD-021910,1,customer_id,,GUEST,same order
+R09,ORD-022073,1,customer_id,,GUEST,same order
+R09,ORD-022218,1,customer_id,,GUEST,same order
+R09,ORD-022228,1,customer_id,,GUEST,same order
+R09,ORD-022305,4,customer_id,,C00955,same order
+R09,ORD-022634,1,customer_id,,GUEST,same order
+R09,ORD-022663,2,customer_id,,GUEST,same order
+R09,ORD-022674,3,customer_id,,C01600,same order
+R09,ORD-022808,1,customer_id,,GUEST,same order
+R09,ORD-023161,1,customer_id,,GUEST,same order
+R09,ORD-023168,1,customer_id,,GUEST,same order
+R09,ORD-023275,1,customer_id,,GUEST,same order
+R09,ORD-023555,2,customer_id,,GUEST,same order
+R09,ORD-023579,1,customer_id,,GUEST,same order
+R09,ORD-023590,2,customer_id,,GUEST,same order
+R09,ORD-023795,2,customer_id,,GUEST,same order
+R09,ORD-023814,1,customer_id,,GUEST,same order
+R09,ORD-023983,2,customer_id,,C02179,same order
+R09,ORD-023992,1,customer_id,,GUEST,same order
+R09,ORD-024142,2,customer_id,,GUEST,same order
+R09,ORD-024255,3,customer_id,,GUEST,same order
+R09,ORD-024319,1,customer_id,,GUEST,same order
+R09,ORD-024403,1,customer_id,,GUEST,same order
+R09,ORD-024483,1,customer_id,,GUEST,same order
+R09,ORD-024944,3,customer_id,,GUEST,same order
+R09,ORD-025026,1,customer_id,,GUEST,same order
+R09,ORD-025181,4,customer_id,,GUEST,same order
+R09,ORD-025195,2,customer_id,,GUEST,same order
+R09,ORD-025206,1,customer_id,,C02810,same order
+R09,ORD-025377,1,customer_id,,GUEST,same order
+R09,ORD-025410,1,customer_id,,GUEST,same order
+R09,ORD-025555,1,customer_id,,GUEST,same order
+R09,ORD-025663,2,customer_id,,GUEST,same order
+R09,ORD-025703,2,customer_id,,C02402,same order
+R09,ORD-025792,1,customer_id,,GUEST,same order
+R09,ORD-025905,1,customer_id,,C02808,same order
+R09,ORD-026146,1,customer_id,,GUEST,same order
+R09,ORD-026163,2,customer_id,,GUEST,same order
+R09,ORD-026210,3,customer_id,,GUEST,same order
+R09,ORD-026280,3,customer_id,,GUEST,same order
+R09,ORD-026398,1,customer_id,,C02496,same order
+R09,ORD-026503,2,customer_id,,GUEST,same order
+R09,ORD-026734,2,customer_id,,GUEST,same order
+R09,ORD-026925,1,customer_id,,GUEST,same order
+R09,ORD-027527,2,customer_id,,GUEST,same order
+R09,ORD-027538,2,customer_id,,GUEST,same order
+R09,ORD-027643,2,customer_id,,GUEST,same order
+R09,ORD-027658,3,customer_id,,C02326,same order
+R09,ORD-028216,2,customer_id,,C01834,same order
+R09,ORD-028291,3,customer_id,,C02530,same order
+R09,ORD-028478,3,customer_id,,GUEST,same order
+R09,ORD-028580,1,customer_id,,C02965,same order
+R09,ORD-028671,3,customer_id,,C02873,same order
+R09,ORD-028783,1,customer_id,,GUEST,same order
+R09,ORD-028848,2,customer_id,,GUEST,same order
+R09,ORD-029222,1,customer_id,,GUEST,same order
+R09,ORD-029275,3,customer_id,,C02144,same order
+R09,ORD-029340,2,customer_id,,C02199,same order
+R09,ORD-029530,2,customer_id,,C01383,same order
+R09,ORD-029628,1,customer_id,,C03106,same order
+R09,ORD-029961,2,customer_id,,GUEST,same order
+R09,ORD-030321,1,customer_id,,C03142,same order
+R09,ORD-030713,2,customer_id,,GUEST,same order
+R09,ORD-031095,1,customer_id,,GUEST,same order
+R09,ORD-031180,2,customer_id,,C02139,same order
+R09,ORD-031235,1,customer_id,,GUEST,same order
+R09,ORD-031513,1,customer_id,,GUEST,same order
+R09,ORD-031915,1,customer_id,,GUEST,same order
+R09,ORD-032070,1,customer_id,,GUEST,same order
+R09,ORD-032145,1,customer_id,,GUEST,same order
+R09,ORD-032161,4,customer_id,,GUEST,same order
+R09,ORD-032209,2,customer_id,,C03287,same order
+R09,ORD-032601,1,customer_id,,GUEST,same order
+R09,ORD-032620,1,customer_id,,C02290,same order
+R09,ORD-033076,1,customer_id,,C03111,same order
+R09,ORD-033169,2,customer_id,,GUEST,same order
+R09,ORD-033781,2,customer_id,,GUEST,same order
+R09,ORD-033844,2,customer_id,,C02942,same order
+R09,ORD-033937,2,customer_id,,GUEST,same order
+R09,ORD-034045,3,customer_id,,GUEST,same order
+R09,ORD-034220,3,customer_id,,GUEST,same order
+R09,ORD-034273,2,customer_id,,GUEST,same order
+R09,ORD-034278,1,customer_id,,C03195,same order
+R09,ORD-034473,2,customer_id,,GUEST,same order
+R09,ORD-034849,1,customer_id,,GUEST,same order
+R09,ORD-035235,1,customer_id,,GUEST,same order
+R09,ORD-035804,1,customer_id,,GUEST,same order
+R09,ORD-036108,1,customer_id,,GUEST,same order
+R09,ORD-036194,1,customer_id,,C01332,same order
+R09,ORD-036643,2,customer_id,,C03621,same order
+R09,ORD-036808,4,customer_id,,GUEST,same order
+R09,ORD-037063,1,customer_id,,GUEST,same order
+R09,ORD-037299,3,customer_id,,C02947,same order
+R09,ORD-037334,2,customer_id,,GUEST,same order
+R09,ORD-037335,2,customer_id,,GUEST,same order
+R09,ORD-037373,4,customer_id,,GUEST,same order
+R09,ORD-037678,2,customer_id,,GUEST,same order
+R09,ORD-037929,2,customer_id,,GUEST,same order
+R09,ORD-037949,3,customer_id,,GUEST,same order
+R09,ORD-037960,1,customer_id,,C03038,same order
+R09,ORD-037975,4,customer_id,,GUEST,same order
+R09,ORD-037976,2,customer_id,,C03832,same order
+R09,ORD-038101,1,customer_id,,GUEST,same order
+R09,ORD-038551,1,customer_id,,GUEST,same order
+R09,ORD-038697,2,customer_id,,C02244,same order
+R09,ORD-038749,2,customer_id,,GUEST,same order
+R09,ORD-038832,3,customer_id,,C03653,same order
+R09,ORD-039060,3,customer_id,,C03887,same order
+R10,ORD-000099,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-000383,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-001097,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-001262,1,discount_pct,,0.15,1 - net_revenue / (quantity * list_price)
+R10,ORD-001562,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-001658,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-001691,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-001804,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-001810,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002074,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002259,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002301,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002470,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002640,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002731,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-002788,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-002821,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-003436,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-003464,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-003584,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-003620,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-003908,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-004069,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-004225,1,discount_pct,,0.1,1 - net_revenue / (quantity * list_price)
+R10,ORD-004313,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-004316,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-004450,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-004457,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-004812,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-005002,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-005048,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-005053,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-005537,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-005550,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-005922,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-005943,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-006827,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-006833,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-007092,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-007781,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-008047,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-008411,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-008794,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-008905,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-009118,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-009637,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-009856,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-009883,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-009962,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-009980,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-010307,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-010333,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-010436,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-010513,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-011044,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-011359,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-011413,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-011435,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-011452,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-011536,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-012030,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-013061,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-013183,1,discount_pct,,0.1,1 - net_revenue / (quantity * list_price)
+R10,ORD-013205,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-013209,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-013231,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-013441,1,discount_pct,,0.15,1 - net_revenue / (quantity * list_price)
+R10,ORD-013763,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-013839,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-014191,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-014874,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-015461,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-015885,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-015887,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-015949,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-016103,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-016283,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-016323,1,discount_pct,,0.13,1 - net_revenue / (quantity * list_price)
+R10,ORD-016672,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-016757,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-016924,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-016959,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-017141,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-017163,1,discount_pct,,0.1,1 - net_revenue / (quantity * list_price)
+R10,ORD-017461,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-017630,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-018240,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-018437,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-018503,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-018534,1,discount_pct,,0.1,1 - net_revenue / (quantity * list_price)
+R10,ORD-018647,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-018976,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-018999,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-019008,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-019551,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-019593,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-019749,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-019759,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-019784,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020130,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-020140,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020226,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020467,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020617,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020694,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020722,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020906,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-020956,1,discount_pct,,0.19,1 - net_revenue / (quantity * list_price)
+R10,ORD-021122,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-021346,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-021688,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-021763,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-021934,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-022160,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-022178,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-022895,1,discount_pct,,0.1,1 - net_revenue / (quantity * list_price)
+R10,ORD-022902,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-023522,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-024050,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-024145,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-024146,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-024325,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-024431,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-024470,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-024554,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-024580,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-024940,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-025092,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-025096,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-025128,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-025191,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-025337,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-025564,1,discount_pct,,0.1,1 - net_revenue / (quantity * list_price)
+R10,ORD-025697,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-025887,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-026219,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-026293,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-026596,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-026787,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-026906,1,discount_pct,,0.15,1 - net_revenue / (quantity * list_price)
+R10,ORD-027146,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-027150,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-027350,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-027366,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-027674,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-027675,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-027691,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-027874,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-027920,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028038,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028065,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-028285,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028311,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028345,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028508,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028709,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028775,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-028899,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-029093,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-029297,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-029409,1,discount_pct,,0.15,1 - net_revenue / (quantity * list_price)
+R10,ORD-029421,1,discount_pct,,0.15,1 - net_revenue / (quantity * list_price)
+R10,ORD-029457,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-029862,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-029899,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-030216,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030397,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030583,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030652,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030688,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030716,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030876,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-030979,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-031284,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-031370,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-031379,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-031520,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-031615,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-031821,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-031869,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)
+R10,ORD-031942,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-031995,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-032228,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-032441,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-032800,1,discount_pct,,0.05,1 - net_revenue / (quantity * list_price)
+R10,ORD-032989,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-033030,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-033221,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-033365,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-033431,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-033571,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-033976,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034051,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034063,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034327,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034608,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034647,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034856,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034903,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-034990,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-035065,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-035196,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-035408,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-035605,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-035674,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-035777,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-036113,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-036175,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-036274,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-036470,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-036557,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-037100,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-037139,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-037151,1,discount_pct,,0.13,1 - net_revenue / (quantity * list_price)
+R10,ORD-037332,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-037758,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-037898,1,discount_pct,,0.3,1 - net_revenue / (quantity * list_price)
+R10,ORD-038077,1,discount_pct,,0.14,1 - net_revenue / (quantity * list_price)
+R10,ORD-038092,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-038382,1,discount_pct,,0.12,1 - net_revenue / (quantity * list_price)
+R10,ORD-038416,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-038568,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-038681,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-038806,1,discount_pct,,0.0,1 - net_revenue / (quantity * list_price)
+R10,ORD-039254,1,discount_pct,,0.25,1 - net_revenue / (quantity * list_price)

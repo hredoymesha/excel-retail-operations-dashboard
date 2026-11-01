@@ -1,85 +1,86 @@
-# Advanced Excel Retail Operations Dashboard
+# Excel Retail Operations Dashboard
 
-An advanced Excel portfolio project for sales, profitability, inventory risk, ABC product contribution, and demand forecasting analysis.
+> **All data in this project is synthetic.** The company, products, suppliers and customers are made up, and no real person, brand or business is described. The numbers say nothing about any real retailer.
 
-This project uses a fictional retail/e-commerce company and synthetic 2025 data. It is designed to demonstrate practical Excel business analytics skills for data analyst, business analyst, operations analyst, and IT analyst roles.
+This is an Excel workbook for a fictional Finnish retailer that sells through four channels: online, retail stores, a marketplace and wholesale. A Python companion rebuilds the numbers from the CSV files, so every figure can be checked.
 
-![Dashboard preview](screenshots/dashboard_preview.png)
+Version 1 was a single-year workbook. Version 2 uses three years of daily data, adds the analysis a retail analyst is usually asked for, and tests the workbook against pandas. Version 1 is kept in [`v1/`](v1/). Where version 1 was wrong, [`CHANGELOG.md`](CHANGELOG.md) says so.
 
-## Project Objective
+## Business questions
 
-The goal is to turn raw sales and inventory data into an executive-ready Excel dashboard that helps answer:
+- Where does margin come from, and where does it leak once shipping, fees, discounts and returns are counted?
+- What moved contribution margin between two years: volume, mix, price, discounts, cost or returns?
+- Which SKUs carry the revenue, and which are steady enough to plan around?
+- What should be reordered now, what is overstocked, and what do stock-outs cost?
+- Which forecasting method works for each category, and what does next year look like?
+- Do promotions pay for themselves? What happens if prices, suppliers or demand change?
+- Who are the repeat customers, how fast do cohorts fade, and what is a customer worth?
 
-- Which months, regions, and product categories drive revenue?
-- How profitable is the business after discounts and unit costs?
-- Which inventory items are at risk of stockout or overstock?
-- Which products contribute most to total revenue?
-- What is the next-month revenue forecast under a demand uplift scenario?
+## Key findings
 
-## Workbook Features
+Each figure is computed by the script named next to it. The numbers are for synthetic data and show what the workbook can do, not what retail is like.
 
-- Executive KPI dashboard
-- Native Excel charts for revenue, gross profit, region performance, and inventory status
-- Transaction-level sales dataset
-- SKU and warehouse-level inventory analysis
-- Monthly sales and profitability summary
-- ABC product contribution analysis
-- Three-month moving average forecast model
-- Scenario uplift assumption
-- Conditional formatting for inventory risk
-- Structured tables, filters, formulas, and clean workbook navigation
+- **Margin by channel.** Gross margin is 52.1% over the three years, but contribution margin is 37.3% once shipping, fees and returns come off. Marketplace earns 24.2% against 49.0% for retail. `analysis/kpis.py`
+- **Margin bridge.** From 2024 to 2025 contribution margin moved from 314,713 to 317,479 euros (+2,766). List prices added 19,333 and unit costs took away 9,192. `analysis/kpis.py`
+- **Stock-outs.** In 2025 stock-outs cost 2,088 units, 5.4% of demand, about 49,737 euros of revenue. On the last day 4 SKUs are at or below their reorder point, 10 more have less cover than their lead time and 10 are overstocked. `analysis/abc_xyz.py`
+- **Promotions.** 35 of 73 promotions that have a baseline added gross profit and 38 lost it. Together they changed gross profit by -3,838 euros. Baselines do not remove seasonality, so this is an estimate. `analysis/customers.py`
+- **Returns.** Apparel returns 12.6% of units against 2.0% for office goods. Returns cost 139,089 euros, 5.8% of revenue. The worst SKU is a pair of jeans at 21.6%. `analysis/customers.py`
+- **Customers.** 72% of the 2,217 consumers who bought ordered twice or more, and 47% of 2024 buyers ordered again in 2025. Champions are 19% of scored customers and 40% of their revenue. `analysis/customers.py`
 
-## Files
+The full list is in `outputs/key_findings.csv`.
 
-| File | Description |
-|---|---|
-| `Excel_Retail_Operations_Dashboard.xlsx` | Main Excel workbook |
-| `data/sales_transactions_2025.csv` | Synthetic transaction-level sales data |
-| `data/product_master.csv` | Product, category, cost, price, supplier, and reorder assumptions |
-| `data/inventory_snapshot.csv` | SKU and warehouse-level inventory snapshot |
-| `screenshots/dashboard_preview.png` | Dashboard preview for GitHub |
-| `screenshots/monthly_summary_preview.png` | Monthly summary preview |
-| `methodology.md` | Explanation of the analysis logic and model design |
+## How it was built
 
-## Key Metrics Included
+- **Data.** `tools/generate_data.py` builds three years of daily sales for 42 SKUs in 6 categories, 5 regions, 4 channels and 4,000 customers. It includes a promotion calendar with price elasticity, seasonality, returns, shipping and payment fees, supplier delays and stock-outs. It is seeded, so it gives the same files every time.
+- **Dirty data and cleaning.** A separate export in `data/raw/` carries duplicates, missing values and wrong dates. `tools/clean_data.py` repairs them and logs every change. The cleaned file matches the original exactly.
+- **Workbook.** `tools/build_workbook.py` writes `Excel_Retail_Operations_Dashboard_v2.xlsx` with XlsxWriter: 24 sheets, live formulas over Excel tables, named ranges, drop-downs, conditional formats and native charts. Every input is on the Assumptions sheet.
+- **Checks.** The Checks sheet has 42 tests that compare the workbook with the CSV files and with itself. `tools/verify_workbook.py` recalculates the workbook in LibreOffice and compares 1,415 figures with pandas. `tests/` holds the pytest suite.
 
-- Total revenue
-- Gross profit
-- Gross margin %
-- Units sold
-- Revenue per order
-- Average discount %
-- Inventory value
-- Days of cover
-- Reorder and stockout risk flags
-- Product revenue share
-- Cumulative revenue contribution
-- ABC class
-- Scenario-based next-month revenue forecast
+## What I would do next
 
-## Tools Used
+- Replace the synthetic data with a real extract and see which assumptions break first.
+- Remove seasonality from the promotion baseline, and estimate elasticity with a model instead of averaging promotion lifts.
+- Give the forecast a band that includes uncertainty in level and trend, and test more than three held-back months.
+- Model stock by region and return flows into stock.
+- Add the PivotTable and Power Query layer described in [`docs/manual-steps.md`](docs/manual-steps.md).
 
-- Microsoft Excel
-- Excel formulas
-- Structured tables
-- Conditional formatting
-- Native Excel charts
-- CSV-based sample data
-- Business analysis and dashboard design
+## Limits
 
-## How To Use
+- The data is synthetic and was built from the very rules the analysis then finds again. It shows that the method works. It does not show that the method works on real data.
+- I opened the workbook in desktop Excel 16 on Windows, recalculated it there and took the screenshots from it. I did not test Mac Excel, Excel for the web or Google Sheets. See [`docs/manual-steps.md`](docs/manual-steps.md).
+- The workbook keeps sales at month, SKU, region and channel level. Order-level detail is in the CSV files.
+- Three quarters of order lines have no customer id, so the customer analysis describes identified customers only.
+- Pivot tables, slicers and Power Query are not in the file. A script cannot write them reliably.
 
-1. Download or open `Excel_Retail_Operations_Dashboard.xlsx`.
-2. Start from the `Dashboard` sheet for the executive view.
-3. Review `Sales_Data` and `Inventory_Data` for the source data.
-4. Change assumptions in the `Assumptions` sheet, especially the scenario demand uplift.
-5. Check `Forecast_Model` to see how the forecast changes.
-6. Use filters in the data sheets to explore specific regions, channels, categories, products, or warehouses.
+## Folder map
 
-## Data Privacy
+```
+Excel_Retail_Operations_Dashboard_v2.xlsx   the workbook
+README.md  CHANGELOG.md  LICENSE  requirements.txt
+data/        CSV files (clean) and data/raw/ (dirty export and cleaning log)
+tools/       generate_data.py, clean_data.py, check_data.py, build_workbook.py, verify_workbook.py
+analysis/    pandas versions of the workbook's calculations, one script per topic
+tests/       pytest suite
+docs/        walkthrough.md, methodology.md, data-dictionary.md, manual-steps.md
+outputs/     CSV results, charts, data checks and the workbook parity table
+screenshots/ images you add yourself (see docs/manual-steps.md)
+v1/          version 1, untouched
+```
 
-All data in this project is synthetic and created for portfolio demonstration only. It does not contain real employer, customer, supplier, sales, or fundraising data.
+## How to open it
 
-## Portfolio Positioning
+Open `Excel_Retail_Operations_Dashboard_v2.xlsx` in Excel 2010 or later. If Excel asks, choose Enable Editing. Start on `Start_Here`, then go to `Dashboard` and use the yellow drop-downs. Change inputs on `Assumptions`. `Checks` should show every row as PASS.
 
-This project demonstrates advanced Excel analytics beyond basic reporting. It shows the ability to build a reusable decision-support workbook, connect operational data to business questions, and present insights clearly for non-technical stakeholders.
+## How to reproduce
+
+```
+pip install -r requirements.txt
+python tools/generate_data.py
+python tools/clean_data.py
+python tools/check_data.py
+python analysis/run_all.py
+python tools/build_workbook.py
+python -m pytest tests
+```
+
+`tools/verify_workbook.py` needs LibreOffice and takes several minutes. `python tools/build_workbook.py --no-values` skips the LibreOffice step that stores calculated values in the file.
