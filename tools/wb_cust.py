@@ -249,7 +249,7 @@ def build_promotions(ctx: Ctx) -> None:
         ws.write_formula(r, 5, f"=IF(ISNUMBER(E{x}),E{x},D{x})", ctx.cell(DEC2, bold=True))
         ws.write_formula(r, 6, f"=SUMIFS({col('S')},{col('C')},$A{x})", ctx.cell(EUR))
     ctx.name("el_used", absrange("Promotions", C0 + 2, 5, C0 + 1 + len(CATEGORIES), 5))
-    ws.write(C0 + 8, 0, "Baseline: average daily sales of the same category and channels over up to 56 days before the promotion, leaving out other promotion days and the dip after big ones. Seasonality is not removed, so lifts in November and December are overstated.", ctx.note())
+    ws.merge_range(C0 + 8, 0, C0 + 8, 6, "Baseline: average daily sales of the same category and channels over up to 56 days before the promotion, leaving out other promotion days and the dip after big ones. Seasonality is not removed, so lifts in November and December are overstated.", ctx.note())
     ws.set_row(C0 + 8, 44)
 
     # campaign summary
@@ -269,13 +269,14 @@ def build_promotions(ctx: Ctx) -> None:
     ch = ctx.wb.add_chart({"type": "bar"})
     k1, k2 = K0 + 3, K0 + 2 + len(camps)
     ch.add_series({"name": "Extra gross profit", "categories": f"=Promotions!$A${k1}:$A${k2}", "values": f"=Promotions!$F${k1}:$F${k2}",
-                   "fill": {"color": PAL["teal"]}, "invert_if_negative": True, "invert_if_negative_color": PAL["amber"], "data_labels": {"value": True, "num_format": "#,##0", "font": {"size": 9}}})
+                   "fill": {"color": PAL["teal"]}, "invert_if_negative": True, "invert_if_negative_color": PAL["amber"], "gap": 40,
+                   "data_labels": {"value": True, "num_format": "#,##0", "position": "outside_end", "font": {"size": 9}}})
     ch.set_title({"name": "Extra gross profit by campaign (all years)", "name_font": {"size": 11, "bold": True, "color": PAL["navy"]}})
     ch.set_legend({"none": True})
-    ch.set_y_axis({"reverse": True, "num_font": {"size": 9}})
+    ch.set_y_axis({"reverse": True, "label_position": "low", "num_font": {"size": 9}})
     ch.set_x_axis({"num_format": "#,##0", "major_gridlines": {"visible": True, "line": {"color": "#E3E8EE"}}})
     ch.set_chartarea({"border": {"color": PAL["line"]}})
-    ch.set_size({"width": 560, "height": 330})
+    ch.set_size({"width": 640, "height": 400})
     ws.insert_chart(C0, 8, ch, {"x_offset": 10})
     ws.freeze_panes(3, 1)
 

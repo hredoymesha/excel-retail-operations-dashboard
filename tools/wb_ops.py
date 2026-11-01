@@ -10,7 +10,7 @@ NS = NSKU
 
 
 def waterfall(ctx: Ctx, ws, sheet: str, top: int, left: int, rows: list[tuple[str, str, bool]], title: str,
-              chart_at: tuple[int, int], size=(640, 330)):
+              chart_at: tuple[int, int], size=(640, 330), y_min: float | None = None):
     """Write the helper table for a waterfall and insert the chart.
 
     rows: (label, value formula, is_total). Totals restart the bar from zero; other rows float.
@@ -45,7 +45,10 @@ def waterfall(ctx: Ctx, ws, sheet: str, top: int, left: int, rows: list[tuple[st
         ch.add_series(s)
     ch.set_title({"name": title, "name_font": {"size": 11, "bold": True, "color": PAL["navy"]}})
     ch.set_legend({"position": "bottom", "delete_series": [0], "font": {"size": 9}})
-    ch.set_y_axis({"num_format": "#,##0", "major_gridlines": {"visible": True, "line": {"color": "#E3E8EE"}}, "num_font": {"size": 9}})
+    y_axis = {"num_format": "#,##0", "major_gridlines": {"visible": True, "line": {"color": "#E3E8EE"}}, "num_font": {"size": 9}}
+    if y_min is not None:
+        y_axis["min"] = y_min
+    ch.set_y_axis(y_axis)
     ch.set_x_axis({"num_font": {"size": 8, "rotation": -35}})
     ch.set_chartarea({"border": {"color": PAL["line"]}})
     ch.set_size({"width": size[0], "height": size[1]})
@@ -201,7 +204,7 @@ def build_profit(ctx: Ctx) -> None:
     ws.set_row(s0 + 11, 40)
     ws.set_row(s0 + 11, 40)
     bw = [(label.split(" (")[0] if i not in (0, 8) else ("Year before" if i == 0 else "Reference year"), f"=B{s0+2+i}", i in (0, 8)) for i, (label, f, t) in enumerate(steps)]
-    waterfall(ctx, ws, "Profit_Margin", s0 + 13, 0, bw, "Contribution margin bridge", (b0, 6), (700, 340))
+    waterfall(ctx, ws, "Profit_Margin", s0 + 13, 0, bw, "Contribution margin bridge (axis starts at 300,000)", (b0, 6), (700, 340), y_min=300000)
     ws.freeze_panes(3, 1)
 
 
@@ -307,7 +310,7 @@ def build_inventory(ctx: Ctx) -> None:
     cs = "Calc_Sku"
 
     # main table first (so the list above can point at it)
-    M0 = 30
+    M0 = 34
     heads = ["SKU", "Product", "Category", "Stocking policy", "On hand", "On order", "Stock position", "Unit cost", "Lead time (days)",
              "Lead time SD", "Min order qty", "Demand per day", "SD of daily demand", "Safety stock", "Reorder point", "Economic order qty",
              "Days of cover", "Inventory turns", "GMROI", "Overstock units", "Overstock cost per year", "Lost units (window)",
@@ -385,25 +388,29 @@ def build_inventory(ctx: Ctx) -> None:
     ctx.refs["inv_value"] = absref("Inventory", 5, 6)
 
     # reorder list
-    L0 = 13
+    L0 = 15
+    ws.merge_range(12, 0, 13, 9, "Stock position is stock on hand plus stock on order. A SKU can show zero or very low days of cover and still have a high stock position: the stock is on its way. It is flagged Stock-out risk, but it needs no new order, so the suggested order is 0. A suggested order appears only for Reorder now, when the stock position is at or below the reorder point.",
+                   ctx.fmt(italic=True, font_color=PAL["slate"], text_wrap=True, valign="top"))
     ws.write(L0 - 1, 0, "Reorder list, most urgent first", ctx.h1())
-    ws.write_row(L0, 0, ["Rank", "Product", "Status", "Days of cover", "Stock position", "Reorder point", "Suggested order qty", "Lead time (days)", "Supplier"], ctx.head())
+    ws.write_row(L0, 0, ["Rank", "Product", "Status", "Days of cover", "On hand", "On order", "Stock position", "Reorder point", "Suggested order qty", "Lead time (days)", "Supplier"], ctx.head())
     ws.set_row(L0, 32)
     ctx.inv_list = (L0 + 1,)
     for j in range(15):
         r = L0 + 1 + j
         x = r + 1
-        ws.write(r, 0, j + 1, ctx.cell("0", align="center"))
+        ws.write_formula(r, 0, f'=IF(ROWS($A${L0 + 2}:A{x})<=COUNT($AA${f}:$AA${l}),ROWS($A${L0 + 2}:A{x}),"-")', ctx.cell("0", align="center"))
         m = f"MATCH($A{x},$AA${f}:$AA${l},0)"
-        pick = lambda col: f"=IFERROR(INDEX(${col}${f}:${col}${l},{m}),\"\")"
+        pick = lambda col: f'=IFERROR(INDEX(${col}${f}:${col}${l},{m}),"-")'
         ws.write_formula(r, 1, pick("B"), ctx.cell())
         ws.write_formula(r, 2, pick("X"), ctx.cell())
-        ws.write_formula(r, 3, pick("Q"), ctx.cell(DEC1))
-        ws.write_formula(r, 4, pick("G"), ctx.cell(INT))
-        ws.write_formula(r, 5, pick("O"), ctx.cell(INT))
-        ws.write_formula(r, 6, pick("Y"), ctx.cell(INT))
-        ws.write_formula(r, 7, pick("I"), ctx.cell(INT))
-        ws.write_formula(r, 8, f'=IFERROR(INDEX(Data_Products!$E$2:$E${NS+1},{m}),"")', ctx.cell())
+        ws.write_formula(r, 3, pick("Q"), ctx.cell(DEC1, align="right"))
+        ws.write_formula(r, 4, pick("E"), ctx.cell(INT, align="right"))
+        ws.write_formula(r, 5, pick("F"), ctx.cell(INT, align="right"))
+        ws.write_formula(r, 6, pick("G"), ctx.cell(INT, align="right"))
+        ws.write_formula(r, 7, pick("O"), ctx.cell(INT, align="right"))
+        ws.write_formula(r, 8, pick("Y"), ctx.cell(INT, align="right"))
+        ws.write_formula(r, 9, pick("I"), ctx.cell(INT, align="right"))
+        ws.write_formula(r, 10, f'=IFERROR(INDEX(Data_Products!$E$2:$E${NS+1},{m}),"-")', ctx.cell())
     ws.conditional_format(L0 + 1, 2, L0 + 15, 2, {"type": "text", "criteria": "containing", "value": "Reorder", "format": ctx.fmt(bg_color=PAL["warn_fill"], font_color=PAL["warn_font"])})
     ws.conditional_format(L0 + 1, 2, L0 + 15, 2, {"type": "text", "criteria": "containing", "value": "Stock-out", "format": ctx.fmt(bg_color=PAL["fail_fill"], font_color=PAL["fail_font"])})
     ws.freeze_panes(M0 + 1, 2)
@@ -415,4 +422,4 @@ def build_inventory(ctx: Ctx) -> None:
     ch.set_y_axis({"major_gridlines": {"visible": True, "line": {"color": "#E3E8EE"}}})
     ch.set_chartarea({"border": {"color": PAL["line"]}})
     ch.set_size({"width": 430, "height": 230})
-    ws.insert_chart(3, 10, ch, {"x_offset": 10})
+    ws.insert_chart(3, 12, ch, {"x_offset": 10})
