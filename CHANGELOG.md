@@ -8,9 +8,9 @@ A new workbook, a new data set and a Python companion. Version 1 is kept untouch
 
 - Three years of synthetic daily data (2023 to 2025) for 42 SKUs, 6 categories, 5 regions, 4 channels and 4,000 customers, with a promotion calendar, returns, shipping and payment fees, supplier delays and stock-outs. It is built by `tools/generate_data.py` from a seed.
 - A dirty sales export with a cleaning script and a log of every change (`tools/clean_data.py`, `data/raw/`).
-- `Excel_Retail_Operations_Dashboard_v2.xlsx`: 24 sheets with live formulas over Excel tables, named ranges, drop-downs, conditional formats and native charts. It covers a dashboard with year, region, channel and category selectors, contribution margin and a margin bridge, ABC-XYZ, reorder points and economic order quantities, a tested forecast, scenarios with a sensitivity grid, RFM, cohorts and lifetime value, promotion lift and break-even, returns, and a Checks sheet with 42 tests.
+- `Excel_Retail_Operations_Dashboard_v2.xlsx`: 24 sheets with live formulas over Excel tables, named ranges, drop-downs, conditional formats and native charts. It covers a dashboard with year, region, channel and category selectors, contribution margin and a margin bridge, ABC-XYZ, reorder points and economic order quantities, a tested forecast, scenarios with a sensitivity grid, RFM, cohorts and lifetime value, promotion lift and break-even, returns, and a Checks sheet with 42 tests. Two sheets were added by hand in Excel after the build: `Pivot_Revenue` (a PivotTable on `tblMonthly` with region and channel slicers and a chart) and `Power_Query` (six queries on the CSV files, connection only, with the data folder worked out from where the workbook is saved).
 - `analysis/`: the same calculations in pandas, writing CSV files and charts to `outputs/`.
-- `tests/`: 40 pytest tests on the generator, the cleaning script, the calculations and the workbook structure. A parity test reads the comparison file written by `tools/verify_workbook.py`.
+- `tests/`: 39 pytest tests on the generator, the cleaning script, the calculations and the workbook structure. A parity test reads the comparison file written by `tools/verify_workbook.py`.
 - `tools/verify_workbook.py`: recalculates the workbook in LibreOffice and compares 1,415 figures with pandas.
 - Documentation: README, walkthrough, methodology, data dictionary and manual steps.
 
@@ -28,7 +28,7 @@ I checked version 1 against its own data with `analysis/v1_review.py`. The resul
 ### Known limits of 2.0
 
 - The workbook was recalculated and compared in LibreOffice, and opened in desktop Excel 16 on Windows, where all 42 checks pass. Mac Excel, Excel for the web and Google Sheets were not tested. Opening it in Excel found a bug that LibreOffice had hidden: the month-on-month text on the dashboard used `TEXT()` format codes that fail in Excel with a non-English regional setting. It is fixed and no longer uses `TEXT()` for numbers.
-- PivotTables, slicers and Power Query are not in the file. `docs/manual-steps.md` shows how to add them.
+- The PivotTable and Power Query sheets are not made by the build script, so building the workbook again drops them. `docs/manual-steps.md` shows how to add them.
 - The promotion baseline and the elasticity estimates do not remove seasonality.
 - Three quarters of sales lines carry no customer id, so customer measures cover identified customers only.
 - The data is synthetic and the analysis finds rules the generator put there. It shows that the method works, not that the findings hold for a real business.

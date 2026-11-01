@@ -8,7 +8,7 @@ Version 1 was a single-year workbook. Version 2 uses three years of daily data, 
 
 ## Screenshots
 
-Taken from the workbook in desktop Excel. All nine are in [`screenshots/`](screenshots/).
+Taken from the workbook in desktop Excel. All ten are in [`screenshots/`](screenshots/).
 
 <img src="screenshots/01_dashboard.png" alt="Dashboard with all drop-downs on All" width="520">
 <img src="screenshots/03_margin_bridge.png" alt="Profit and margin sheet with the margin bridge" width="520">
@@ -42,7 +42,7 @@ The full list is in `outputs/key_findings.csv`.
 
 - **Data.** `tools/generate_data.py` builds three years of daily sales for 42 SKUs in 6 categories, 5 regions, 4 channels and 4,000 customers. It includes a promotion calendar with price elasticity, seasonality, returns, shipping and payment fees, supplier delays and stock-outs. It is seeded, so it gives the same files every time.
 - **Dirty data and cleaning.** A separate export in `data/raw/` carries duplicates, missing values and wrong dates. `tools/clean_data.py` repairs them and logs every change. The cleaned file matches the original exactly.
-- **Workbook.** `tools/build_workbook.py` writes `Excel_Retail_Operations_Dashboard_v2.xlsx` with XlsxWriter: 24 sheets, live formulas over Excel tables, named ranges, drop-downs, conditional formats and native charts. Every input is on the Assumptions sheet.
+- **Workbook.** `tools/build_workbook.py` writes `Excel_Retail_Operations_Dashboard_v2.xlsx` with XlsxWriter: 24 sheets, live formulas over Excel tables, named ranges, drop-downs, conditional formats and native charts. Every input is on the Assumptions sheet. A PivotTable sheet with slicers (`Pivot_Revenue`) and a Power Query sheet (`Power_Query`, six queries on the CSV files) were then added by hand in Excel.
 - **Checks.** The Checks sheet has 42 tests that compare the workbook with the CSV files and with itself. `tools/verify_workbook.py` recalculates the workbook in LibreOffice and compares 1,415 figures with pandas. `tests/` holds the pytest suite.
 
 ## What I would do next
@@ -51,7 +51,6 @@ The full list is in `outputs/key_findings.csv`.
 - Remove seasonality from the promotion baseline, and estimate elasticity with a model instead of averaging promotion lifts.
 - Give the forecast a band that includes uncertainty in level and trend, and test more than three held-back months.
 - Model stock by region and return flows into stock.
-- Add the PivotTable and Power Query layer described in [`docs/manual-steps.md`](docs/manual-steps.md).
 
 ## Limits
 
@@ -59,7 +58,7 @@ The full list is in `outputs/key_findings.csv`.
 - I opened the workbook in desktop Excel 16 on Windows, recalculated it there and took the screenshots from it. I did not test Mac Excel, Excel for the web or Google Sheets. See [`docs/manual-steps.md`](docs/manual-steps.md).
 - The workbook keeps sales at month, SKU, region and channel level. Order-level detail is in the CSV files.
 - Three quarters of order lines have no customer id, so the customer analysis describes identified customers only.
-- Pivot tables, slicers and Power Query are not in the file. A script cannot write them reliably.
+- The PivotTable, the slicers and the Power Query queries were added by hand in Excel after the build. Building the workbook again with the script leaves them out.
 
 ## Folder map
 
@@ -72,7 +71,7 @@ analysis/    pandas versions of the workbook's calculations, one script per topi
 tests/       pytest suite
 docs/        walkthrough.md, methodology.md, data-dictionary.md, manual-steps.md
 outputs/     CSV results, charts, data checks and the workbook parity table
-screenshots/ nine images taken from the workbook in Excel
+screenshots/ ten images taken from the workbook in Excel
 v1/          version 1, untouched
 ```
 

@@ -2,11 +2,11 @@
 
 The build script cannot do everything. This page covers the steps done by hand in Excel, the screenshots, and what was and was not tested.
 
-## What a script cannot create reliably
+## What the script does not create
 
-The workbook builder (XlsxWriter) writes formulas, tables, named ranges, charts, drop-downs and conditional formats. It cannot write PivotTables, slicers or Power Query connections. The data is laid out as Excel tables so you can add them yourself in a few minutes. Nothing in the workbook depends on them.
+The workbook builder (XlsxWriter) writes formulas, tables, named ranges, charts, drop-downs and conditional formats. It cannot write PivotTables, slicers or Power Query connections. Those were added by hand in Excel after the build: the sheet `Pivot_Revenue` and the sheet `Power_Query`. Building the workbook again with `tools/build_workbook.py` leaves them out, so repeat the steps below, or keep the saved file. Nothing else in the workbook depends on them.
 
-## 1. Add a PivotTable with slicers
+## 1. The PivotTable with slicers
 
 Use the table `tblMonthly` on the sheet `Data_Monthly`. It has one row per month, SKU, region and channel.
 
@@ -21,9 +21,9 @@ Use the table `tblMonthly` on the sheet `Data_Monthly`. It has one row per month
 
 Rename the new sheet to `Pivot_Revenue` and move it after `Returns` if you want it near the analysis sheets.
 
-## 2. Load the CSV files with Power Query
+## 2. Power Query on the CSV files
 
-This gives the workbook a refreshable link to the raw files.
+The sheet `Power_Query` holds six queries (`sales_lines`, `returns`, `products`, `customers`, `promotions` and `sales_with_products`). They are connection only. The cell `DataFolder` on that sheet works out the data folder from where the workbook is saved, so keep the workbook in the project folder. To load one, open **Data**, **Queries & Connections**, right-click the query and choose **Load To**. To make a query like these yourself:
 
 1. Make sure the CSV files are in the `data` folder next to the workbook.
 2. On the **Data** tab choose **Get Data**, then **From File**, then **From Text/CSV**.
@@ -38,7 +38,7 @@ If Excel cannot find the file after you move the project, open **Data**, **Queri
 
 ## 3. Screenshots
 
-Nine screenshots are in `screenshots/`. They were taken from desktop Excel 16 with the formula bar and headings hidden. Each is at least 1600 pixels wide, and some were scaled up by about 1.5 times from the Excel capture. The data is synthetic.
+Ten screenshots are in `screenshots/`. They were taken from desktop Excel 16 with the formula bar and headings hidden. Each is at least 1600 pixels wide, and some were scaled up by about 1.5 times from the Excel capture. The data is synthetic.
 
 | File | What it shows |
 |---|---|
@@ -51,6 +51,7 @@ Nine screenshots are in `screenshots/`. They were taken from desktop Excel 16 wi
 | `07_scenarios.png` | `Scenarios`, assumptions, results and chart |
 | `08_cohorts.png` | `Customers`, the cohort heat map |
 | `09_checks.png` | `Checks`, every row PASS |
+| `10_pivot_table.png` | `Pivot_Revenue`, the PivotTable, slicers and chart |
 
 To retake one: open the workbook, wait for the status bar to stop saying Calculate, untick Formula Bar and Headings on the **View** tab, pick a zoom that fits the sheet, press Windows + Shift + S, drag a rectangle around the sheet only and save as PNG. Keep the title bar, taskbar, your user name and any file path out of the frame.
 
