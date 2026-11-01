@@ -6,7 +6,7 @@ import datetime as dt
 import numpy as np
 import pandas as pd
 import xlsxwriter
-from xlsxwriter.utility import xl_col_to_name, xl_rowcol_to_cell
+from xlsxwriter.utility import xl_rowcol_to_cell
 
 PAL = dict(navy="#1F3A5F", teal="#2A7F8E", slate="#5B6B7B", light="#EEF2F6", mid="#D5DEE8", line="#B8C4D0",
            input_fill="#FFF4D6", input_font="#1F4E9E", pass_fill="#DDEFE3", pass_font="#1B5E32",

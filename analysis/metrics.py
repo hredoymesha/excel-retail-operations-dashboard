@@ -109,7 +109,6 @@ def inventory_rules(t: dict, monthly: pd.DataFrame) -> pd.DataFrame:
     d["eoq"] = np.maximum(d.min_order_qty, np.ceil(raw / d.min_order_qty - 1e-12) * d.min_order_qty)
     d["position"] = d.on_hand_end + d.on_order_end
     d["cover"] = np.where(d.mu > 0, d.on_hand_end / d.mu.replace(0, np.nan), np.nan)
-    disc = d.discontinued_date.notna()
     status = []
     for sku, r in d.iterrows():
         if pd.notna(r.discontinued_date):

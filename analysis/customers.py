@@ -17,11 +17,10 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
-import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 
 from analysis import common, metrics  # noqa: E402
-from analysis.style import COLOURS, apply_style  # noqa: E402
+from analysis.style import apply_style  # noqa: E402
 
 OUT = common.ROOT / "outputs"
 

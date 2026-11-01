@@ -4,7 +4,7 @@ from __future__ import annotations
 from xlsxwriter.utility import xl_col_to_name as cn
 
 from analysis.common import CATEGORIES
-from wb_core import DEC1, DEC2, EUR, INT, MONTH, PAL, PCT, PCT0, Ctx, absrange, absref
+from wb_core import DEC1, DEC2, EUR, INT, MONTH, PAL, PCT, PCT0, Ctx, absref
 from wb_data import DEM_R0, NM, NSKU, SM_C0
 
 NC = len(CATEGORIES)
@@ -145,7 +145,6 @@ def build_forecast(ctx: Ctx) -> None:
     ctx.refs["fc_best_first"] = absref("Forecast", R_SUM + 1, 5)
 
     # ---- method grids (12 months ahead)
-    names = ["Naive", "Moving average", "Seasonal naive", "Seasonal index"]
     G0 = [R_GRID + 15 * i for i in range(4)]
     for gi, g0 in enumerate(G0):
         ws.write(g0 - 1, 0, f"Next 12 months: {METHODS[gi]}", ctx.h1())
@@ -269,7 +268,7 @@ def build_scenarios(ctx: Ctx) -> None:
         ws.write(r, 5, dl, ctx.inp(INT))
         ws.merge_range(r, 6, r, 12, desc, cell)
     ws.merge_range(A0 + 6, 0, A0 + 6, 6, "Elasticity is taken from the Promotions sheet (or the override on the Assumptions sheet).", ctx.fmt(italic=True, font_color=PAL["slate"]))
-    SA, SB = A0 + 2, A0 + 6          # excel rows of the first and last scenario
+    SA = A0 + 2                      # excel row of the first scenario
     P = lambda col, i: f"${col}${SA + i}"
 
     # category block

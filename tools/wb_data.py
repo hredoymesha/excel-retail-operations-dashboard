@@ -3,11 +3,10 @@ from __future__ import annotations
 
 import datetime as dt
 
-import pandas as pd
-from xlsxwriter.utility import xl_col_to_name as cn, xl_rowcol_to_cell as rc
+from xlsxwriter.utility import xl_col_to_name as cn
 
 from analysis.common import CATEGORIES, CHANNELS
-from wb_core import (DATE, DEC1, DEC2, EUR, EUR2, INT, MONTH, PAL, PCT, PCT0, Ctx, absrange, absref, write_table)
+from wb_core import (DATE, DEC1, DEC2, EUR, EUR2, INT, MONTH, PCT, PCT0, Ctx, absrange, absref, write_table)
 
 FILT = "m_region,reg_c,m_channel,ch_c,m_category,cat_c"
 YEARSEL = 'm_year,">="&yr_lo,m_year,"<="&yr_hi'

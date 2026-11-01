@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from xlsxwriter.utility import xl_col_to_name as cn
 
-from wb_core import DEC1, DEC2, EUR, EUR2, INT, PAL, PCT, PCT0, Ctx, absrange, absref
-from wb_data import FILT, NSKU, YEARSEL, sf
+from wb_core import DEC1, DEC2, EUR, EUR2, INT, PAL, PCT, Ctx, absrange, absref
+from wb_data import NSKU, sf
 
 NS = NSKU
 
@@ -121,7 +121,6 @@ def build_profit(ctx: Ctx) -> None:
     ws.write_formula(b0 + 3, 0, '=IF(br_ya<MIN(m_year),"No earlier year in the data, so the bridge shows everything as mix.","")', ctx.fmt(font_color=PAL["fail_font"], italic=True))
 
     W0 = b0 + 40          # header row of the working table
-    first, last = W0 + 2, W0 + 1 + NS       # excel rows (1-based): first data row index W0+1
     fr, lr = W0 + 2, W0 + 1 + NS
     heads = ["SKU", "Product", "Units, year before", "Units, reference", "List value, before", "List value, ref",
              "Discounts, before", "Discounts, ref", "Cost of goods, before", "Cost of goods, ref", "Fees, before", "Fees, ref",
@@ -142,7 +141,6 @@ def build_profit(ctx: Ctx) -> None:
         x = r + 1
         ws.write_formula(r, 0, f"=Data_Products!$A${i+2}", ctx.cell())
         ws.write_formula(r, 1, f"=Data_Products!$B${i+2}", ctx.cell())
-        cols = {}
         def wr(col, f, num=INT):
             ws.write_formula(r, col, f, ctx.cell(num))
         for j, which in enumerate(["a", "b"]):
@@ -323,7 +321,6 @@ def build_inventory(ctx: Ctx) -> None:
         r = M0 + 1 + i
         x = r + 1
         crow = 5 + i
-        dp = f"Data_Products!${{c}}${i+2}"
         g = lambda name: f"=Data_Products!${pc(name)}${i+2}"
         ws.write_formula(r, 0, g("sku"), ctx.cell())
         ws.write_formula(r, 1, g("product_name"), ctx.cell())
@@ -393,7 +390,6 @@ def build_inventory(ctx: Ctx) -> None:
     ws.write_row(L0, 0, ["Rank", "Product", "Status", "Days of cover", "Stock position", "Reorder point", "Suggested order qty", "Lead time (days)", "Supplier"], ctx.head())
     ws.set_row(L0, 32)
     ctx.inv_list = (L0 + 1,)
-    rank = f"Inventory!$AA${f}:$AA${l}"
     for j in range(15):
         r = L0 + 1 + j
         x = r + 1

@@ -4,7 +4,7 @@ from __future__ import annotations
 import datetime as dt
 
 from analysis.common import CATEGORIES, CHANNELS
-from wb_core import DEC2, EUR, INT, PAL, PCT, SHEETS, Ctx, absref
+from wb_core import DEC2, EUR, INT, PAL, PCT, Ctx, absref
 from wb_data import NSKU, REGIONS
 
 

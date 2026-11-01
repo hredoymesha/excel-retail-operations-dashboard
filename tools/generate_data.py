@@ -283,7 +283,6 @@ def build_products(rng: np.random.Generator, cfg: Config) -> pd.DataFrame:
 def build_price_history(products: pd.DataFrame, years: list[int]) -> pd.DataFrame:
     rows = []
     for _, p in products.iterrows():
-        cost_shock = 1.0
         for year in years:
             k = year - years[0]
             price = charm(p.list_price_2023 * (1 + PRICE_GROWTH[p.category]) ** k) if k else p.list_price_2023
@@ -372,7 +371,6 @@ def promo_arrays(promos: pd.DataFrame, dates: pd.DatetimeIndex, rng: np.random.G
 def simulate_sku(p, supplier, T, dates, rate_base, season_t, trend_t, week_noise, chan, dow, promo,
                  rng, cfg):
     """Demand and stock for one SKU. Returns sale lines, daily stock rows and purchase orders."""
-    R, C = len(REGIONS), 4
     region_w = np.array(list(REGIONS.values()))
     disc, buzz, pidx, dip = promo
     launch = (pd.Timestamp(p.launch_date) - dates[0]).days
@@ -482,7 +480,6 @@ def assign_orders(lines: pd.DataFrame, rng: np.random.Generator) -> pd.DataFrame
     key = (lines.t.values * 10 + lines.r.values) * 4 + lines.c.values
     starts = np.r_[0, np.nonzero(np.diff(key))[0] + 1]
     counts = np.diff(np.r_[starts, len(lines)])
-    local = np.zeros(len(lines), dtype=np.int64)
     next_order = 0
     order_idx = np.zeros(len(lines), dtype=np.int64)
     sizes_pool = np.array([1, 2, 3, 4, 5])
@@ -623,7 +620,6 @@ def generate(cfg: Config | None = None) -> dict[str, pd.DataFrame]:
 
     # order level costs, spread over the lines by units
     order_units = lines.groupby("order_id").quantity.transform("sum")
-    order_rev = lines.groupby("order_id").net_revenue.transform("sum")
     share = lines.quantity / order_units
     ch = lines.channel
     ship_order = np.where(ch == "Online", 5.20 + 0.60 * (order_units - 1),

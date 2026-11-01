@@ -5,7 +5,7 @@ from xlsxwriter.utility import xl_col_to_name as cn
 
 from analysis.common import CATEGORIES
 from wb_core import DATE, DEC1, DEC2, EUR, INT, MONTH, PAL, PCT, PCT0, Ctx, absrange, absref
-from wb_data import NSKU, REGIONS, sf
+from wb_data import NSKU, REGIONS
 
 SEGMENTS = ["Champions", "Loyal", "New or recent", "At risk", "Lost or hibernating", "Needs attention"]
 

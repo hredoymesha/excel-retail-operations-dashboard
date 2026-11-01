@@ -112,7 +112,6 @@ def verify(label: str, selections: dict, data: dict, t: dict, monthly: pd.DataFr
     # ---- ABC, XYZ, inventory
     inv = M.inventory_rules(t, monthly)
     skus = list(inv.index)
-    ic = ctx.inv_cols
     m0 = ctx.inv_main[0]
     for i, sku in enumerate(skus):
         r = inv.loc[sku]
@@ -170,7 +169,6 @@ def verify(label: str, selections: dict, data: dict, t: dict, monthly: pd.DataFr
     for i, s in enumerate(["Champions", "Loyal", "New or recent", "At risk", "Lost or hibernating", "Needs attention"]):
         C.num(f"RFM customers in {s}", V("Customers", cu["S0"] + 2 + i, 1), segs.get(s, 0), 0)
     C.num("Repeat purchase rate", V("Customers", cu["P0"] + 6, 3), rf["repeat"], 1e-9)
-    clv_rows = {"aov": 2, "freq": 3, "retention": 5}
     C.num("Average order value", V("Customers", cu["V0"] + 2, 1), rf["aov"], 1e-6)
     C.num("Orders per active customer-year", V("Customers", cu["V0"] + 3, 1), rf["freq"], 1e-9)
     C.num("Yearly retention", V("Customers", cu["V0"] + 5, 1), rf["retention"], 1e-9)

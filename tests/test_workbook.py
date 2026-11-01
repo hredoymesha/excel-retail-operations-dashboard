@@ -67,7 +67,6 @@ def test_dashboard_has_selectors_charts_and_print_setup(built):
     z = zipfile.ZipFile(path)
     names = z.namelist()
     sheet_xml = {n: z.read(n).decode() for n in names if n.startswith("xl/worksheets/sheet")}
-    dash = [x for x in sheet_xml.values() if "<dataValidation " in x and "Pick from" not in x]
     assert any(x.count("<dataValidation ") >= 4 for x in sheet_xml.values())
     assert len([n for n in names if n.startswith("xl/charts/chart")]) >= 14
     assert any("fitToPage" in x and 'orientation="landscape"' in x for x in sheet_xml.values())

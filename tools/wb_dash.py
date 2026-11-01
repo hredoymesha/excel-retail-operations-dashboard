@@ -2,8 +2,8 @@
 from __future__ import annotations
 
 from analysis.common import CATEGORIES, CHANNELS
-from wb_core import EUR, INT, PAL, PCT, Ctx, absrange, absref
-from wb_data import NSKU, REGIONS
+from wb_core import EUR, INT, PAL, PCT, Ctx, absref
+from wb_data import REGIONS
 
 KPIS = [
     # label, row key on Calc_Dashboard, number format, kind (money, ratio)

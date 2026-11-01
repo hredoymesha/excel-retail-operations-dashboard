@@ -1,8 +1,7 @@
 import numpy as np
-import pandas as pd
 import pytest
 
-from analysis import common, metrics
+from analysis import metrics
 from analysis.common import CATEGORIES
 
 

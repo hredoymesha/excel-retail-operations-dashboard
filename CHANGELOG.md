@@ -10,7 +10,7 @@ A new workbook, a new data set and a Python companion. Version 1 is kept untouch
 - A dirty sales export with a cleaning script and a log of every change (`tools/clean_data.py`, `data/raw/`).
 - `Excel_Retail_Operations_Dashboard_v2.xlsx`: 24 sheets with live formulas over Excel tables, named ranges, drop-downs, conditional formats and native charts. It covers a dashboard with year, region, channel and category selectors, contribution margin and a margin bridge, ABC-XYZ, reorder points and economic order quantities, a tested forecast, scenarios with a sensitivity grid, RFM, cohorts and lifetime value, promotion lift and break-even, returns, and a Checks sheet with 42 tests.
 - `analysis/`: the same calculations in pandas, writing CSV files and charts to `outputs/`.
-- `tests/`: 37 pytest tests on the generator, the cleaning script, the calculations and the workbook structure. A parity test reads the comparison file written by `tools/verify_workbook.py`.
+- `tests/`: 40 pytest tests on the generator, the cleaning script, the calculations and the workbook structure. A parity test reads the comparison file written by `tools/verify_workbook.py`.
 - `tools/verify_workbook.py`: recalculates the workbook in LibreOffice and compares 1,415 figures with pandas.
 - Documentation: README, walkthrough, methodology, data dictionary and manual steps.
 
