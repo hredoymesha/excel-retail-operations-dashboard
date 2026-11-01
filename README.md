@@ -6,6 +6,15 @@ This is an Excel workbook for a fictional Finnish retailer that sells through fo
 
 Version 1 was a single-year workbook. Version 2 uses three years of daily data, adds the analysis a retail analyst is usually asked for, and tests the workbook against pandas. Version 1 is kept in [`v1/`](v1/). Where version 1 was wrong, [`CHANGELOG.md`](CHANGELOG.md) says so.
 
+## Screenshots
+
+Taken from the workbook in desktop Excel. All nine are in [`screenshots/`](screenshots/).
+
+<img src="screenshots/01_dashboard.png" alt="Dashboard with all drop-downs on All" width="520">
+<img src="screenshots/03_margin_bridge.png" alt="Profit and margin sheet with the margin bridge" width="520">
+
+<img src="screenshots/08_cohorts.png" alt="Monthly cohort retention heat map" width="780">
+
 ## Business questions
 
 - Where does margin come from, and where does it leak once shipping, fees, discounts and returns are counted?
@@ -63,7 +72,7 @@ analysis/    pandas versions of the workbook's calculations, one script per topi
 tests/       pytest suite
 docs/        walkthrough.md, methodology.md, data-dictionary.md, manual-steps.md
 outputs/     CSV results, charts, data checks and the workbook parity table
-screenshots/ images you add yourself (see docs/manual-steps.md)
+screenshots/ nine images taken from the workbook in Excel
 v1/          version 1, untouched
 ```
 
