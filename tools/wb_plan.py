@@ -192,7 +192,8 @@ def build_forecast(ctx: Ctx) -> None:
     ctx.refs["fc_first_cell"] = absref("Forecast", R_FC + 1, 2)
 
     # ---- chart data and chart
-    ws.write(R_CH - 1, 0, "Chart data for the selected category", ctx.h1())
+    ws.write(R_CH - 2, 0, "Chart data for the selected category", ctx.h1())
+    ws.write(R_CH - 1, 0, "#N/A is on purpose; it makes the chart skip that point.", ctx.fmt(italic=True, font_color=PAL["slate"]))
     ws.write_row(R_CH, 0, ["Month no", "Month", "Actual", "Forecast", "Lower band", "Upper band"], hdr)
     catpos = f"MATCH(sel_fc,$F${R_DATA+1}:$K${R_DATA+1},0)"
     for k in range(NM + 12):
@@ -213,6 +214,7 @@ def build_forecast(ctx: Ctx) -> None:
             fac = f"INDEX($G${R_LVL+2}:$G${R_LVL+1+NC},{catpos})"
             ws.write_formula(r, 4, f"=D{x}*(1-{fac})", ctx.cell(INT))
             ws.write_formula(r, 5, f"=D{x}*(1+{fac})", ctx.cell(INT))
+    ws.conditional_format(R_CH + 1, 2, R_CH + NM + 12, 5, {"type": "errors", "format": ctx.fmt(font_color=PAL["grey"], bg_color=PAL["light"])})
     c0, c1 = R_CH + 2, R_CH + 1 + NM + 12
     ch = ctx.wb.add_chart({"type": "line"})
     for nm_, col, color, w, dash in [("Actual demand", 2, PAL["navy"], 2.25, "solid"), ("Forecast", 3, PAL["teal"], 2.25, "solid"),

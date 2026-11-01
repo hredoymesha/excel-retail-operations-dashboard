@@ -27,11 +27,11 @@ SHEETS = [
     ("Start_Here", PAL["navy"]), ("Dashboard", PAL["navy"]), ("Profit_Margin", PAL["teal"]),
     ("Products", PAL["teal"]), ("Inventory", PAL["teal"]), ("Forecast", PAL["teal"]),
     ("Scenarios", PAL["teal"]), ("Customers", PAL["teal"]), ("Promotions", PAL["teal"]),
-    ("Returns", PAL["teal"]), ("Checks", PAL["amber"]), ("Assumptions", PAL["amber"]), ("Notes", PAL["slate"]),
+    ("Returns", PAL["teal"]), ("Checks", PAL["teal"]), ("Assumptions", PAL["teal"]), ("Notes", PAL["teal"]),
     ("Calc_SkuMonth", PAL["grey"]), ("Calc_Sku", PAL["grey"]), ("Calc_Dashboard", PAL["grey"]),
-    ("Calc_Customers", PAL["grey"]), ("Data_Monthly", PAL["sky"]), ("Data_Products", PAL["sky"]),
-    ("Data_StockMonth", PAL["sky"]), ("Data_Customers", PAL["sky"]), ("Data_Cohort", PAL["sky"]),
-    ("Data_Promo", PAL["sky"]), ("Data_Control", PAL["sky"]),
+    ("Calc_Customers", PAL["grey"]), ("Data_Monthly", PAL["grey"]), ("Data_Products", PAL["grey"]),
+    ("Data_StockMonth", PAL["grey"]), ("Data_Customers", PAL["grey"]), ("Data_Cohort", PAL["grey"]),
+    ("Data_Promo", PAL["grey"]), ("Data_Control", PAL["grey"]),
 ]
 
 
@@ -69,6 +69,8 @@ class Ctx:
         for name, colour in SHEETS:
             w = self.wb.add_worksheet(name)
             w.set_tab_color(colour)
+            if name.startswith(("Calc_", "Data_")):
+                w.hide()
             w.hide_gridlines(2)
             self.ws[name] = w
             w.write_formula = self._with_cached_value(name, w.write_formula)

@@ -176,7 +176,7 @@ def build_start(ctx: Ctx) -> None:
     r += len(legend) + 2
     ws.write(r, 1, "Tab colours", ctx.h1())
     ws.write(r, 2, "", ctx.h1())
-    for i, (n, t) in enumerate([("Navy", "Start and dashboard"), ("Teal", "Analysis sheets"), ("Amber", "Checks and assumptions"), ("Grey", "Working sheets (formulas only)"), ("Light blue", "Data tables built from the CSV files")]):
+    for i, (n, t) in enumerate([("Dark blue", "Start and dashboard"), ("Teal", "Analysis sheets, checks, assumptions and notes"), ("Grey", "Helper sheets (Calc_ and Data_), hidden")]):
         ws.write(r + 1 + i, 1, n, ctx.cell())
         ws.write(r + 1 + i, 2, t, ctx.fmt())
     r += 7
@@ -184,9 +184,14 @@ def build_start(ctx: Ctx) -> None:
     ws.write(r, 2, "", ctx.h1())
     link = ctx.fmt(font_color=PAL["teal"], underline=1)
     for i, (name, text) in enumerate(DESC["sheets"]):
-        ws.write_url(r + 1 + i, 1, f"internal:'{name}'!A1", link, name)
+        if name.startswith(("Calc_", "Data_")):
+            ws.write(r + 1 + i, 1, name, ctx.fmt(font_color=PAL["slate"]))
+        else:
+            ws.write_url(r + 1 + i, 1, f"internal:'{name}'!A1", link, name)
         ws.write(r + 1 + i, 2, text, ctx.fmt(text_wrap=True, valign="top"))
-    r += len(DESC["sheets"]) + 2
+    r += len(DESC["sheets"]) + 1
+    ws.write(r, 2, "Sheets that start with Calc_ or Data_ are hidden. Right-click any sheet tab and choose Unhide to see them.", ctx.note())
+    r += 2
     ws.write(r, 1, "Workbook checks", ctx.h1())
     ws.write(r, 2, "", ctx.h1())
     ws.write_formula(r + 1, 2, "=Checks!$C$4", ctx.fmt(bold=True))

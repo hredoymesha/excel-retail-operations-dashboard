@@ -8,9 +8,9 @@ Some things were done by hand in Excel, and some things were not tested. This pa
 
 ## The PivotTable and slicers
 
-It sits on the table `tblMonthly` (sheet `Data_Monthly`), which has one row per month, SKU, region and channel.
+It sits on the table `tblMonthly` (sheet `Data_Monthly`), which has one row per month, SKU, region and channel. The `Data_` and `Calc_` sheets are hidden, which does not stop the PivotTable working. To see them, right-click any sheet tab and choose Unhide.
 
-1. Click a cell inside the table on `Data_Monthly`.
+1. Unhide `Data_Monthly` (right-click a tab, Unhide), then click a cell inside the table.
 2. Insert tab, PivotTable, New Worksheet, OK.
 3. Drag `category` to Rows, `year` to Columns and `net_revenue` to Values (it must say Sum of net_revenue).
 4. Right-click a number, Number Format, and pick a euro format with no decimals.

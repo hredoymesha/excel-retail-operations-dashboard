@@ -25,7 +25,7 @@ def formulas(path):
     z = zipfile.ZipFile(path)
     names = {}
     wbxml = z.read("xl/workbook.xml").decode()
-    for m in re.finditer(r'<sheet name="([^"]+)" sheetId="\d+" r:id="(rId\d+)"', wbxml):
+    for m in re.finditer(r'<sheet name="([^"]+)" sheetId="\d+"(?: state="\w+")? r:id="(rId\d+)"', wbxml):
         names[m.group(2)] = m.group(1)
     rels = z.read("xl/_rels/workbook.xml.rels").decode()
     target = {m.group(1): m.group(2) for m in re.finditer(r'Id="(rId\d+)"[^>]*Target="([^"]+)"', rels)}

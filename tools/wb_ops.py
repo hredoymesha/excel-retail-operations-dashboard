@@ -216,7 +216,8 @@ def build_products(ctx: Ctx) -> None:
     ws.set_column(1, 1, 11)
     ws.set_column(2, 2, 28)
     ws.set_column(3, 3, 17)
-    ws.set_column(4, 15, 12)
+    ws.set_column(4, 14, 12)
+    ws.set_column(15, 15, 12, None, {"hidden": True})
     cs = "Calc_Sku"
     f5, l5 = 5, 4 + NS
     rng = lambda col: f"{cs}!${col}${f5}:${col}${l5}"
